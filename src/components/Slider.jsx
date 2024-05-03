@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 // import Slide1 from '../asset/home_slider_1.jpg';
 // import Slide2 from '../asset/home_slider_2.jpg';
-import Slide3 from '../asset/home_slider_3.jpg';
+// import Slide3 from '../asset/home_slider_3.jpg';
 import Slide4 from '../asset/home_slider_4.jpg';
 import Slide5 from '../asset/home_slider_5.jpg';
 import Slide6 from '../asset/home_slider_6.jpg';
@@ -18,7 +18,7 @@ import Slide14 from '../asset/home_slider_14.jpg';
 
 const slideImages = [
  
-  { url: Slide3, caption: '' },
+  
   { url: Slide4, caption: '' },
   { url: Slide5, caption: '' },
   { url: Slide6, caption: '' },
