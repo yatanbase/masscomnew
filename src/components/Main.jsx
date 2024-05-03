@@ -183,8 +183,10 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
-            <li><NavLink to={"/page5"} className="dropdown-item">Faculty</NavLink></li>
+            <li><NavLink to={"/page5"} className="dropdown-item">Faculty In-Charge</NavLink></li>
             <li><NavLink to={"/page4"} className="dropdown-item">Staff</NavLink></li>
+            <li><NavLink to='{' className="dropdown-item">Consultant</NavLink></li>
+           
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
@@ -240,8 +242,8 @@ const MainContent = () => {
                 
 <div className="tab-pane fade show tab-border active" id="home" role="tabpanel" aria-labelledby="home-tab" style={{margin:'10px', border:'none'}}>
 
-    <div className='partent'>
-        <div className='Box-About-1' style={{marginLeft:'-10px'}}>
+    <div className='partent' style={{}}>
+        <div className='Box-About-1' style={{marginLeft:'-10px',width:'900px'}}>
             <div style={{position:'relative', top:'13px'}}>
         <ImageSlider images={images} />     
 
@@ -287,72 +289,41 @@ const MainContent = () => {
 
             </div>
         </div>
-        <div className='Box-About-2' style={{ marginTop:"10px", padding: "10px", height: "1333px" }}>
-            <div style={{ width: '100%', height: '550px',marginTop:"10px",  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",padding:"10px 10px" , backgroundColor:"#F0F0F0",marginBottom:"10px" ,textAlign:'ce'}}>
-<h4 className='heading-news'>News and Announcements</h4>
-<br></br>
+        <div className='Box-About-2' style={{ marginTop:"10px", padding: "10px",width:'400px', height: "1333px",textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+    <div style={{ width: '100%', height: '550px',marginTop:"10px",   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",padding:"10px 10px" , backgroundColor:"#F0F0F0",marginBottom:"10px" ,textAlign:'center'}}>
+        <h4 className='heading-news'>News and Announcements</h4>
+        <br />
+\
+<a href="/News6" className='text-decoration-none' style={{ display: 'block',marginTop:'-30px', marginBottom: '20px' }}>Student Film Recognised.</a>
 
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News1" className='text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px',marginTop:'-20px' }}>Street Play Script Writing Contest on the Theme Disaster Management </a>
-
-</div>
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News2" className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Human Rights Awareness Programme organized at SJMC</a>
-</div>
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News6" className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Student film recognised in renowned film festivals.</a>
-</div>
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News3" className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Training workshop for media professionals to create awareness about disaster mitigation.</a>
-</div>
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News4" className='text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Open Mic on "Youth Icon of Bihar" </a>
-</div>
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<br></br>
-<a href="/News5" className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Screening of seven films of SJMC students  </a>
-</div>
-
-<br></br>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<br></br>
-<a href="/News7" className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Patna Book Fair  </a>
-</div>
+        <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>
+        
+        <a href="/News7" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Discussion on Journalism at PBF  </a>
+        
+        <a href="/News3" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Training Workshop for Media.</a>
+        
+        <a href="/News2" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Human Rights Awareness</a>
+        
+        <a href="/News1" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Street Play and Script Writing Contest </a>
+        
+        <a href="/News5" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Screening of Seven Films </a>
+        
 
 
+    </div>
 
-</div>
+
 
             <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
                 <h4 className='heading-news'>Important Links</h4>
 
-                <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center',margin:'20px 0px 20px 0px' }}><br></br>
-<a href={Announcement1} target='_blank' className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Notice About Academic Advisory Committee </a>
-</div>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement2} target='_blank' className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Board Of Studies  </a>
-</div>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement3} target='_blank' className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
-</div>
-
-<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement4} target='_blank' className=' text-decoration-none' style={{  marginRight: '10px', marginLeft: '8px' }}>MoU between SJMC & BIPARD  </a>
-</div>
-
+                <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
+        
+        <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>
+        
+        <a href={Announcement3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
+        
+        <a href={Announcement4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>MoU between SJMC & BIPARD  </a>
 
 
 
@@ -562,42 +533,42 @@ const MainContent = () => {
             <NavLink to={"/page20"}>
                 <img src={Film} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
-            <h4 style={{ textAlign: 'center' }}>Film Screening</h4>
+            <h4 style={{ textAlign: 'center' , fontFamily: 'Times New Roman, serif'}}>Film Screening of Student Films (2021-2023)</h4>
         </div>
 
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', top: '10px' }}>
+        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <NavLink to={"/page21"}>
                 <img src={Refresher} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
-            <h4 style={{ textAlign: 'center' }}>Refresher Training Programme for IPRD</h4>
+            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Refresher Training Programme for IPRD Officials</h4>
         </div>
 
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
             <NavLink to={"/page19"}>
                 <img src={DigitalEd} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
-            <h4 style={{ textAlign: 'center' }}>Digital Education</h4>
+            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>National Workshop on Digital Education</h4>
         </div>
 
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
             <NavLink to={"/page18"}>
                 <img src={ScriptWritingDay} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
-            <h4 style={{ textAlign: 'center' }}>Script Writing Day</h4>
+            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Script Writing Workshop</h4>
         </div>
 
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', top: '1px' }}>
             <NavLink to={"/page17"}>
                 <img src={DisasterImage} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
-            <h4 style={{ textAlign: 'center' }}>Disaster Management Seminar</h4>
+            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Disaster Management Seminar for Media Persons</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/page22"} style={{ width: '100%', height: '100%' }}>
         <img src={Students} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
     </NavLink>
-    <h4 style={{ textAlign: 'center' }}>Student Activities</h4>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',position:'relative',bottom:'25px' }}>Student Activities</h4>
 </div>
 
 

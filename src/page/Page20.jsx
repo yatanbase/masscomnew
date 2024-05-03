@@ -15,7 +15,7 @@ function Page20() {
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
           <div className="row justify-content-center">
             <div className="col-md-12 text-center">
-              <h2>Film Screening</h2>
+              <h2>Film Screening of Student Films (2021-2023)</h2>
             </div>
           </div>
           <div className="row justify-content-around">

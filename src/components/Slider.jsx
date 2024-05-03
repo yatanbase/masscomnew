@@ -34,7 +34,7 @@ const slideImages = [
 
 function ImageSlider() {
   return (
-    <div className="container">
+    <div className="container" style={{width:'700px' , marginBottom:'10px'}}>
       <div className="row">
         <div className="col">
           <Slide arrows={true} dots={true}>
