@@ -238,7 +238,7 @@ const MainContent = () => {
             
             <div className="tab-content" id="myTabContent">
                 
-<div className="tab-pane fade show tab-border active" id="home" role="tabpanel" aria-labelledby="home-tab" style={{margin:'10px'}}>
+<div className="tab-pane fade show tab-border active" id="home" role="tabpanel" aria-labelledby="home-tab" style={{margin:'10px', border:'none'}}>
 
     <div className='partent'>
         <div className='Box-About-1' style={{marginLeft:'-10px'}}>
@@ -323,6 +323,12 @@ const MainContent = () => {
 <a href="/News5" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Screening of seven films of SJMC students  </a>
 </div>
 
+<br></br>
+
+<div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
+<br></br>
+<a href="/News7" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Patna Book Fair  </a>
+</div>
 
 
 

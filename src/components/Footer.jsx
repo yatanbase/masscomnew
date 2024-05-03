@@ -43,7 +43,7 @@ const Footer = () => {
                                     <a href="https://twitter.com/PatnaSjmc">Twitter</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/@schoolofjournalismmasscomm6140">Youtube</a>
+                                    <a href="https://www.youtube.com/@AryabhattaKnowledgeUniversity">Youtube</a>
                                 </li>
                                 {/* Add more social media links */}
                             </ul>
