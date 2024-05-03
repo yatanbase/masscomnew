@@ -41,6 +41,7 @@ import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
 import Announcement4 from '../News/Announcement4.pdf'
+import Syllabus from '../News/news_pdf_syllabus.pdf'
 
 
 import { useEffect } from 'react';
@@ -296,8 +297,8 @@ const MainContent = () => {
 
         <div style={{marginTop:'-40px'}}>
 
-        <a href="http://adms.akubihar.ac.in:81/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-
+        <a href="http://adms.akubihar.ac.in:81/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} />   </a>
+        <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
 <a href="/News6" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Student Film Recognised.</a>
 
         <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>
