@@ -293,41 +293,41 @@ const MainContent = () => {
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News1" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px',marginTop:'-20px' }}>Street Play Script Writing Contest on the Theme Disaster Management </a>
+<a href="/News1" className='text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px',marginTop:'-20px' }}>Street Play Script Writing Contest on the Theme Disaster Management </a>
 
 </div>
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News2" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Human Rights Awareness Programme organized at SJMC</a>
+<a href="/News2" className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Human Rights Awareness Programme organized at SJMC</a>
 </div>
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News6" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Student film recognised in renowned film festivals.</a>
+<a href="/News6" className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Student film recognised in renowned film festivals.</a>
 </div>
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News3" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Training workshop for media professionals to create awareness about disaster mitigation.</a>
+<a href="/News3" className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Training workshop for media professionals to create awareness about disaster mitigation.</a>
 </div>
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
-<a href="/News4" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Open Mic on "Youth Icon of Bihar" </a>
+<a href="/News4" className='text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Open Mic on "Youth Icon of Bihar" </a>
 </div>
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
 <br></br>
-<a href="/News5" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Screening of seven films of SJMC students  </a>
+<a href="/News5" className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Screening of seven films of SJMC students  </a>
 </div>
 
 <br></br>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' }}>
 <br></br>
-<a href="/News7" className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Patna Book Fair  </a>
+<a href="/News7" className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Patna Book Fair  </a>
 </div>
 
 
@@ -338,19 +338,19 @@ const MainContent = () => {
                 <h4 className='heading-news'>Important Links</h4>
 
                 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center',margin:'20px 0px 20px 0px' }}><br></br>
-<a href={Announcement1} target='_blank' className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Notice About Academic Advisory Committee </a>
+<a href={Announcement1} target='_blank' className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Notice About Academic Advisory Committee </a>
 </div>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement2} target='_blank' className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Board Of Studies  </a>
+<a href={Announcement2} target='_blank' className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Board Of Studies  </a>
 </div>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement3} target='_blank' className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
+<a href={Announcement3} target='_blank' className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
 </div>
 
 <div className="news-announcement-box" style={{ display: 'flex', alignItems: 'center' ,margin:'20px 0px 20px 0px'}}><br></br>
-<a href={Announcement4} target='_blank' className='text-reset text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>MoU between SJMC & BIPARD  </a>
+<a href={Announcement4} target='_blank' className=' text-decoration-none' style={{ fontWeight: 'bold', marginRight: '10px', marginLeft: '8px' }}>MoU between SJMC & BIPARD  </a>
 </div>
 
 
