@@ -45,6 +45,9 @@ const Footer = () => {
                                 <li>
                                     <a href="https://www.youtube.com/@AryabhattaKnowledgeUniversity">Youtube</a>
                                 </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@schoolofjournalismmasscomm6140">Youtube SJMC</a>
+                                </li>
                                 {/* Add more social media links */}
                             </ul>
                         </div>
