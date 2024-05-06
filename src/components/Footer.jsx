@@ -13,8 +13,8 @@ const Footer = () => {
                     <div className="col-12 col-md-4 col-lg-4 d-flex">
                         <div>
                             <img src={FooterLogo} alt="University Logo" style={{width:'100%', paddingBottom:'10px', position:'relative', right:'80px'}} />
-                            <p>Reception: 0000 – 0000 530</p>
-                            <p>Admission: 0000 – 0000 / 518 – 0612-2952742</p>
+                            <p>Reception: 0612-2952742</p>
+                            <p>Phone : +91 9241027682</p>
                             <p>Address:  Aryabhatta Knowledge University Campus, Mithapur, Patna, Bihar (India)</p>
                             <p>Email: sjmcpatna@gmail.com</p>
                         </div>

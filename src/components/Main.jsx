@@ -128,7 +128,7 @@ const MainContent = () => {
     return (
         <>
         
-        <Toolbar />
+        {/* <Toolbar /> */}
       <Header />
         <main className="container py-4">
             <ul className="nav nav-pills nav-fill nav-list-style">
@@ -230,7 +230,7 @@ const MainContent = () => {
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
                 <a style={{fontWeight:'bold',color: "inherit"}} className="nav-link dropdown-toggle dropdown-item text-reset text-decoration-none" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Contact</a>
                 <ul className="dropdown-menu" aria-labelledby="contact-tab">
-                    <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('0612-2952742')}>Phone : 0612-2952742</button></li>
+                    <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('+919241027682')}>Phone : +919241027682</button></li>
                     <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('sjmcpatna@gmail.com')}>Mail : sjmcpatna@gmail.com</button></li>
                     <li><a  style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} className="dropdown-item" href="https://www.google.com/maps/place/Aryabhatta+Knowledge+University/@25.5923023,85.1323539,17z/data=!4m10!1m2!2m1!1sAryabhatta+Knowledge+University,+Gyan+Parisar,Mithapur,+Patna-800+001+India!3m6!1s0x39ed58702e5ae787:0x6c55883d32ec4db4!8m2!3d25.5923023!4d85.1349288!15sCktBcnlhYmhhdHRhIEtub3dsZWRnZSBVbml2ZXJzaXR5LCBHeWFuIFBhcmlzYXIsTWl0aGFwdXIsIFBhdG5hLTgwMCAwMDEgSW5kaWGSAQp1bml2ZXJzaXR54AEA!16s%2Fm%2F0cpbfy3?entry=ttu" target="_blank">ADDRESS INFO<br />Aryabhatta Knowledge University,<br></br> Gyan Parisar,Mithapur, Patna-800 001 (Bihar) India</a></li>
                     <li><hr className="dropdown-divider" /></li>
@@ -531,7 +531,7 @@ const MainContent = () => {
     </div>
 </div>
 </div>
-<div style={{ width: '100%', margin: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+<div style={{ width: '100%', margin: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',position:'relative', right:'36px' }}>
     <h2 style={{ width: '100%', textAlign: 'center',  borderRadius: '10px', textShadow: '0 3px 10px rgba(0, 0, 0, 0.7)' }}>Our Gallery</h2>
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
 
