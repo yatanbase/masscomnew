@@ -2,6 +2,13 @@
  
  function Page2() {
    return (
+    <div> <div  className="container">
+    <div className="row justify-content-center align-items-center">
+      
+      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto text-center ">
+
+
+        
      <div><div>
      <h2 style={{ textAlign: 'center', borderBottom: '1px solid black' }}>
          <a href="#"></a>Ph.D. in Mass communication
@@ -141,6 +148,7 @@
              </div>
              </section>
          </div></div>
+         </div></div></div></div>
    )
  }
  

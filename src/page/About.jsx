@@ -4,6 +4,11 @@ import myImage from '../asset/img2.jpeg';
 
 function About() {
   return (
+    <div> <div  className="container" style={{marginTop:'20px'}}>
+    <div className="row justify-content-center align-items-center">
+      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto ">
+
+
     <div> <div className="mu-latest-course-single" style={{margin: '50px'}}>
     <figure className="mu-latest-course-img">
       <a href="#" style={{width: '100%',display: 'flex' , justifyContent: 'center'}}><img src={myImage} alt="img" style={{width: '50%' , boxShadow: ' 0 0 25px black' , borderRadius: '10px'}}/></a>
@@ -24,7 +29,7 @@ function About() {
       <p className="text-justify">With this view, the School of Journalism &Mass Communication may come up with courses specifically aimed at teaching and research on Communication & Information system. The institute is one of its kind in the region aimed at constantly innovating its programmes in order to meet the challenges thrown up by developments in the industry by reviewing the syllabi every year to make changes and suitable modifications to make them relevant to the needs of the industry and society.</p>
       <p className="text-justify">Establishment of this institute was essential because of the current trend of proliferation of media institutions in Bihar without appropriate curricula. Media scholars and professionals have over the years debated the benchmark for journalism curriculum of developing countries since the curricula differ structurally and pedagogically from one another.</p>
     </div>
-  </div></div>
+  </div></div></div></div></div></div>
   )
 }
 

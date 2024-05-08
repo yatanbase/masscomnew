@@ -2,6 +2,10 @@ import React from 'react'
 
 function Page7() {
   return (
+<div> <div  className="container" style={{marginTop:'20px'}}>
+    <div className="row justify-content-center align-items-center">
+      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto ">
+
     <div> <div className="mu-latest-course-single" style={{margin: '50px'}}>
     
     <div className="about_role_content">
@@ -16,6 +20,8 @@ function Page7() {
 <p className="text-justify"><span style={{ fontWeight: 'bold' }}>Knowledge Management:</span> The institute will provide platform for public policy makers, business professionals and academic community to undertake and disseminate knowledge on mass communication and building of ideas.</p>
 
     </div>
+  </div></div>
+  </div></div>
   </div></div>
   )
 }

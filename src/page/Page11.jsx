@@ -2,6 +2,12 @@ import React from 'react'
 
 function Page11() {
   return (
+    <div> <div  className="container" style={{marginTop:'20px'}}>
+    <div className="row ">
+      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto  ">
+
+
+
     <div> <div className="about_vision_n_mission" style={{margin: '50px'}}>
     
     <div className="about_vision&mission_content">
@@ -28,6 +34,8 @@ function Page11() {
 </div>
 
     </div>
+  </div></div>
+  </div></div>
   </div></div>
   )
 }

@@ -4,7 +4,11 @@ import React from 'react'
 function Page1() {
   return (
     <>
-    
+    <div> <div  className="container">
+    <div className="row justify-content-center align-items-center">
+      
+      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto text-center ">
+        <div>
 
     <h2 style={{ textAlign: 'center', borderBottom: '1px solid black', color: 'black', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
             <a href="#" style={{ color: 'black', textDecoration: 'none' }}>M.A. in Journalism and Mass communication</a>
@@ -663,7 +667,7 @@ function Page1() {
                style={{ boxSizing: 'border-box', background: 'none rgb(15, 189, 113)', color: 'rgb(255, 255, 255)', textDecoration: 'none', display: 'inline-block', marginBottom: '0px', fontWeight: 'normal', textAlign: 'center', verticalAlign: 'middle', cursor: 'pointer', border: '1px solid rgb(13, 165, 99)', whiteSpace: 'nowrap', padding: '6px 12px', fontSize: '14px', lineHeight: '1.42857', borderRadius: '0px', userSelect: 'none' }}>
                 View Course In PDF
             </a>
-        </div>
+        </div></div></div></div></div></div>
     </>
   )
 }

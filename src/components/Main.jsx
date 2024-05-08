@@ -221,7 +221,7 @@ const MainContent = () => {
             <li><a   href="https://epathshala.nic.in/ " className="dropdown-item"> EPATHSHALA </a></li>
             <li><a   href="https://www.isro.gov.in/" className="dropdown-item"> ISRO </a></li>
              
-            <li><NavLink to={"/page2"} className="dropdown-item"> </NavLink></li>
+            <li><NavLink to={"/PhD"} className="dropdown-item"> </NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
