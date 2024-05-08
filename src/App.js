@@ -3,7 +3,7 @@ import MainContent from './components/Main';
 import Page1 from './page/page1';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Page2 from './page/page2';
-import Page3 from './page/Page3';
+import About from './page/About';
 import Page4 from './page/Page4';
 import Page5 from './page/Page5';
 import Page6 from './page/Page6';
@@ -42,28 +42,28 @@ function App() {
       
         <Routes>
         <Route path="/" element={<MainContent />} />
-          <Route path="/page1" element={<Page1 />} />
-          <Route path="/page2" element={<Page2 />} />
-          <Route path="/page3" element={<Page3 />} />
-          <Route path="/page4" element={<Page4 />} />
-          <Route path="/page5" element={<Page5 />} />
+          <Route path="/MA" element={<Page1 />} />
+          <Route path="/PhD" element={<Page2 />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Staff" element={<Page4 />} />
+          <Route path="/Faculty" element={<Page5 />} />
           <Route path="/page6" element={<Page6 />} />
-          <Route path="/page7" element={<Page7 />} />
-          <Route path="/page8" element={<Page8 />} />
-          <Route path="/page9" element={<Page9 />} />
-          <Route path="/page10" element={<Page10 />} />
-          <Route path="/page11" element={<Page11 />} />
-          <Route path="/page12" element={<Page12 />} />
-          <Route path="/page13" element={<Page13 />} />
-          <Route path="/page14" element={<Page14 />} />
+          <Route path="/RoleOfSJMC" element={<Page7 />} />
+          <Route path="/Some_Moments" element={<Page8 />} />
+          <Route path="/Founder_Director" element={<Page9 />} />
+          <Route path="/Careers" element={<Page10 />} />
+          <Route path="/Vision_and_mission" element={<Page11 />} />
+          <Route path="/Studio" element={<Page12 />} />
+          <Route path="/Media_lab" element={<Page13 />} />
+          <Route path="/Library" element={<Page14 />} />
           <Route path="/page15" element={<Page15 />} />
           <Route path="/page16" element={<Page16 />} />
-          <Route path="/page17" element={<Page17 />} />
-          <Route path="/page19" element={<Page19 />} />
-          <Route path="/page20" element={<Page20 />} />
-          <Route path="/page18" element={<Page18 />} />
-          <Route path="/page21" element={<Page21 />} />
-          <Route path="/page22" element={<Page22 />} />
+          <Route path="/Disaster_management" element={<Page17 />} />
+          <Route path="/Digital_education" element={<Page19 />} />
+          <Route path="/Film_screening" element={<Page20 />} />
+          <Route path="/Scipt_writing" element={<Page18 />} />
+          <Route path="/Refresher_training" element={<Page21 />} />
+          <Route path="/Student_activities" element={<Page22 />} />
           <Route path="/page23" element={<Page23 />} />
           <Route path="/page24" element={<Page24 />} />
 

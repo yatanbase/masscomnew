@@ -2,7 +2,7 @@ import React from 'react'
 
 import myImage from '../asset/img2.jpeg';
 
-function Page3() {
+function About() {
   return (
     <div> <div className="mu-latest-course-single" style={{margin: '50px'}}>
     <figure className="mu-latest-course-img">
@@ -28,4 +28,4 @@ function Page3() {
   )
 }
 
-export default Page3
+export default About

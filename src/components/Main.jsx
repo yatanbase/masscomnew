@@ -137,12 +137,12 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>About Department</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
-            <li><NavLink to={"/page3"} className="dropdown-item">About us</NavLink></li>
-            <li><NavLink to={"/page11"} className="dropdown-item">Vision & Mission</NavLink></li>
-            <li><NavLink to={"/page7"} className="dropdown-item">Role Of SJMC</NavLink></li>
-            <li><NavLink to={"/page8"} className="dropdown-item">Our Gallery</NavLink></li>
-            <li><NavLink to={"/page9"} className="dropdown-item">Founder Director</NavLink></li>
-            <li><NavLink to={"/page10"} className="dropdown-item">Careers</NavLink></li>
+            <li><NavLink to={"/About"} className="dropdown-item">About us</NavLink></li>
+            <li><NavLink to={"/Vision_and_mission"} className="dropdown-item">Vision & Mission</NavLink></li>
+            <li><NavLink to={"/RoleOfSJMC"} className="dropdown-item">Role Of SJMC</NavLink></li>
+            <li><NavLink to={"/Some_Moments"} className="dropdown-item">Our Gallery</NavLink></li>
+            <li><NavLink to={"/Founder_Director"} className="dropdown-item">Founder Director</NavLink></li>
+            <li><NavLink to={"/Careers"} className="dropdown-item">Careers</NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
@@ -152,9 +152,9 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Infrastructure</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
-            <li><NavLink to={"/page12"} className="dropdown-item">Studio</NavLink></li>
-            <li><NavLink to={"/page13"} className="dropdown-item">Media Lab</NavLink></li>
-            <li><NavLink to={"/page14"} className="dropdown-item">Library</NavLink></li>
+            <li><NavLink to={"/Studio"} className="dropdown-item">Studio</NavLink></li>
+            <li><NavLink to={"/Media_lab"} className="dropdown-item">Media Lab</NavLink></li>
+            <li><NavLink to={"/Library"} className="dropdown-item">Library</NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
@@ -163,8 +163,8 @@ const MainContent = () => {
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
                 <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Academic Program</a>
                 <ul className="dropdown-menu" aria-labelledby="contact-tab">
-                    <li><a href="/page1" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
-                    <li><a href="/page2" className="dropdown-item">Ph.D. in Mass communication</a></li>
+                    <li><a href="/MA" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
+                    <li><a href="/PhD" className="dropdown-item">Ph.D. in Mass communication</a></li>
                     <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
                     <li  onClick={togglePgdDropdown}>
                         <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
@@ -184,8 +184,8 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
-            <li><NavLink to={"/page5"} className="dropdown-item">Faculty In-Charge</NavLink></li>
-            <li><NavLink to={"/page4"} className="dropdown-item">Staff</NavLink></li>
+            <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
             <li><NavLink to='{' className="dropdown-item">Consultant</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
@@ -536,42 +536,42 @@ const MainContent = () => {
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <NavLink to={"/page20"}>
+            <NavLink to={"/Film_Screening"}>
                 <img src={Film} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
             <h4 style={{ textAlign: 'center' , fontFamily: 'Times New Roman, serif'}}>Film Screening of Student Films (2021-2023)</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <NavLink to={"/page21"}>
+            <NavLink to={"/Refresher_training"}>
                 <img src={Refresher} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
             <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Refresher Training Programme for IPRD Officials</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
-            <NavLink to={"/page19"}>
+            <NavLink to={"/Digital_education"}>
                 <img src={DigitalEd} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
             <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>National Workshop on Digital Education</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
-            <NavLink to={"/page18"}>
+            <NavLink to={"/Scipt_writing"}>
                 <img src={ScriptWritingDay} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
             <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Script Writing Workshop</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', top: '1px' }}>
-            <NavLink to={"/page17"}>
+            <NavLink to={"/Disaster_management"}>
                 <img src={DisasterImage} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
             </NavLink>
             <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Disaster Management Seminar for Media Persons</h4>
         </div>
 
         <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/page22"} style={{ width: '100%', height: '100%' }}>
+    <NavLink to={"/Student_activities"} style={{ width: '100%', height: '100%' }}>
         <img src={Students} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
     </NavLink>
     <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',position:'relative',bottom:'25px' }}>Student Activities</h4>
