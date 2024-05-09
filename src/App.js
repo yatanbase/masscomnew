@@ -64,7 +64,7 @@ function App() {
           <Route path="/Scipt_writing" element={<Page18 />} />
           <Route path="/Refresher_training" element={<Page21 />} />
           <Route path="/Student_activities" element={<Page22 />} />
-          <Route path="/page23" element={<Page23 />} />
+          <Route path="/AdvisoryCommittee" element={<Page23 />} />
           <Route path="/page24" element={<Page24 />} />
 
           
