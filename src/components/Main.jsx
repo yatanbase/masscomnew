@@ -184,6 +184,8 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
+
+            <li><NavLink to={"/Page23"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
             <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
             <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
             <li><NavLink to='{' className="dropdown-item">Consultant</NavLink></li>
