@@ -12,6 +12,7 @@ import Image10 from '../asset/Digital Education/digitaled (10).jpeg'
 import Image11 from '../asset/Digital Education/digitaled (11).jpeg'
 import Image12 from '../asset/Digital Education/digitaled (12).jpeg'
 import Image13 from '../asset/Digital Education/digitaled (13).jpeg'
+import Home from '../components/HomeButton'
 
 function Page19() {
   useEffect(() => {
@@ -22,7 +23,7 @@ function Page19() {
 
   return (
     <div style={{ margin: '50px' }}>
-     
+     <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">

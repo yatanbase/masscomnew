@@ -1,8 +1,9 @@
 import React from 'react'
+import Home from '../components/HomeButton'
 
 function Page11() {
   return (
-    <div> <div  className="container" style={{marginTop:'20px'}}>
+    <div><Home/> <div  className="container" style={{marginTop:'20px'}}>
     <div className="row ">
       <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto  ">
 

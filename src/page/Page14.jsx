@@ -1,10 +1,12 @@
 import React from 'react'
 import LibImage1 from '../asset/Library.png'
 import LibImage2 from '../asset/library2.png'
+import Home from '../components/HomeButton'
+
 function Page14() {
   return (
     <div style={{ margin: '50px' }}>
-   
+   <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">

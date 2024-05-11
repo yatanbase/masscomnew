@@ -1,9 +1,11 @@
 import { width } from '@fortawesome/free-solid-svg-icons/fa0'
 import React from 'react'
+import Home from '../components/HomeButton'
 
 function Page1() {
   return (
     <>
+    <Home/>
     <div> <div  className="container">
     <div className="row justify-content-center align-items-center">
       

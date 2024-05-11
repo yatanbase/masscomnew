@@ -6,6 +6,7 @@ import Image4 from '../asset/Script seminar/scriptSeminar4.jpg'
 import Image5 from '../asset/Script seminar/scriptSeminar5.jpg'
 import Image6 from '../asset/Script seminar/scriptSeminar6.jpg'
 import Image7 from '../asset/Script seminar/scriptSeminar7.jpg'
+import Home from '../components/HomeButton'
 
 
 function Page18() {
@@ -16,7 +17,7 @@ function Page18() {
   }, []);
   return (
     <div style={{ margin: '50px' }}>
-     
+     <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">

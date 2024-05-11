@@ -3,11 +3,12 @@ import Image1 from '../asset/Disaster education/disastered (1).jpeg'
 import Image2 from '../asset/Disaster education/disastered (2).jpeg'
 import Image3 from '../asset/Disaster education/disastered (3).jpeg'
 import Image4 from '../asset/Disaster education/disastered (4).jpeg'
+import Home from '../components/HomeButton'
 
 function page17() {
   return (
     <div style={{ margin: '50px' }}>
-     
+     <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">

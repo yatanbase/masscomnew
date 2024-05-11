@@ -5,11 +5,12 @@ import Image3 from '../asset/film screening/film (3).jpeg'
 import Image4 from '../asset/film screening/film (4).jpeg'
 import Image5 from '../asset/film screening/film (5).jpeg'
 import Image6 from '../asset/film screening/film (6).jpeg'
+import Home from '../components/HomeButton'
 
 function Page20() {
   return (
     <div style={{ margin: '50px' }}>
-     
+     <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">

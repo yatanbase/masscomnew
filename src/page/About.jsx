@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Home from '../components/HomeButton'
 import myImage from '../asset/img2.jpeg';
 
 function About() {
   return (
-    <div> <div  className="container" style={{marginTop:'20px'}}>
+    <div> <Home/><div  className="container" style={{marginTop:'20px'}}>
     <div className="row justify-content-center align-items-center">
       <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto ">
 

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Home from '../components/HomeButton'
 
 import { NavLink } from 'react-router-dom';
 import Manisha from '../asset/DrManishaPrakash.jpeg'
@@ -13,7 +14,8 @@ function Page5() {
   return (
 
     
-    <div> <div  className="container">
+    <div>
+      <Home/> <div  className="container">
     <div className="row justify-content-center align-items-center">
       {/* Vertical navigation bar component */}
       {/* <div className="col-md-2 bg-light border border-secondary p-4" style={{position:'relative' , bottom:'300px'}}>

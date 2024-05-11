@@ -6,6 +6,7 @@ import Image3 from '../asset/advisoryCommittee/laxmikant.jpg';
 import Image5 from '../asset/advisoryCommittee/roma.jpg';
 import Image6 from '../asset/advisoryCommittee/salman.jpg';
 import Image7 from '../asset/advisoryCommittee/uma.jpg';
+import Home from '../components/HomeButton'
 
 const Page23 = () => {
   const contentData = [
@@ -69,6 +70,8 @@ const Page23 = () => {
 
   return (
     <>
+    <div style={{margin:'50px'}}>
+    <Home/>
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} className="col-md-9 p-4 mx-auto text-center">
@@ -92,6 +95,7 @@ const Page23 = () => {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from '../components/HomeButton'
 
 function Page7() {
   return (
@@ -22,7 +23,10 @@ function Page7() {
     </div>
   </div></div>
   </div></div>
-  </div></div>
+  </div>
+  <Home/>
+  </div>
+  
   )
 }
 

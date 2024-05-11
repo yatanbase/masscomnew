@@ -4,9 +4,12 @@ import Tushar from '../asset/TUSHAR.png';
 import Arjun from '../asset/ARJUNTHAKUR.png';
 import Amish from '../asset/AMISHANAND.png';
 import { NavLink } from 'react-router-dom';
+import Home from '../components/HomeButton'
+
 function Page4() {
   return (
-    <div> <div  className="container">
+    <div>
+      <Home/> <div  className="container">
     <div className="row justify-content-center align-items-center">
       {/* Vertical navigation bar component */}
       {/* <div className="col-md-2 bg-light border border-secondary p-4">

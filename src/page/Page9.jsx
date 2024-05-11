@@ -1,9 +1,10 @@
 import React from 'react'
 import Director from '../asset/founding_director.jpeg'
+import Home from '../components/HomeButton'
 
 function Page9() {
   return (
-    <div> <div  className="container">
+    <div> <Home/><div  className="container">
     <div className="row justify-content-center align-items-center">
       {/* Vertical navigation bar component */}
       {/* <div className="col-md-2 bg-light border border-secondary p-4" style={{position:'relative' , bottom:'300px'}}>

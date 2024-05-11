@@ -49,7 +49,7 @@ function App() {
           <Route path="/Faculty" element={<Page5 />} />
           <Route path="/page6" element={<Page6 />} />
           <Route path="/RoleOfSJMC" element={<Page7 />} />
-          <Route path="/Some_Moments" element={<Page8 />} />
+          <Route path="/Media_Center" element={<Page8 />} />
           <Route path="/Founder_Director" element={<Page9 />} />
           <Route path="/Careers" element={<Page10 />} />
           <Route path="/Vision_and_mission" element={<Page11 />} />
@@ -65,7 +65,7 @@ function App() {
           <Route path="/Refresher_training" element={<Page21 />} />
           <Route path="/Student_activities" element={<Page22 />} />
           <Route path="/AdvisoryCommittee" element={<Page23 />} />
-          <Route path="/page24" element={<Page24 />} />
+          <Route path="/Some_moments" element={<Page24 />} />
 
           
           <Route path="/News1" element={<News1 />} />

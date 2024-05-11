@@ -42,6 +42,8 @@ import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
 import Announcement4 from '../News/Announcement4.pdf'
 import Syllabus from '../News/news_pdf_syllabus.pdf'
+import Home from '../components/HomeButton'
+import MCLogo from '../asset/media_center_logo.png'
 
 
 import { useEffect } from 'react';
@@ -292,7 +294,7 @@ const MainContent = () => {
 
             </div>
         </div>
-        <div className='Box-About-2' style={{ marginTop:"10px", padding: "10px",width:'400px', height: "1333px",textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+        <div  style={{ marginTop:"10px", padding: "10px",width:'400px', height: "1333px",textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
     <div style={{ width: '100%', height: '550px',marginTop:"10px",   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",padding:"10px 10px" , backgroundColor:"#F0F0F0",marginBottom:"10px" ,textAlign:'center'}}>
         <h4 className='heading-news'>News and Announcements</h4>
         <br />
@@ -319,7 +321,18 @@ const MainContent = () => {
 
     </div>
 
+                <a href='/Media_Center' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
+    <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
+        <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>
+        
+        </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Media Center</h4>
+    </div>
 
+
+    </div>
+    </a>
 
             <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
                 <h4 className='heading-news'>Important Links</h4>
@@ -586,6 +599,7 @@ const MainContent = () => {
 
         </main>
         <Footer/>
+        <Home/>
         </>
     );
 };

@@ -1,8 +1,12 @@
 import React from 'react'
+import Home from '../components/HomeButton'
 
 function Page15() {
   return (
-    <div>ANNUAL REPORT 2022-2023</div>
+    <div>
+      
+      <Home/>
+      ANNUAL REPORT 2022-2023</div>
   )
 }
 

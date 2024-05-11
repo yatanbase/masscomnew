@@ -1,8 +1,11 @@
 import React from 'react'
+import Home from '../components/HomeButton'
 
 function Page6() {
   return (
-    <div> <div className="about_objective" style={{margin: '50px'}}>
+    <div> 
+      <Home/>
+      <div className="about_objective" style={{margin: '50px'}}>
    
     <div className= "about_objective_content">
       <h2 style={{textAlign: 'left', borderBottom: '1px solid black'}}><a href="#" style={{color: 'black' , textDecoration: 'none'}}>Objectives</a></h2>

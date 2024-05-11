@@ -7,6 +7,7 @@ import Image5 from '../asset/refresher/Refresher (5).jpeg'
 import Image6 from '../asset/refresher/Refresher (6).jpeg'
 import Image7 from '../asset/refresher/Refresher (7).jpeg'
 import Image8 from '../asset/refresher/Refresher (8).jpeg'
+import Home from '../components/HomeButton'
 
 function Page21() {
 
@@ -18,7 +19,7 @@ function Page21() {
   
   return (
     <div style={{ margin: '50px' }}>
-     
+     <Home/>
     <div className="container">
       <div className="row justify-content-center align-items-center">
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
