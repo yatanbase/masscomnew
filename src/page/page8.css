@@ -22,13 +22,13 @@
 
   .slide-track {
     display: flex;
-    animation: scroll 6s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll 8s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
   .slide-track2 {
     display: flex;
-    animation: scroll2 21s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll2 28s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
@@ -43,10 +43,14 @@
   }
 
   .aslide img {
-    height:250px;
+    height:300px;
+    width:250px;
     width: 100%;
     transition: transform 1%;
-    object-fit: contain;
+    image-rendering: crisp-edges; /* for modern browsers */
+    image-rendering: -moz-crisp-edges; /* for Firefox */
+    image-rendering: -webkit-optimize-contrast; /* for WebKit (Safari, Chrome) */
+    -ms-interpolation-mode: nearest-neighbor; /* for IE/Edge */
   }
 
   .aslide img:hover {
@@ -99,4 +103,48 @@
   100% {
     transform: translateX(calc(-250px * 21)); /* Adjust calculation based on number of slides */
   }
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  z-index: 999; /* Ensure modal is on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+  width: auto; /* Allow the width of the image to adjust according to its aspect ratio */
+  height: 100%; /* Allow the height of the image to adjust according to its aspect ratio */
+  max-width: 100%; /* Ensure that the image does not exceed the width of the modal container */
+  max-height: 100vh; /* Ensure that the image does not exceed the height of the modal container */
+  object-fit: contain; /* Scale the image to maintain its aspect ratio while fitting within the modal container */
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.close:hover {
+  color: #000;
 }
