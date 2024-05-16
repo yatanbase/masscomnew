@@ -1,5 +1,6 @@
  import React from 'react'
  import Home from '../components/HomeButton'
+ import phd_pdf from '../asset/phd_syllabus.pdf'
 
  function Page2() {
    return (
@@ -142,7 +143,7 @@
                                          </tr>
                                      </tbody>
                                  </table>
-                                 <a className="btn btn-success" href="http://old.sjmc.ac.in/assets/SJMC/phd_in_sjmc.pdf" style={{ boxSizing: 'border-box', background: 'none rgb(15, 189, 113)', color: 'rgb (255, 255, 255)', textDecoration: 'none', display: 'inline-block', marginBottom: '0px', fontWeight: 'normal', textAlign: 'center', verticalAlign: 'middle', cursor: 'pointer', border: '1px solid rgb(13, 165, 99)', whiteSpace: 'nowrap', padding: '6px 12px', fontSize: '14px', lineHeight: '1.42857', borderRadius: '0px', userSelect: 'none' }}>
+                                 <a className="btn btn-success" href={phd_pdf} style={{ boxSizing: 'border-box', background: 'none rgb(15, 189, 113)', color: 'rgb (255, 255, 255)', textDecoration: 'none', display: 'inline-block', marginBottom: '0px', fontWeight: 'normal', textAlign: 'center', verticalAlign: 'middle', cursor: 'pointer', border: '1px solid rgb(13, 165, 99)', whiteSpace: 'nowrap', padding: '6px 12px', fontSize: '14px', lineHeight: '1.42857', borderRadius: '0px', userSelect: 'none' }}>
                                      View Course In PDF</a></div>
                              </div>
                          </div>
