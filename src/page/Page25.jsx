@@ -10,7 +10,7 @@ function Page25() {
      <div  className="container">
   <div className="row justify-content-center align-items-center">
     <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto text-center ">
-    <h2 style={{display: 'block', textAlign:'center',fontWeight:'bold',margin:'20px',marginBottom:'40px', textShadow: '1px 1px 2px #000000'}}>PSE Consultants</h2>
+    <h2 style={{display: 'block', textAlign:'center',fontWeight:'bold',margin:'20px',marginBottom:'40px', textShadow: '1px 1px 2px #000000'}}>SJMC Consultants</h2>
 
       <div className="Consultant" style={{marginBottom:'50px'}}>
 
