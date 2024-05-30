@@ -25,6 +25,7 @@ import Page21 from './page/Page21';
 import Page22 from './page/Page22';
 import Page23 from './page/Page23';
 import Page24 from './page/Page24';
+import Page25 from './page/Page25';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -66,6 +67,7 @@ function App() {
           <Route path="/Student_activities" element={<Page22 />} />
           <Route path="/AdvisoryCommittee" element={<Page23 />} />
           <Route path="/Some_moments" element={<Page24 />} />
+          <Route path="/Consultant" element={<Page25 />} />
 
           
           <Route path="/News1" element={<News1 />} />

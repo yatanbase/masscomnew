@@ -44,7 +44,7 @@ import Announcement4 from '../News/Announcement4.pdf'
 import Syllabus from '../News/news_pdf_syllabus.pdf'
 import Home from '../components/HomeButton'
 import MCLogo from '../asset/media_center_logo.png'
-
+import Form from '../components/Form'
 
 import { useEffect } from 'react';
 
@@ -129,7 +129,7 @@ const MainContent = () => {
 
     return (
         <>
-        
+       
         {/* <Toolbar /> */}
       <Header />
         <main className="container py-4">
@@ -190,7 +190,7 @@ const MainContent = () => {
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
             <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
             <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
-            <li><NavLink to='{' className="dropdown-item">Consultant</NavLink></li>
+            <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
         </ul>
@@ -585,6 +585,7 @@ const MainContent = () => {
 </div>
 
         </main>
+        <Form/>
         <Footer/>
         <Home/>
         </>
