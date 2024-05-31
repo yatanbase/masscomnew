@@ -31,6 +31,8 @@ import Image2_20 from '../asset/media_center/2023/29 November 2023/29_july (4).j
 
 import Image2_21 from '../asset/media_center/2023/14 September 2023/14_sep (1).jpg'
 
+import Image7 from '../asset/media_center/2024/30 May 2024/30 may.jpg'
+
 function Page8() {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalImage, setModalImage] = useState('');
@@ -56,7 +58,11 @@ function Page8() {
      
      <div className="autoslider">
       <div className="slide-track">
-       
+
+      <div className="aslide" onClick={() => handleImageClick(Image7)}>
+  <img src={Image7} alt="Image 7" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 30/05/2024</p>
+</div>
       <div className="aslide" onClick={() => handleImageClick(Image1)}>
   <img src={Image1} alt="Image 1" />
   <p style={{textAlign:'left' , color:'gray'}}>Date : 02/04/2024</p>
@@ -82,6 +88,11 @@ function Page8() {
   <p style={{textAlign:'left' , color:'gray'}}>Date : 02/04/2024</p>
 </div>
 
+
+<div className="aslide" onClick={() => handleImageClick(Image7)}>
+  <img src={Image7} alt="Image 7" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 30/05/2024</p>
+</div>
 <div className="aslide" onClick={() => handleImageClick(Image1)}>
   <img src={Image1} alt="Image 1" />
   <p style={{textAlign:'left' , color:'gray'}}>Date : 02/04/2024</p>
