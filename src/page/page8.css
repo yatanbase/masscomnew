@@ -22,13 +22,13 @@
 
   .slide-track {
     display: flex;
-    animation: scroll 9s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll 13s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
   .slide-track2 {
     display: flex;
-    animation: scroll2 28s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll2 32s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
@@ -94,7 +94,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7)); /* Adjust calculation based on number of slides */
+      transform: translateX(calc(-250px * 9)); /* Adjust calculation based on number of slides */
     }
 }
 

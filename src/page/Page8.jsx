@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
+import './page8.css';
 import Home from '../components/HomeButton'
+import Image8 from '../asset/media_center/2024/10 july 2024/i1.jpg';
+import Image9 from '../asset/media_center/2024/10 july 2024/i2.jpg';
+import Image7 from '../asset/media_center/2024/30 May 2024/30 may.jpg'
 import Image6 from '../asset/media_center/2024/2 April 2024/2_April (1).jpg'
 import Image1 from '../asset/media_center/2024/2 April 2024/2_April (2).jpg'
 import Image2 from '../asset/media_center/2024/2 April 2024/2_April (3).jpg'
 import Image3 from '../asset/media_center/2024/29 January 2024/29_Jan.jpg'
 import Image4 from '../asset/media_center/2024/4 April 2024/4_april (1).jpg'
 import Image5 from '../asset/media_center/2024/4 April 2024/4_april (2).jpg'
-import './page8.css';
+
 import Image2_1 from '../asset/media_center/2023/10 December 2023/10_dec (1).jpg'
 import Image2_2 from '../asset/media_center/2023/10 December 2023/10_dec (2).jpg'
 import Image2_3 from '../asset/media_center/2023/10 December 2023/10_dec (3).jpg'
-
 import Image2_4 from '../asset/media_center/2023/14 September 2023/14_sep (2).jpg'
 import Image2_5 from '../asset/media_center/2023/14 September 2023/14_sep (3).jpg'
 import Image2_6 from '../asset/media_center/2023/14 September 2023/14_sep (4).jpg'
@@ -31,7 +34,7 @@ import Image2_20 from '../asset/media_center/2023/29 November 2023/29_july (4).j
 
 import Image2_21 from '../asset/media_center/2023/14 September 2023/14_sep (1).jpg'
 
-import Image7 from '../asset/media_center/2024/30 May 2024/30 may.jpg'
+
 
 function Page8() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -59,6 +62,15 @@ function Page8() {
      <div className="autoslider">
       <div className="slide-track">
 
+
+<div className="aslide" onClick={() => handleImageClick(Image8)}>
+  <img src={Image8} alt="Image 8" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 10/07/2024</p>
+</div>
+<div className="aslide" onClick={() => handleImageClick(Image9)}>
+  <img src={Image9} alt="Image 9" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 10/07/2024</p>
+</div>
       <div className="aslide" onClick={() => handleImageClick(Image7)}>
   <img src={Image7} alt="Image 7" />
   <p style={{textAlign:'left' , color:'gray'}}>Date : 30/05/2024</p>

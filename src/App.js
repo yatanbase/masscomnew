@@ -27,6 +27,7 @@ import Page23 from './page/Page23';
 import Page24 from './page/Page24';
 import Page25 from './page/Page25';
 import Page26 from './page/Page26';
+import Page27 from './page/Page27';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -70,6 +71,7 @@ function App() {
           <Route path="/Some_moments" element={<Page24 />} />
           <Route path="/Consultant" element={<Page25 />} />
           <Route path="/Page26" element={<Page26 />} />
+          <Route path="/Page27" element={<Page27 />} />
 
           
           <Route path="/News1" element={<News1 />} />

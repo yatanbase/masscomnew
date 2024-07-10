@@ -38,6 +38,7 @@ import Refresher from '../asset/refresher/Refresher (7).jpeg'
 import Film from '../asset/film screening/film (3).jpeg'
 import Students from '../asset/Student activities/students (2).jpeg'
 import Hindi_divas from '../asset/Our gallery/Hindi Diwas/image (2).jpg'
+import MOU from '../asset/MOU/2.jpg';
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -589,7 +590,12 @@ const MainContent = () => {
     <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Hindi Patrakarita Divas</h4>
 </div>
 
-
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page27"} style={{ width: '100%', height: '100%' }}>
+        <img src={MOU} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> MOU </h4>
+</div>
 
     </div>
 </div>
