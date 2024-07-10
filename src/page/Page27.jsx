@@ -16,8 +16,11 @@ export default function Page27() {
           <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
             <div className="row justify-content-center">
               <div className="col-md-12 text-center">
-                <h2> </h2>
-              </div>
+                <h4>MOU Between BSMEC & SJMC(AKU)</h4>
+                <h6>Bihar State Minorities Financial Corporation Limited (BSMEC) and School of Journalism and Mass Communication of Aryabhatta Knowledge University joined hands and signed a MOU .</h6>
+                <br></br>
+                 </div>
+              
             </div>
             <div className="row justify-content-around">
               {/* Adjust image size and display */}

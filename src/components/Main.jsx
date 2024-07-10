@@ -594,7 +594,7 @@ const MainContent = () => {
     <NavLink to={"/Page27"} style={{ width: '100%', height: '100%' }}>
         <img src={MOU} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
     </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> MOU </h4>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> MOU Between BSMEC & SJMC (AKU) </h4>
 </div>
 
     </div>
