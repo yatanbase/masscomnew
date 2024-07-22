@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './page8.css';
 import Home from '../components/HomeButton'
 
+import Image12 from '../asset/media_center/2024/21 July 2024/21July.jpeg';
 import Image11 from '../asset/media_center/2024/19 july 2024/image (1).jpeg';
 import Image10 from '../asset/media_center/2024/19 july 2024/image (2).jpeg';
 import Image9 from '../asset/media_center/2024/10 july 2024/i2.jpg';
@@ -64,7 +65,14 @@ function Page8() {
      <div className="autoslider">
       <div className="slide-track">
 
-      <div className="aslide" onClick={() => handleImageClick(Image10)}>
+      
+      
+      
+<div className="aslide" onClick={() => handleImageClick(Image12)}>
+  <img src={Image12} alt="Image 12" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 21/07/2024</p>
+</div>      
+<div className="aslide" onClick={() => handleImageClick(Image10)}>
   <img src={Image10} alt="Image 10" />
   <p style={{textAlign:'left' , color:'gray'}}>Date : 19/07/2024</p>
 </div>
@@ -110,6 +118,10 @@ function Page8() {
 </div>
 
 
+<div className="aslide" onClick={() => handleImageClick(Image12)}>
+  <img src={Image12} alt="Image 12" />
+  <p style={{textAlign:'left' , color:'gray'}}>Date : 21/07/2024</p>
+</div>      
 <div className="aslide" onClick={() => handleImageClick(Image10)}>
   <img src={Image10} alt="Image 10" />
   <p style={{textAlign:'left' , color:'gray'}}>Date : 19/07/2024</p>
