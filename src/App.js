@@ -38,7 +38,6 @@ import News6 from './News/News6';
 import News7 from './News/News7';
 
 
-
 function App() {
   return (
     < >
