@@ -195,8 +195,9 @@ const MainContent = () => {
 
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
             <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
+    
             <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
         </ul>
