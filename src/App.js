@@ -29,6 +29,10 @@ import Page25 from './page/Page25';
 import Page26 from './page/Page26';
 import Page27 from './page/Page27';
 import Page28 from './page/Page28';
+import Page29 from './page/Page29';
+import Page30 from './page/Page30';
+import Page31 from './page/Page31';
+import Page32 from './page/Page32';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -36,6 +40,7 @@ import News4 from './News/News4';
 import News5 from './News/News5';
 import News6 from './News/News6';
 import News7 from './News/News7';
+
 
 
 function App() {
@@ -74,6 +79,10 @@ function App() {
           <Route path="/Page26" element={<Page26 />} />
           <Route path="/Page27" element={<Page27 />} />
           <Route path="/Page28" element={<Page28 />} />
+          <Route path="/Page29" element={<Page29 />} />
+          <Route path="/Page30" element={<Page30 />} />
+          <Route path="/Page31" element={<Page31 />} />
+          <Route path="/Page32" element={<Page32 />} />
 
           
           <Route path="/News1" element={<News1 />} />
