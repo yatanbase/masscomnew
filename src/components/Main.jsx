@@ -51,11 +51,20 @@ import Syllabus from '../News/news_pdf_syllabus.pdf'
 import Home from '../components/HomeButton'
 import MCLogo from '../asset/media_center_logo.png'
 import Form from '../components/Form'
+import Advertisement from '../components/Admission_popup'
 
 import { useEffect } from 'react';
 
 const MainContent = () => {
     
+
+    const [showAd, setShowAd] = useState(true);         //for popup admission ad
+
+    const handleCloseAd = () => {
+      setShowAd(false);
+    };
+
+
     const latestNews = "Important announcement: Classes will be canceled tomorrow due to inclement weather.";
     const images = [
         { url: '', caption: 'Slide 1' },
@@ -135,6 +144,8 @@ const MainContent = () => {
 
     return (
         <>
+
+{showAd && <Advertisement onClose={handleCloseAd} />}
        
         {/* <Toolbar /> */}
       <Header />
