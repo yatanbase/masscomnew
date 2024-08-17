@@ -45,6 +45,8 @@ import Orientation from '../asset/Our gallery/Orientation/orientation (4).jpeg'
 import Orientation_pdf from '../asset/News/PR - August 1, 2024.pdf'
 import Space_day from '../asset/Our gallery/space_day/space_day (3).jpeg'
 import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
+import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
+import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).docx'
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -54,6 +56,9 @@ import Home from '../components/HomeButton'
 import MCLogo from '../asset/media_center_logo.png'
 import Form from '../components/Form'
 import Advertisement from '../components/Admission_popup'
+
+
+import Track from '../components/traffic'
 
 import { useEffect } from 'react';
 
@@ -151,6 +156,7 @@ const MainContent = () => {
        
         {/* <Toolbar /> */}
       <Header />
+      <Track/>
         <main className="container py-4">
             <ul className="nav nav-pills nav-fill nav-list-style">
                  
@@ -323,6 +329,7 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} />   </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
+        <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Bookistan Club at SJMC 2024     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
         <a href={Space_day_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day Quiz & Speech Competition 2024      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
         <a href={Orientation_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Orientation at SJMC 2024      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
         <a href={Wetland_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Wetlands For Life - Training Workshop      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
@@ -562,6 +569,12 @@ const MainContent = () => {
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
 
 
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page31"} style={{ width: '100%', height: '100%' }}>
+        <img src={Bookistan} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> BOOKISTAN Club </h4>
+</div>
 
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page30"} style={{ width: '100%', height: '100%' }}>
