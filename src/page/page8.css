@@ -22,7 +22,7 @@
 
   .slide-track {
     display: flex;
-    animation: scroll 30s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll 31s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
@@ -94,7 +94,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 21)); 
+      transform: translateX(calc(-250px * 22)); 
     }
 }
 
