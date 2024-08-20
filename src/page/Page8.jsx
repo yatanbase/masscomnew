@@ -178,6 +178,10 @@ function Page8() {
   <img src={Image22} alt ='Image16'/>
   <p style={{textAlign:'left', color:'gray'}}>Date : 20/08/2024</p>
   </div>
+  <div className="aslide" onClick={()=> handleImageClick(Image16)}>
+  <img src={Image21} alt ='Image16'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 18/08/2024</p>
+  </div>
 <div className="aslide" onClick={()=> handleImageClick(Image16)}>
   <img src={Image17} alt ='Image16'/>
   <p style={{textAlign:'left', color:'gray'}}>Date : 18/08/2024</p>
