@@ -7,7 +7,7 @@ import Image5 from '../asset/Our gallery/Orientation/orientation (5).jpeg'
 import Image6 from '../asset/Our gallery/Orientation/orientation (6).jpeg'
 import Image7 from '../asset/Our gallery/Orientation/orientation (7).jpeg'
 import Image8 from '../asset/Our gallery/Orientation/orientation (8).jpeg'
-import pdf from '../asset/News/PR - August 1, 2024.pdf'
+import pdf from '../asset/News/orientation_sjmc.pdf'
 
 const Page29 = () => {
   return (
