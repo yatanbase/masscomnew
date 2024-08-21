@@ -366,11 +366,11 @@ const MainContent = () => {
     </a>
 
 
-    {/* <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page31"} style={{ width: '100%', height: '100%' }}>
         <img src={Bookistan} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '3px 5px 5px 2px rgba(0, 0, 0, 0.4   )',padding:'13px', borderRadius: '20px' }} />
     </NavLink>
-</div> */}
+</div>
 
 
 
