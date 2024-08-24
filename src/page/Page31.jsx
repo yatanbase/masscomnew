@@ -22,10 +22,10 @@ const Page31 = () => {
     <div style={{width:'75vw', height:'80vh' }}>
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',width:'72vw', height:'85vh', marginLeft:'8px',marginTop:'20px' }} className="col-md-9 p-4 mx-auto text-center">
           
-        <a   href="https://www.example.com"   style={{    textDecoration: 'none',    display: 'block'}}>
+        <a   href="#top"   style={{    textDecoration: 'none',    display: 'block'}}>
         <div style={{ width: 'calc(33.33% - 120px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <img src={Image1} alt="Gallery Image 2" style={{ width: '100%', height: '330px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-        <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',marginBottom:'none',fontSize:'1.1rem',color:'black' }}> National Space Day 2024 <br></br><span style={{position:'relative',bottom:'10px',color:'darkred',fontSize:'1rem'      }}>know more &gt;</span></p>
+        <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',marginBottom:'none',fontSize:'1.1rem',color:'black' }}> Date : 8 August 2024 <br></br><span style={{position:'relative',bottom:'10px',color:'darkred',fontSize:'1rem'      }}>know more &gt;</span></p>
         </div></a>
 
 

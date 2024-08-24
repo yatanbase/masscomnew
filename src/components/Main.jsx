@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import Toolbar from './Toolbar';
 import Header from './Header';
 import myImage from '../asset/myImage.jpeg';
+import Book from '../asset/book_logo.png'
 import g1 from '../asset/slide1.jpeg';
 import g2 from '../asset/slide2.jpeg';
 import g3 from '../asset/slide3.jpeg';
@@ -48,6 +49,7 @@ import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
 import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
+import space_day_pr_pdf from '../asset/News/PR_National_Space_Day.pdf'
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -328,6 +330,7 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} />   </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
+        <a href={space_day_pr_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day 2024     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
         <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Literary discussion on Harishankar Parsai     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
 
         <a href={Space_day_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day Quiz & Speech Competition 2024      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
@@ -360,17 +363,22 @@ const MainContent = () => {
         </div>
     <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Media Center</h4>
     </div>
+    </div>
+    </a>
 
-
+    <a href='/page31' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
+    <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
+        <img src={Book} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
+        
+        </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Bookistan</h4>
+    </div>
     </div>
     </a>
 
 
-    <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page31"} style={{ width: '100%', height: '100%' }}>
-        <img src={Bookistan} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '3px 5px 5px 2px rgba(0, 0, 0, 0.4   )',padding:'13px', borderRadius: '20px' }} />
-    </NavLink>
-</div>
+   
 
 
 
