@@ -57,6 +57,7 @@ import Announcement3 from '../News/Announcement3.pdf'
 import Announcement4 from '../News/Announcement4.pdf'
 import Syllabus from '../News/news_pdf_syllabus.pdf'
 import Home from '../components/HomeButton'
+import Clubs from '../components/ClubsButton'
 import MCLogo from '../asset/media_center_logo.png'
 import Form from '../components/Form'
 import Advertisement from '../components/Admission_popup'
@@ -158,6 +159,7 @@ const MainContent = () => {
        
         {/* <Toolbar /> */}
       <Header />
+      
       <Track/>
         <main className="container py-4">
             <ul className="nav nav-pills nav-fill nav-list-style">
@@ -686,6 +688,7 @@ const MainContent = () => {
         
         <Footer/>
         <Home/>
+        <Clubs/>
         </>
     );
 };
