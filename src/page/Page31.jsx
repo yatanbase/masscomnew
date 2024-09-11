@@ -19,7 +19,7 @@ const Page31 = () => {
 
 
 <div style={{display:'flex', justifyContent:'center'}}>
-    <div style={{width:'98vw', height:'80vh' , display:'flex'}}>
+    <div style={{width:'98vw', height:'80vh' , display:'flex', alignItems:'start'}}>
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',width:'100%', height:'85vh', marginLeft:'50px',marginTop:'20px' }} className="col-md-9 p-4 mx-auto text-center">
           
         <a   href={Pdf}  target='_blank' style={{    textDecoration: 'none'}}>
@@ -33,32 +33,28 @@ const Page31 = () => {
         </div>
   </div>    
 
-  {/* <div style={{width:'26vw', height:'80vh'}}>
-        <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',width:'23vw', height:'85vh', marginRight:'8px',marginTop:'20px' }} className="col-md-9 p-4 mx-auto text-center">
-      <div style={{width:'100%',height:'5vh', borderBottom:'3px dotted darkred',display:'flex',overflow:'hidden'}}>
-        {/* <div style={{height:'50px',width:'20px',backgroundColor:'darkred',position:'relative',right:'13px'}}></div> */}
-      {/* <p style={{fontSize:'1.5rem',fontWeight:'bold',position:'relative',bottom:'8px'}}> News at BOOK<span style={{color:'darkred'}}>ISTAN</span></p> */}
-      {/* </div>  */}
-
-      {/* <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'end' , borderBottom: '1px solid lightgray',height:'4.2rem'}}>
-  <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position: 'relative', left: '10px', color: 'black', fontSize: '1rem', padding: '.5rem',textAlign: 'right' }}>
-    Literary discussion on Harishankar Parsai
-    <div style={{ backgroundColor: 'darkred',color: 'white', borderRadius: '5px', width: '50%', textAlign: 'center', position: 'absolute', right: '.3rem', top: '2.2rem' }}>
-      <p style={{ margin: '0' }}>PR 8 August</p>
-    </div>
-  </a>
-</div> */}
-
-
-
-
-
-
-
-{/* </div>
-</div>*/}
 
 </div> 
+
+<style>
+  {`
+    @media (max-width: 768px) {
+      .image-container {
+        width: 80vw; /* Image container takes 80% of the viewport width */
+        display: flex;
+        justify-content: center; /* Center align the image inside the container */
+        margin: 0 auto; /* Center the container itself */
+      }
+
+      .image-container img {
+        width: 100%; /* Image will take full width of the container */
+        height: auto; /* Maintain the aspect ratio */
+        object-fit: cover; /* Ensures the image fills the container without distortion */
+      }
+    }
+  `}
+</style>
+
     </>
 
   );
