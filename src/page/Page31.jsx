@@ -19,11 +19,11 @@ const Page31 = () => {
 
 
 <div style={{display:'flex', justifyContent:'center'}}>
-    <div style={{width:'98vw', height:'80vh' }}>
-        <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',width:'100%', height:'85vh', marginLeft:'8px',marginTop:'20px' }} className="col-md-9 p-4 mx-auto text-center">
+    <div style={{width:'98vw', height:'80vh' , display:'flex'}}>
+        <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',width:'100%', height:'85vh', marginLeft:'50px',marginTop:'20px' }} className="col-md-9 p-4 mx-auto text-center">
           
         <a   href={Pdf}  target='_blank' style={{    textDecoration: 'none'}}>
-        <div style={{ width: 'calc(33.33% - 120px)', marginBottom: '20px', marginLeft:'30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: 'calc(33.33% - 120px)', marginBottom: '20px', marginLeft:'70px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <img src={Image1} alt="Gallery Image 2" style={{ width: '450px', height: '330px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
         <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',marginBottom:'none',fontSize:'1.1rem',color:'black' }}> Date : 11 to 30 september 2024 <br></br><span style={{position:'relative',bottom:'10px',color:'darkred',fontSize:'1rem'      }}>know more &gt;</span></p>
         </div></a>
