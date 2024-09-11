@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import Toolbar from './Toolbar';
 import Header from './Header';
 import myImage from '../asset/myImage.jpeg';
-import Book from '../asset/book_logo.png'
+import Book from '../asset/events.png'
 import g1 from '../asset/slide1.jpeg';
 import g2 from '../asset/slide2.jpeg';
 import g3 from '../asset/slide3.jpeg';
@@ -68,11 +68,11 @@ import { useEffect } from 'react';
 const MainContent = () => {
     
 
-    const [showAd, setShowAd] = useState(true);         //for popup admission ad
+    // const [showAd, setShowAd] = useState(true);         //for popup admission ad
 
-    const handleCloseAd = () => {
-      setShowAd(false);
-    };
+    // const handleCloseAd = () => {
+    //   setShowAd(false);
+    // };
 
 
     const latestNews = "Important announcement: Classes will be canceled tomorrow due to inclement weather.";
@@ -155,7 +155,7 @@ const MainContent = () => {
     return (
         <>
 
-{showAd && <Advertisement onClose={handleCloseAd} />}
+{/* {showAd && <Advertisement onClose={handleCloseAd} />} */}
        
         {/* <Toolbar /> */}
       <Header />
@@ -331,14 +331,14 @@ const MainContent = () => {
 
         <div style={{marginTop:'-40px' , marginBottom:'10px'}}>
 
-        <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} />   </a>
-        <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={space_day_pr_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Great astronomer Aryabhatta remembered on National space day     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Literary discussion on Harishankar Parsai     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={Space_day_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day Quiz & Speech Competition 2024      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={Bookistan_club} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Bookistan Club at SJMC 2024     <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={Orientation_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Orientation at SJMC 2024      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
-        <a href={Wetland_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Wetlands For Life - Training Workshop      <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /></a>
+        <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024<img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} /> </a>
+        <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
+        <a href={space_day_pr_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Great astronomer Aryabhatta remembered on National space day     </a>
+        <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Literary discussion on Harishankar Parsai     </a>
+        <a href={Space_day_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day Quiz & Speech Competition 2024      </a>
+        <a href={Bookistan_club} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Bookistan Club at SJMC 2024     </a>
+        <a href={Orientation_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Orientation at SJMC 2024      </a>
+        <a href={Wetland_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Wetlands For Life - Training Workshop      </a>
         <a href="/News6" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Student Film Recognised.</a>
 
         <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>
@@ -374,7 +374,7 @@ const MainContent = () => {
         <img src={Book} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
         
         </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Bookistan</h4>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Upcoming Events</h4>
     </div>
     </div>
     </a>
