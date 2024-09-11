@@ -368,7 +368,7 @@ const MainContent = () => {
     </div>
     </a>
 
-    <a href='/page31' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <a href='/upcomingEvents' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
         <img src={Book} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>

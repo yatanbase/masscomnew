@@ -81,7 +81,7 @@ function App() {
           <Route path="/Page28" element={<Page28 />} />
           <Route path="/Page29" element={<Page29 />} />
           <Route path="/Page30" element={<Page30 />} />
-          <Route path="/Page31" element={<Page31 />} />
+          <Route path="/upcomingEvents" element={<Page31 />} />
           <Route path="/Page32" element={<Page32 />} />
 
           
