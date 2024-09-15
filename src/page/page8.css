@@ -1,3 +1,7 @@
+:root {
+  --half-screen-width: 50vw; /* Define the variable for 50vw */
+}
+
 .slidecontainer{
     min-height:100vh;
     background-color: rgba(219, 204, 204, 0.428);
@@ -22,7 +26,7 @@
 
   .slide-track {
     display: flex;
-    animation: scroll 85s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll 45s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
@@ -91,19 +95,19 @@
 
   @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX(50vw);
     }
     100% {
-      transform: translateX(calc(-250px * 29)); 
+      transform: translateX(calc(-250px * 29 + var(--half-screen-width) )); 
     }
 }
 
 @keyframes scroll2 {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-250px * 21)); 
+    transform: translateX(calc(-250px * 21 )); 
   }
 }
 
