@@ -22,7 +22,7 @@
 
   .slide-track {
     display: flex;
-    animation: scroll 40s linear infinite; /* Adjust animation duration as needed */
+    animation: scroll 85s linear infinite; /* Adjust animation duration as needed */
     width: max-content;
   }
 
