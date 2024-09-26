@@ -33,6 +33,7 @@ import Page29 from './page/Page29';
 import Page30 from './page/Page30';
 import Page31 from './page/Page31';
 import Page32 from './page/Page32';
+import Page33 from './page/Page33';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -83,6 +84,7 @@ function App() {
           <Route path="/Page30" element={<Page30 />} />
           <Route path="/upcomingEvents" element={<Page31 />} />
           <Route path="/Page32" element={<Page32 />} />
+          <Route path="/Page33" element={<Page33 />} />
 
           
           <Route path="/News1" element={<News1 />} />
