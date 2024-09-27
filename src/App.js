@@ -36,6 +36,7 @@ import Page32 from './page/Page32';
 import Page33 from './page/Page33';
 import Page34 from './page/Page34';
 import Page35 from './page/Page35';
+import Page36 from './page/Page36';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -89,6 +90,7 @@ function App() {
           <Route path="/Page33" element={<Page33 />} />
           <Route path="/Page34" element={<Page34 />} />
           <Route path="/Page35" element={<Page35 />} />
+          <Route path="/Page36" element={<Page36 />} />
 
           
           <Route path="/News1" element={<News1 />} />
