@@ -600,7 +600,13 @@ const MainContent = () => {
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
 
 
-  
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page33"} style={{ width: '100%', height: '100%' }}>
+        <img src={Aryabhatta_times} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Aryabhatta times  </h4>
+</div>
+
 
 <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page35"} style={{ width: '100%', height: '100%' }}>
@@ -616,13 +622,7 @@ const MainContent = () => {
     <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Youth as Co-Creators </h4>
 </div>
 
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page33"} style={{ width: '100%', height: '100%' }}>
-        <img src={Aryabhatta_times} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Aryabhatta times  </h4>
-</div>
-
+    
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page32"} style={{ width: '100%', height: '100%' }}>
         <img src={aryabhatta_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
