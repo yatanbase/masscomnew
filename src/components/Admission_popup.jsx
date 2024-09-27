@@ -23,13 +23,13 @@ const Admission_popup = ({ onClose }) => {
   return (
     <div className="ad-overlay">
       <div className="ads-container" ref={adRef}>
-        <button className="ad-close" onClick={onClose}>×</button>
+        <button className="ad-close" onClick={onClose}> x </button>
         
         {/* First Ad */}
         <div className="ad-box">
           <img src={Image2} alt="Advertisement 1" className="ad-image" />
           <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/" target='_blank' className="primary-button">Details 1</a>
+            <a href="https://adms.akubihar.ac.in/" target='_blank' className="primary-button">Click for Details</a>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ const Admission_popup = ({ onClose }) => {
         <div className="ad-box">
           <img src={Image1} alt="Advertisement 2" className="ad-image" />
           <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="secondary-button">Details 2</a>
+            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="secondary-button">Click for Details</a>
           </div>
         </div>
       </div>

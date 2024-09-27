@@ -15,7 +15,7 @@
 
 .ads-container {
     display: flex;
-    gap: 30px; /* Space between the two ads */
+
     justify-content: center;
     padding: 2rem;
     /* Transparent background to show the website */
@@ -26,7 +26,7 @@
 }
 
 .ad-box {
-    padding: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
