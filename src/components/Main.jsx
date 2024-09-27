@@ -41,6 +41,8 @@ import Students from '../asset/Student activities/students (2).jpeg'
 import Hindi_divas from '../asset/Our gallery/Hindi Diwas/image (2).jpg'
 import Wetland from '../asset/Our gallery/wetlands_Workshop/poster.png'
 import MOU from '../asset/MOU/2.jpg';
+import Youth_cover from '../asset/Our gallery/youth as co creators/banner for gallery title.jpeg'
+import Tvbroadcasting_cover from '../asset/Our gallery/Bhartiye tv prasaran -14-09-24/BANNER for title only.jpeg'
 import Wetland_pdf from '../asset/Our gallery/wetlands_Workshop/1.pdf'
 import Orientation from '../asset/Our gallery/Orientation/orientation (4).jpeg'
 import Orientation_pdf from '../asset/News/orientation_sjmc.pdf'
@@ -54,6 +56,7 @@ import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
 import space_day_pr_pdf from '../asset/News/PR_National_Space_Day.pdf'
 import BroadcastingLecture from '../asset/News/PR (14 Sep).pdf'
 import aryabhattaTimes from '../asset/News/Aryabhatta_time_launch.pdf'
+import Youth_pdf from '../asset/News/youth as co creators pr final.pdf'
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -71,11 +74,11 @@ import { useEffect } from 'react';
 const MainContent = () => {
     
 
-    // const [showAd, setShowAd] = useState(true);         //for popup admission ad
+    const [showAd, setShowAd] = useState(true);         //for popup admission ad
 
-    // const handleCloseAd = () => {
-    //   setShowAd(false);
-    // };
+    const handleCloseAd = () => {
+      setShowAd(false);
+    };
 
 
     const latestNews = "Important announcement: Classes will be canceled tomorrow due to inclement weather.";
@@ -158,7 +161,7 @@ const MainContent = () => {
     return (
         <>
 
-{/* {showAd && <Advertisement onClose={handleCloseAd} />} */}
+{showAd && <Advertisement onClose={handleCloseAd} />}
        
         {/* <Toolbar /> */}
       <Header />
@@ -338,6 +341,7 @@ const MainContent = () => {
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={aryabhattaTimes} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>'Aryabhatta Times' was launched at the SJMC<img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={BroadcastingLecture} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Lecture on Indian TV Broadcasting and Hindi Celebrated on Hindi Day at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
+        <a href={Youth_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Youth as Co-creators 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={space_day_pr_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Great astronomer Aryabhatta remembered on National space day     </a>
         <a href={Bookistan_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Literary discussion on Harishankar Parsai     </a>
         <a href={Space_day_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>National Space Day Quiz & Speech Competition 2024      </a>
@@ -596,7 +600,21 @@ const MainContent = () => {
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
 
 
+  
 
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page35"} style={{ width: '100%', height: '100%' }}>
+        <img src={Tvbroadcasting_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Indian TV Broadcasting and Hindi </h4>
+</div>
+
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page34"} style={{ width: '100%', height: '100%' }}>
+        <img src={Youth_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Youth as Co-Creators </h4>
+</div>
 
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page33"} style={{ width: '100%', height: '100%' }}>
