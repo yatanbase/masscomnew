@@ -6,19 +6,21 @@ import Flipbook from '../components/Flipbook';
 
 const Page36 = () => {
 
-    const pages = [
-        'Page 1 Content',
-        'Page 2 Content',
-        'Page 3 Content',
-        'Page 4 Content',
-        // Add more pages as needed
-      ];
-
+  
   return (
-    <div className="App">
-      <h1>3D Flipbook</h1>
-      <Flipbook pages={pages} />
+    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+      <iframe
+        style={{ position: 'absolute', border: 'none', width: '100%', height: '105%', left: 0, top: 0 }}
+        src="https://online.pubhtml5.com/qdxdi/scdu/"
+        seamless="seamless"
+        scrolling="no"
+        frameBorder="0"
+        allowTransparency="true"
+        allowFullScreen={true}
+        title="PubHtml5 FlipBook"
+      />
     </div>
+
   )
 }
 
