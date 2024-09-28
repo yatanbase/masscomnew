@@ -51,12 +51,14 @@ import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
 import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
 import aryabhatta_cover from '../asset/Our gallery/aryabhatta on space day/image (1).jpeg'
 import Aryabhatta_times from '../asset/Our gallery/aryabhatta times/image (4).jpg'
+import PRO_img from '../asset/Our gallery/PRO/banner.jpg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
 import space_day_pr_pdf from '../asset/News/PR_National_Space_Day.pdf'
 import BroadcastingLecture from '../asset/News/PR (14 Sep).pdf'
 import aryabhattaTimes from '../asset/News/Aryabhatta_time_launch.pdf'
 import Youth_pdf from '../asset/News/youth as co creators pr final.pdf'
+import Pro_pdf from '../asset/News/PRO_PR (Sep 28).pdf'
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -339,6 +341,7 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024<img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} /> </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
+        <a href={Pro_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Lecture on Rules and Responsiblities of Public Relation Officer<img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={aryabhattaTimes} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>'Aryabhatta Times' was launched at the SJMC<img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={BroadcastingLecture} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Lecture on Indian TV Broadcasting and Hindi Celebrated on Hindi Day at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
         <a href={Youth_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Youth as Co-creators 2024 <img src={Gif} alt="newicon" height="8" width="27" style={{ marginRight: '5px', position:'relative'}} /> </a>
@@ -599,6 +602,13 @@ const MainContent = () => {
 
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
 
+
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page37"} style={{ width: '100%', height: '100%' }}>
+        <img src={PRO_img} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Rules and Responsiblities of PRO </h4>
+</div>
 
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page33"} style={{ width: '100%', height: '100%' }}>
