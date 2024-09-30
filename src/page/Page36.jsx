@@ -8,9 +8,9 @@ const Page36 = () => {
 
   
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+    <div style={{ position: 'relative', width: '100%', height: '100vh',overflow:'hidden' }}>
       <iframe
-        style={{ position: 'absolute', border: 'none', width: '100%', height: '105%', left: 0, top: 0 }}
+        style={{ position: 'absolute', border: 'none', width: '100%', height: '120%', left: 0, top: 0 }}
         src="https://online.pubhtml5.com/qdxdi/scdu/"
         seamless="seamless"
         scrolling="no"

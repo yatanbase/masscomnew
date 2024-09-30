@@ -67,6 +67,7 @@ import Syllabus from '../News/news_pdf_syllabus.pdf'
 import Home from '../components/HomeButton'
 import Clubs from '../components/ClubsButton'
 import MCLogo from '../asset/media_center_logo.png'
+import AryabhattaTimes_Logo from '../asset/AryabhattaTimes_logo.png'
 import Form from '../components/Form'
 import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
@@ -391,7 +392,16 @@ const MainContent = () => {
     </div>
     </a>
 
-
+    <a href='/page38' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
+    <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
+        <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
+        
+        </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Aryabhatta Times</h4>
+    </div>
+    </div>
+    </a>
    
 
 
