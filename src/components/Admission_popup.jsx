@@ -25,19 +25,13 @@ const Admission_popup = ({ onClose }) => {
       <div className="ads-container" ref={adRef}>
         <button className="ad-close" onClick={onClose}> x </button>
         
-        {/* First Ad */}
-        <div className="ad-box">
-          <img src={Image2} alt="Advertisement 1" className="ad-image" />
-          <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/" target='_blank' className="primary-button">Click for Details</a>
-          </div>
-        </div>
+       
 
         {/* Second Ad */}
         <div className="ad-box">
-          <img src={Image1} alt="Advertisement 2" className="ad-image" />
+          <img src={Image1} alt="Advertisement 1" className="ad-image" />
           <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="secondary-button">Click for Details</a>
+            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="primary-button">Click for Details</a>
           </div>
         </div>
       </div>
