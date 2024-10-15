@@ -24,7 +24,7 @@ import Slide20 from '../asset/upcoming events/Image1.jpeg'
 
 const slideImages = [
  
-  { url: Slide20, caption: '' },
+  
   { url: Slide15, caption: '' },
   { url: Slide19, caption: '' },
   { url: Slide18, caption: '' },
