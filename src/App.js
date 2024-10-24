@@ -40,6 +40,9 @@ import Page36 from './page/Page36';
 import Page37 from './page/Page37';
 import Page38 from './page/Page38';
 import Page39 from './page/Page39';
+import Page40 from './page/Page40';
+import Page41 from './page/Page41';
+import Page42 from './page/Page42';
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -97,7 +100,11 @@ function App() {
           <Route path="/Page37" element={<Page37 />} />
           <Route path="/Page38" element={<Page38 />} />
           <Route path="/Page39" element={<Page39/>} />
+          <Route path="/Page40" element={<Page40/>} />
+          <Route path="/Page41" element={<Page41/>} />
+          <Route path="/Page42" element={<Page42/>} />
 
+          
           
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />

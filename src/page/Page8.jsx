@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import './page8.css';
 import Home from '../components/HomeButton'
 
+import Image44 from '../asset/media_center/2024/24 October 2024/image (4).jpg'
+import Image43 from '../asset/media_center/2024/24 October 2024/image (3).jpg'
+import Image42 from '../asset/media_center/2024/24 October 2024/image (2).jpg'
+import Image41 from '../asset/media_center/2024/24 October 2024/image (1).jpg'
+
+
 import Image39 from '../asset/media_center/2024/6 October 2024/image (1).jpg'
 import Image40 from '../asset/media_center/2024/6 October 2024/image (2).jpg'
 
@@ -109,6 +115,30 @@ function Page8() {
   <img src={Image39} alt ='Image16'/>
   <p style={{textAlign:'left', color:'gray'}}>Date : 14/09/2024</p>
   </div> */}
+
+
+<div className="aslide" onClick={()=> handleImageClick(Image44)}>
+  <img src={Image44} alt ='Image44'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+  <div className="aslide" onClick={()=> handleImageClick(Image43)}>
+  <img src={Image43} alt ='Image43'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+
+  <div className="aslide" onClick={()=> handleImageClick(Image42)}>
+  <img src={Image42} alt ='Image42'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+
+  <div className="aslide" onClick={()=> handleImageClick(Image41)}>
+  <img src={Image41} alt ='Image41'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
 
 <div className="aslide" onClick={()=> handleImageClick(Image40)}>
   <img src={Image40} alt ='Image16'/>
@@ -297,6 +327,27 @@ function Page8() {
 
  
 
+<div className="aslide" onClick={()=> handleImageClick(Image44)}>
+  <img src={Image44} alt ='Image44'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+  <div className="aslide" onClick={()=> handleImageClick(Image43)}>
+  <img src={Image43} alt ='Image43'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+
+  <div className="aslide" onClick={()=> handleImageClick(Image42)}>
+  <img src={Image42} alt ='Image42'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
+
+
+  <div className="aslide" onClick={()=> handleImageClick(Image41)}>
+  <img src={Image41} alt ='Image41'/>
+  <p style={{textAlign:'left', color:'gray'}}>Date : 24/10/2024</p>
+  </div>
 <div className="aslide" onClick={()=> handleImageClick(Image40)}>
   <img src={Image40} alt ='Image16'/>
   <p style={{textAlign:'left', color:'gray'}}>Date : 06/10/2024</p>
