@@ -15,9 +15,6 @@ import Slide11 from '../asset/home_slider_11.jpg';
 import Slide12 from '../asset/home_slider_12.jpg';
 import Slide13 from '../asset/home_slider_13.jpg';
 import Slide14 from '../asset/home_slider_14.jpg';
-import Slide15 from '../asset/home_slider_15.jpg';
-import Slide16 from '../asset/home_slider_16.jpg';
-import Slide17 from '../asset/home_slider_17.jpg';
 import Slide18 from '../asset/Our gallery/Orientation/orientation (1).jpeg'
 import Slide19 from '../asset/Our gallery/Orientation/orientation (3).jpeg'
 import Slide20 from '../asset/upcoming events/Image1.jpeg'
@@ -25,12 +22,9 @@ import Slide20 from '../asset/upcoming events/Image1.jpeg'
 const slideImages = [
  
   
-  { url: Slide15, caption: '' },
   { url: Slide19, caption: '' },
   { url: Slide18, caption: '' },
   
-  { url: Slide16, caption: '' },
-  { url: Slide17, caption: '' },
   { url: Slide4, caption: '' },
   { url: Slide5, caption: '' },
   { url: Slide6, caption: '' },
