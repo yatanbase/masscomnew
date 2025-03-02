@@ -1,14 +1,15 @@
 import React from 'react'
-import Image1 from '../asset/Our gallery/screen writing/image (1).jpg'
-import Image2 from '../asset/Our gallery/screen writing/image (2).jpg'
-import Image3 from '../asset/Our gallery/screen writing/image (3).jpg'
-import Image4 from '../asset/Our gallery/screen writing/image (4).jpg'
-import Image5 from '../asset/Our gallery/screen writing/image (5).jpg'
-import Image6 from '../asset/Our gallery/screen writing/image (6).jpg'
+import Image1 from '../asset/Our gallery/unicef/image (1).jpeg'
+import Image2 from '../asset/Our gallery/unicef/image (2).jpeg'
+import Image3 from '../asset/Our gallery/unicef/image (3).jpeg'
+import Image4 from '../asset/Our gallery/unicef/image (4).jpeg'
+import Image5 from '../asset/Our gallery/unicef/image (5).jpeg'
+import Image6 from '../asset/Our gallery/unicef/image (6).jpeg'
+import Image7 from '../asset/Our gallery/unicef/image (7).jpeg'
 
 import Home from '../components/HomeButton'
 
-const Page42 = () => {
+const Page47 = () => {
   return (
     <div style={{ margin: '50px' }}>
      <Home/>
@@ -17,7 +18,7 @@ const Page42 = () => {
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
           <div className="row justify-content-center">
             <div className="col-md-12 text-center">
-              <h2>Screen Writing and Its Technical Aspects</h2>
+              <h2>COMMUNICATION FOR SOCIAL AND BEHAVIOUR CHANGE</h2>
             </div>
           </div>
           <div className="row justify-content-around">
@@ -40,6 +41,9 @@ const Page42 = () => {
             <div className="col-md-4 text-center mb-3">
               <img src={Image6} alt="Staff 6" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
             </div>
+            <div className="col-md-4 text-center mb-3">
+              <img src={Image7} alt="Staff 6" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
+            </div>
      
            
             
@@ -53,4 +57,4 @@ const Page42 = () => {
   )
 }
 
-export default Page42
+export default Page47

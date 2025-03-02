@@ -48,6 +48,13 @@ import Orientation from '../asset/Our gallery/Orientation/orientation (4).jpeg'
 import Orientation_pdf from '../asset/News/orientation_sjmc.pdf'
 import Space_day from '../asset/Our gallery/space_day/space_day (3).jpeg'
 import Free_Course from '../asset/Our gallery/Course/banner.jpg'
+import Screen_writing from '../asset/Our gallery/screen writing/image (1).jpg'
+import Resurgent_bharat from '../asset/Our gallery/resurgent bharat/image (4).jpg'
+import BBC_talk from '../asset/Our gallery/talk with bbc/image (4).jpeg'
+import Prabhat_akhbar from '../asset/Our gallery/prabhat akhbar/image (1).jpeg'
+import Univ from '../asset/Our gallery/univ/banner.jpg'
+import Unicef from '../asset/Our gallery/unicef/banner.jpg'
+
 
 
 import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
@@ -619,6 +626,51 @@ const MainContent = () => {
     <h2 style={{ width: '100%', textAlign: 'center',  borderRadius: '10px', textShadow: '0 3px 10px rgba(0, 0, 0, 0.7)' }}>Our Gallery</h2>
 
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
+
+
+
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page47"} style={{ width: '100%', height: '100%' }}>
+        <img src={Unicef} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> COMMUNICATION FOR SOCIAL AND BEHAVIOUR CHANGE</h4>
+</div>
+
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page46"} style={{ width: '100%', height: '100%' }}>
+        <img src={Univ} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Collaboration with association of Indian Univ </h4>
+</div>
+
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page45"} style={{ width: '100%', height: '100%' }}>
+        <img src={Prabhat_akhbar} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Visit To Prabhat Akhbar </h4>
+</div>
+
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page44"} style={{ width: '100%', height: '100%' }}>
+        <img src={BBC_talk} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Talk with BBC ( 29-01-2025) </h4>
+</div>
+
+<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page43"} style={{ width: '100%', height: '100%' }}>
+        <img src={Resurgent_bharat} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Resurgent Bharat </h4>
+</div>
+
+
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page42"} style={{ width: '100%', height: '100%' }}>
+        <img src={Screen_writing} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Screen Writing and its Technical Aspects </h4>
+</div>
 
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
     <NavLink to={"/Page40"} style={{ width: '100%', height: '100%' }}>

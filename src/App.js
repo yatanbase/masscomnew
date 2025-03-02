@@ -43,6 +43,12 @@ import Page39 from './page/Page39';
 import Page40 from './page/Page40';
 import Page41 from './page/Page41';
 import Page42 from './page/Page42';
+import Page43 from './page/Page43';
+import Page44 from './page/Page44';
+import Page45 from './page/Page45';
+import Page46 from './page/Page46';
+import Page47 from './page/Page47';
+
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -103,6 +109,11 @@ function App() {
           <Route path="/Page40" element={<Page40/>} />
           <Route path="/Page41" element={<Page41/>} />
           <Route path="/Page42" element={<Page42/>} />
+          <Route path="/Page43" element={<Page43/>} />
+          <Route path="/Page44" element={<Page44/>} />
+          <Route path="/Page45" element={<Page45/>} />
+          <Route path="/Page46" element={<Page46/>} />
+          <Route path="/Page47" element={<Page47/>} />
 
           
           

@@ -36,6 +36,12 @@
     width: max-content;
   }
 
+  .slide-track3 {
+    display: flex;
+    animation: scroll3 s linear infinite;
+    width: max-content;
+  }
+
   .aslide {
     height: 340px;
     width: 250px;
@@ -93,6 +99,10 @@
     animation-play-state: paused;
   }
 
+  .autoslider:hover .slide-track3 {
+    animation-play-state: paused;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(50vw);
@@ -111,7 +121,14 @@
   }
 }
 
-
+@keyframes scroll3 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-250px * 4));
+  }
+}
 
 .modal {
   position: fixed;
