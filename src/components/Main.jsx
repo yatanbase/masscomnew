@@ -49,7 +49,7 @@ import Orientation_pdf from '../asset/News/orientation_sjmc.pdf'
 import Space_day from '../asset/Our gallery/space_day/space_day (3).jpeg'
 import Free_Course from '../asset/Our gallery/Course/banner.jpg'
 import Screen_writing from '../asset/Our gallery/screen writing/image (1).jpg'
-import Resurgent_bharat from '../asset/Our gallery/resurgent bharat/image (4).jpg'
+import Resurgent_bharat from '../asset/Our gallery/resurgent bharat/image (2).jpg'
 import BBC_talk from '../asset/Our gallery/talk with bbc/image (4).jpeg'
 import Prabhat_akhbar from '../asset/Our gallery/prabhat akhbar/image (1).jpeg'
 import Univ from '../asset/Our gallery/univ/image (1).jpg'
@@ -647,7 +647,7 @@ const MainContent = () => {
     <NavLink to={"/Page45"} style={{ width: '100%', height: '100%' }}>
         <img src={Prabhat_akhbar} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
     </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Visit To Prabhat Akhbar </h4>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Visit To Prabhat Khabar </h4>
 </div>
 
 <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>

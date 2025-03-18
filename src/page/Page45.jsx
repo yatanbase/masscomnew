@@ -20,7 +20,7 @@ const Page45 = () => {
         <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
           <div className="row justify-content-center">
             <div className="col-md-12 text-center">
-              <h2>Screen Writing and Its Technical Aspects</h2>
+              <h2>Visit To Prabhat Khabar</h2>
             </div>
           </div>
           <div className="row justify-content-around">
