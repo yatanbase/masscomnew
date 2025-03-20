@@ -57,6 +57,7 @@ import Unicef from '../asset/Our gallery/unicef/banner.jpg'
 
 
 
+import Women_Collab from '../asset/News/Women_Incubation.docx'
 import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
 import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
 import aryabhatta_cover from '../asset/Our gallery/aryabhatta on space day/image (1).jpeg'
@@ -353,8 +354,11 @@ const MainContent = () => {
 
         <div style={{marginTop:'-40px' , marginBottom:'10px'}}>
 
+        {/* <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024<img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} /> </a> */}
+
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  </a>
+        <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
         <a href={Free_Course_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Photography and Film Making Free Training Course 2024</a>
         <a href={Aids_reel_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>S.J.M.C. Hosts Lecture and Reels Competition on AIDS Awareness </a>
         <a href={Pro_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Lecture on Rules and Responsiblities of Public Relation Officer </a>

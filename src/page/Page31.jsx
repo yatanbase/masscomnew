@@ -2,6 +2,7 @@ import React from 'react';
 import Image1 from '../asset/upcoming events/Image1.jpeg';
 import Pdf from '../asset/upcoming events/first.pdf';
 import Book from '../asset/events.png';
+import Bihar_diwas from '../asset/upcoming events/bihar_diwas.jpg'
 
 const Page31 = () => {
   return (
@@ -16,25 +17,25 @@ const Page31 = () => {
         </div>
       </div>
 
-      <div className="alt" style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center',alignItems:'center' }}>
+      {/* <div className="alt" style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center',alignItems:'center' }}>
         No New Upcoming Events...
 
-      </div>
-      {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
+      </div> */}
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center' }}>
           <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)', width: '100%', height: 'auto', marginTop: '20px', padding: '20px' }} className="col-md-9 p-4 text-center">
-            <a href={Pdf} target="_blank" style={{ textDecoration: 'none' }}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuAciMDV7SSKua_eIL2efQ6yOfiwTiI-nZIUPoW3-x_MERDg/viewform" target="_blank" style={{ textDecoration: 'none' }}>
               <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <img src={Image1} alt="Gallery Image 2" style={{ width: '45vw', height: 'auto', objectFit: 'cover', boxShadow: '2px 2px 7px 2px rgba(0, 0, 0, 0.9)', borderRadius: '20px' }} />
+                <img src={Bihar_diwas} alt="Gallery Image 2" style={{ width: '45vw', height: 'auto', objectFit: 'cover', boxShadow: '2px 2px 7px 2px rgba(0, 0, 0, 0.9)', borderRadius: '20px' }} />
                 <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif', fontSize: '1.6rem', color: 'black', marginTop: '10px',marginBottom:'0px' }}>
-                  Date : 11 to 30 September 2024<br />
+                  Date : 23rd March 2025<br />
                   <span style={{ color: 'darkred', fontSize: '1.2rem',position:'relative',bottom:'10px'}}>know more &gt;</span>
                 </p>
               </div>
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Responsive Media Queries */}
       <style>
