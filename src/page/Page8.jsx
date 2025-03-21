@@ -91,6 +91,7 @@ import Image3_1 from '../asset/media_center/2025/10-02-2025/image (1).jpeg'
 import Image3_2 from '../asset/media_center/2025/10-02-2025/image (2).jpeg'
 import Image3_3 from '../asset/media_center/2025/10-02-2025/image (3).jpeg'
 import Image3_4 from '../asset/media_center/2025/10-02-2025/image (4).jpeg'
+import Image3_5 from '../asset/media_center/2025/23 march/image.jpg'
 
 
 
@@ -99,12 +100,13 @@ function Page8() {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalImage, setModalImage] = useState('');
 
-  // Organize images by year and date
+  // Organize images by year and dates
   const images2025 = [
+    { src: Image3_5, date: '21/03/2025' },
     { src: Image3_1, date: '10/02/2025' },
     { src: Image3_2, date: '10/02/2025' },
     { src: Image3_3, date: '10/02/2025' },
-    { src: Image3_4, date: '10/02/2025' }
+    { src: Image3_4, date: '10/02/2025' },
   ];
 
   const images2024 = [
