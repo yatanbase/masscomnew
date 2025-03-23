@@ -54,9 +54,10 @@ import BBC_talk from '../asset/Our gallery/talk with bbc/image (4).jpeg'
 import Prabhat_akhbar from '../asset/Our gallery/prabhat akhbar/image (1).jpeg'
 import Univ from '../asset/Our gallery/univ/image (1).jpg'
 import Unicef from '../asset/Our gallery/unicef/banner.jpg'
+import Film_class from '../asset/Our gallery/FILM MASTERCLASS/image (2).jpg'
 
 
-
+import Film_masterclass from '../asset/News/PRmarch23.docx'
 import Women_Collab from '../asset/News/Women_Incubation.docx'
 import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
 import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
@@ -358,6 +359,7 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  </a>
+        <a href={Film_masterclass} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Film Acting Masterclass by AKU & BSFD & FC <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
         <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
         <a href={Free_Course_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Photography and Film Making Free Training Course 2024</a>
         <a href={Aids_reel_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>S.J.M.C. Hosts Lecture and Reels Competition on AIDS Awareness </a>
@@ -631,6 +633,13 @@ const MainContent = () => {
 
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
 
+
+    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <NavLink to={"/Page48"} style={{ width: '100%', height: '100%' }}>
+        <img src={Film_class} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
+    </NavLink>
+    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Film Acting Masterclass by AKU & BSFD & FC</h4>
+</div>
 
 
     <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
