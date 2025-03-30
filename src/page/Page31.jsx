@@ -21,7 +21,7 @@ const Page31 = () => {
         No New Upcoming Events...
 
       </div> */}
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center' }}>
           <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)', width: '100%', height: 'auto', marginTop: '20px', padding: '20px' }} className="col-md-9 p-4 text-center">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuAciMDV7SSKua_eIL2efQ6yOfiwTiI-nZIUPoW3-x_MERDg/viewform" target="_blank" style={{ textDecoration: 'none' }}>
@@ -35,7 +35,7 @@ const Page31 = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Responsive Media Queries */}
       <style>

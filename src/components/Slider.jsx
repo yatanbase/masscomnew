@@ -19,11 +19,16 @@ import Slide18 from '../asset/Our gallery/Orientation/orientation (1).jpeg'
 import Slide19 from '../asset/Our gallery/Orientation/orientation (3).jpeg'
 import Slide20 from '../asset/upcoming events/Image1.jpeg'
 
+import Slide21 from '../asset/slider/slider.jpg'
+import Slide22 from '../asset/slider/slider_2.jpg'
+
 const slideImages = [
  
   
   { url: Slide19, caption: '' },
   { url: Slide18, caption: '' },
+  { url: Slide21, caption: '' },
+  { url: Slide22, caption: '' },
   
   { url: Slide4, caption: '' },
   { url: Slide5, caption: '' },

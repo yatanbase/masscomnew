@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageSlider from '../components/Slider'
 import BlinkingNews from '../components/Blink'
 import './styles/styles.css'
@@ -55,8 +55,15 @@ import Prabhat_akhbar from '../asset/Our gallery/prabhat akhbar/image (1).jpeg'
 import Univ from '../asset/Our gallery/univ/image (1).jpg'
 import Unicef from '../asset/Our gallery/unicef/banner.jpg'
 import Film_class from '../asset/Our gallery/FILM MASTERCLASS/image (2).jpg'
+import March25 from '../asset/Our gallery/25 march/IMG-20250330-WA0042.jpg'
+import March26 from '../asset/Our gallery/26 march/IMG-20250330-WA0058.jpg'
+import March27 from '../asset/Our gallery/Guru Dakshata program/IMG-20250330-WA0031.jpg'
 
 
+import MOOC_Training4 from '../asset/News/28 march.pdf'
+import MOOC_Training3 from '../asset/News/27 march.pdf'
+import MOOC_Training2 from '../asset/News/26 march.pdf'
+import MOOC_Training1 from '../asset/News/25 march.pdf'
 import Film_masterclass from '../asset/News/PRmarch23.docx'
 import Women_Collab from '../asset/News/Women_Incubation.docx'
 import Space_day_pdf from '../asset/News/PR (August 8, 2024).pdf'
@@ -73,6 +80,8 @@ import aryabhattaTimes from '../asset/News/Aryabhatta_time_launch.pdf'
 import Youth_pdf from '../asset/News/youth as co creators pr final.pdf'
 import Pro_pdf from '../asset/News/PRO_PR (Sep 28).pdf'
 import Free_Course_pdf from '../asset/News/PR (October 22).pdf'
+
+
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -87,7 +96,177 @@ import Form from '../components/Form'
 import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
 
-import { useEffect } from 'react';
+const galleryItems = [
+    {
+        id: 28,
+        image: March27,
+        title: "MOOC Training Program Day 3",
+        link: "/Page51"
+    },
+    {
+        id: 27,
+        image: March26,
+        title: "MOOC Training Program Day 2",
+        link: "/Page50"
+    },
+    {
+        id: 26,
+        image: March25,
+        title: "MOOC Training Program Day 1",
+        link: "/Page49"
+    },
+    {
+        id: 1,
+        image: Film_class,
+        title: "Film Acting Masterclass by AKU & BSFD & FC",
+        link: "/Page48"
+    },
+    {
+        id: 2,
+        image: Unicef,
+        title: "COMMUNICATION FOR SOCIAL AND BEHAVIOUR CHANGE",
+        link: "/Page47"
+    },
+    {
+        id: 3,
+        image: Univ,
+        title: "Collaboration with association of Indian University",
+        link: "/Page46"
+    },
+    {
+        id: 4,
+        image: Prabhat_akhbar,
+        title: "Visit To Prabhat Khabar",
+        link: "/Page45"
+    },
+    {
+        id: 5,
+        image: BBC_talk,
+        title: "Talk with BBC ( 29-01-2025)",
+        link: "/Page44"
+    },
+    {
+        id: 6,
+        image: Resurgent_bharat,
+        title: "Resurgent Bharat",
+        link: "/Page43"
+    },
+    {
+        id: 7,
+        image: Screen_writing,
+        title: "Screen Writing and its Technical Aspects",
+        link: "/Page42"
+    },
+    {
+        id: 8,
+        image: Free_Course,
+        title: "Free Photography and Film Making Training Course",
+        link: "/Page40"
+    },
+    {
+        id: 9,
+        image: Aids_img,
+        title: "Role of Youth in Combating AIDS",
+        link: "/Page39"
+    },
+    {
+        id: 10,
+        image: PRO_img,
+        title: "Rules and Responsiblities of PRO",
+        link: "/Page37"
+    },
+    {
+        id: 11,
+        image: Aryabhatta_times,
+        title: "Aryabhatta times",
+        link: "/Page33"
+    },
+    {
+        id: 12,
+        image: Tvbroadcasting_cover,
+        title: "Indian TV Broadcasting and Hindi",
+        link: "/Page35"
+    },
+    {
+        id: 13,
+        image: Youth_cover,
+        title: "Youth as Co-Creators",
+        link: "/Page34"
+    },
+    {
+        id: 14,
+        image: aryabhatta_cover,
+        title: "The Great Aryabhatta Rememberance",
+        link: "/Page32"
+    },
+    {
+        id: 15,
+        image: Space_day,
+        title: "National Space Day 2024",
+        link: "/Page30"
+    },
+    {
+        id: 16,
+        image: Orientation,
+        title: "Orientation at SJMC 2024",
+        link: "/Page29"
+    },
+    {
+        id: 17,
+        image: Wetland,
+        title: "Wetlands For Life Training Workshop",
+        link: "/Page28"
+    },
+    {
+        id: 18,
+        image: MOU,
+        title: "MOU Between BSMFC & SJMC (AKU)",
+        link: "/Page27"
+    },
+    {
+        id: 19,
+        image: Hindi_divas,
+        title: "Hindi Patrakarita Divas",
+        link: "/Page26"
+    },
+    {
+        id: 20,
+        image: Film,
+        title: "Film Screening of Student Films (2021-2023)",
+        link: "/Film_Screening"
+    },
+    {
+        id: 21,
+        image: Refresher,
+        title: "Refresher Training Programme for IPRD Officials",
+        link: "/Refresher_training"
+    },
+    {
+        id: 22,
+        image: DigitalEd,
+        title: "National Workshop on Digital Education",
+        link: "/Digital_education"
+    },
+    {
+        id: 23,
+        image: ScriptWritingDay,
+        title: "Script Writing Workshop",
+        link: "/Scipt_writing"
+    },
+    {
+        id: 24,
+        image: DisasterImage,
+        title: "Disaster Management Seminar for Media Persons",
+        link: "/Disaster_management"
+    },
+    {
+        id: 25,
+        image: Students,
+        title: "Student Activities",
+        link: "/Student_activities"
+    },
+ 
+];
 
 const MainContent = () => {
     
@@ -359,7 +538,11 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  </a>
-        <a href={Film_masterclass} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Film Acting Masterclass by AKU & BSFD & FC <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        <a href={MOOC_Training4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Mastering MOOC Creation with Studio Shooting and AI-Powered Content at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        <a href={MOOC_Training3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}> MOOC Training Day 3: Focus on Engaging Content for Students <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        <a href={MOOC_Training2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU's MOOC Training Program Day 2  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        <a href={MOOC_Training1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>MOOC Training Program Begins at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        <a href={Film_masterclass} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Film Acting Masterclass by AKU & BSFD & FC </a>
         <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
         <a href={Free_Course_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Photography and Film Making Free Training Course 2024</a>
         <a href={Aids_reel_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>S.J.M.C. Hosts Lecture and Reels Competition on AIDS Awareness </a>
@@ -492,7 +675,7 @@ const MainContent = () => {
                             <p>Program will develop the understanding of Journalism responsibility and how to report for serve the society. The concept of communication process and theories will provide the vital learning and understanding of the problems for better solution. Media course is also attached with technical knowledge, the essential and professional software, tools, equipment, production and others many skills will help to become a trained students for media industries. Newspaper/Magazine Designing, Film Production, Radio programmes, Photography, Video Editing, Camera Operation, Audio Mixer, Video Switcher, Graphics Designing, Website Designing, Anchoring and more others skill based understanding will be developed for media students.</p>
                         </li>
                         <li>Eligibility:</li> 
-                        <p>Bachelor’s degree in any discipline with a minimum of 55% marks for General/OBC/SC/ST candidates.
+                        <p>Bachelor's degree in any discipline with a minimum of 55% marks for General/OBC/SC/ST candidates.
                         </p>
                         <li>Intake:
                         </li>
@@ -632,194 +815,18 @@ const MainContent = () => {
     <h2 style={{ width: '100%', textAlign: 'center',  borderRadius: '10px', textShadow: '0 3px 10px rgba(0, 0, 0, 0.7)' }}>Our Gallery</h2>
 
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', marginTop: '20px' , height:'780px', overflow:'auto'}}>
-
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page48"} style={{ width: '100%', height: '100%' }}>
-        <img src={Film_class} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Film Acting Masterclass by AKU & BSFD & FC</h4>
-</div>
-
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page47"} style={{ width: '100%', height: '100%' }}>
-        <img src={Unicef} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> COMMUNICATION FOR SOCIAL AND BEHAVIOUR CHANGE</h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page46"} style={{ width: '100%', height: '100%' }}>
-        <img src={Univ} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Collaboration with association of Indian University </h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page45"} style={{ width: '100%', height: '100%' }}>
-        <img src={Prabhat_akhbar} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Visit To Prabhat Khabar </h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page44"} style={{ width: '100%', height: '100%' }}>
-        <img src={BBC_talk} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Talk with BBC ( 29-01-2025) </h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page43"} style={{ width: '100%', height: '100%' }}>
-        <img src={Resurgent_bharat} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Resurgent Bharat </h4>
-</div>
-
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page42"} style={{ width: '100%', height: '100%' }}>
-        <img src={Screen_writing} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Screen Writing and its Technical Aspects </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page40"} style={{ width: '100%', height: '100%' }}>
-        <img src={Free_Course} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Free Photography and Film Making Training Course </h4>
-</div>
-
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page39"} style={{ width: '100%', height: '100%' }}>
-        <img src={Aids_img} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Role of Youth in Combating AIDS </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page37"} style={{ width: '100%', height: '100%' }}>
-        <img src={PRO_img} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Rules and Responsiblities of PRO </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page33"} style={{ width: '100%', height: '100%' }}>
-        <img src={Aryabhatta_times} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Aryabhatta times  </h4>
-</div>
-
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page35"} style={{ width: '100%', height: '100%' }}>
-        <img src={Tvbroadcasting_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Indian TV Broadcasting and Hindi </h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page34"} style={{ width: '100%', height: '100%' }}>
-        <img src={Youth_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Youth as Co-Creators </h4>
-</div>
-
-    
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page32"} style={{ width: '100%', height: '100%' }}>
-        <img src={aryabhatta_cover} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> The Great Aryabhatta Rememberance  </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page30"} style={{ width: '100%', height: '100%' }}>
-        <img src={Space_day} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> National Space Day 2024 </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page29"} style={{ width: '100%', height: '100%' }}>
-        <img src={Orientation} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Orientation at SJMC 2024 </h4>
-</div>
-
-    <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page28"} style={{ width: '100%', height: '100%' }}>
-        <img src={Wetland} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> Wetlands For Life Training Workshop </h4>
-</div>
-
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page27"} style={{ width: '100%', height: '100%' }}>
-        <img src={MOU} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}> MOU Between BSMFC & SJMC (AKU) </h4>
-</div>
-
-<div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Page26"} style={{ width: '100%', height: '100%' }}>
-        <img src={Hindi_divas} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Hindi Patrakarita Divas</h4>
-</div>
-
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <NavLink to={"/Film_Screening"}>
-                <img src={Film} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-            </NavLink>
-            <h4 style={{ textAlign: 'center' , fontFamily: 'Times New Roman, serif'}}>Film Screening of Student Films (2021-2023)</h4>
-        </div>
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <NavLink to={"/Refresher_training"}>
-                <img src={Refresher} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-            </NavLink>
-            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Refresher Training Programme for IPRD Officials</h4>
-        </div>
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
-            <NavLink to={"/Digital_education"}>
-                <img src={DigitalEd} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-            </NavLink>
-            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>National Workshop on Digital Education</h4>
-        </div>
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',marginTop:'-25px' }}>
-            <NavLink to={"/Scipt_writing"}>
-                <img src={ScriptWritingDay} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-            </NavLink>
-            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Script Writing Workshop</h4>
-        </div>
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', top: '1px' }}>
-            <NavLink to={"/Disaster_management"}>
-                <img src={DisasterImage} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'cover', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-            </NavLink>
-            <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>Disaster Management Seminar for Media Persons</h4>
-        </div>
-
-        <div style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-    <NavLink to={"/Student_activities"} style={{ width: '100%', height: '100%' }}>
-        <img src={Students} alt="Gallery Image 2" style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} />
-    </NavLink>
-    <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif',position:'relative',bottom:'25px' }}>Student Activities</h4>
-</div>
-
-
-
-
-
+        {galleryItems.map((item) => (
+            <div key={item.id} style={{ width: 'calc(33.33% - 20px)', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <NavLink to={item.link} style={{ width: '100%', height: '100%' }}>
+                    <img 
+                        src={item.image} 
+                        alt={item.title} 
+                        style={{ width: '100%', height: '300px', objectFit: 'fill', boxShadow: '0 0 25px 2px rgba(0, 0, 0, 0.4)', borderRadius: '20px' }} 
+                    />
+                </NavLink>
+                <h4 style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif' }}>{item.title}</h4>
+            </div>
+        ))}
     </div>
 </div>
 
