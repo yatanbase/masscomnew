@@ -1,6 +1,6 @@
 import React from 'react'
 import Sanjeev from '../asset/SANJEEVkr.png';
-import Tushar from '../asset/TUSHAR.png';
+import Ranu from '../asset/ranu.jpg'
 import Arjun from '../asset/ARJUNTHAKUR.png';
 import Amish from '../asset/AMISHANAND.png';
 import { NavLink } from 'react-router-dom';
@@ -41,13 +41,8 @@ TECHNICAL ASSISTANT<br></br>
 sanjeevspy007@gmail.com<br></br>
 9939019792</p>
       </div>
-      <div className="col-md-3 text-center">
-        <img src={Tushar} alt="Staff 2" className="img-fluid rounded border p-3" />
-        <p> MR. TUSHAR HARSH<br></br>
-TECHNICAL ASSISTANT<br></br>
-tusharharsh45@gmail.com<br></br>
-7061488930</p>
-      </div>
+
+
       <div className="col-md-3 text-center">
         <img src={Arjun} alt="Staff 3" className="img-fluid rounded border p-3" />
         <p> MR. ARJUN THAKUR<br></br>
@@ -62,9 +57,22 @@ ASSISTANT<br></br>
 amysharma23@gmail.com<br></br>
 9122733265</p>
       </div>
+
+      <div className="col-md-3 text-center">
+        <img src={Ranu} alt="Staff 2" className="img-fluid rounded border p-3" />
+        <p> MR. RANU SINGH<br></br>
+TECHNICAL ASSISTANT<br></br>
+ranusingh54897gmail.com<br></br>
+{/* 7061488930 */}
+</p>
+      </div>
+
+
+
     </div>
       </div>
     </div>
+
   </div></div>
   )
 }

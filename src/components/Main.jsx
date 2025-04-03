@@ -124,7 +124,7 @@ const galleryItems = [
     {
         id: 2,
         image: Unicef,
-        title: "COMMUNICATION FOR SOCIAL AND BEHAVIOUR CHANGE",
+        title: "Communication For Social and Behavior Change",
         link: "/Page47"
     },
     {
