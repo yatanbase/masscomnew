@@ -38,7 +38,7 @@
 
   .slide-track3 {
     display: flex;
-    animation: scroll3 8s linear infinite;
+    animation: scroll3 14s linear infinite;
     width: max-content;
   }
 
@@ -126,7 +126,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-250px * 5));
+    transform: translateX(calc(-250px * 16));
   }
 }
 

@@ -93,6 +93,18 @@ import Image3_3 from '../asset/media_center/2025/10-02-2025/image (3).jpeg'
 import Image3_4 from '../asset/media_center/2025/10-02-2025/image (4).jpeg'
 import Image3_5 from '../asset/media_center/2025/23 march/image.jpg'
 
+import Image3_6 from '../asset/media_center/2025/march/13 march.jpg'
+import Image3_7 from '../asset/media_center/2025/march/26 march.jpg'
+import Image3_8 from '../asset/media_center/2025/march/26 march.png'
+import Image3_9 from '../asset/media_center/2025/march/27 march (1).jpg'
+import Image3_10 from '../asset/media_center/2025/march/27 march (1).png'
+import Image3_11 from '../asset/media_center/2025/march/27 march (2).jpg'
+import Image3_12 from '../asset/media_center/2025/march/27 march (3).jpg'
+import Image3_13 from '../asset/media_center/2025/march/28 march.jpg'
+import Image3_14 from '../asset/media_center/2025/march/28 march.png'
+import Image3_15 from '../asset/media_center/2025/march/30 march (1).jpg'
+import Image3_16 from '../asset/media_center/2025/march/30 march (2).jpg'
+
 
 
 
@@ -102,6 +114,17 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
+    { src: Image3_6, date: '13/03/2025' },
+    { src: Image3_7, date: '26/03/2025' },
+    { src: Image3_8, date: '26/03/2025' },
+    { src: Image3_9, date: '27/03/2025' },
+    { src: Image3_10, date: '27/03/2025' },
+    { src: Image3_11, date: '27/03/2025' },
+    { src: Image3_12, date: '27/03/2025' },
+    { src: Image3_13, date: '28/03/2025' },
+    { src: Image3_14, date: '28/03/2025' },
+    { src: Image3_15, date: '30/03/2025' },
+    { src: Image3_16, date: '30/03/2025' },
     { src: Image3_5, date: '21/03/2025' },
     { src: Image3_1, date: '10/02/2025' },
     { src: Image3_2, date: '10/02/2025' },
