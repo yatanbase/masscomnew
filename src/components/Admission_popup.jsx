@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './ad_popup.css'; // Import the CSS for styling
 import Image1 from '../asset/popup (1).jpg'
-import Image2 from '../asset/popup (2).jpg'
+// import Image2 from '../asset/popup (2).jpg'
 
 const Admission_popup = ({ onClose }) => {
   const adRef = useRef(null);
