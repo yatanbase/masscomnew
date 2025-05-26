@@ -2,9 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import './ad_popup.css'; // Import the CSS for styling
 import Image1 from '../asset/popup (1).jpg'
 // import Image2 from '../asset/popup (2).jpg'
+import advideo from '../asset/skill courses.mp4'
 
 const Admission_popup = ({ onClose }) => {
   const adRef = useRef(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -14,6 +16,10 @@ const Admission_popup = ({ onClose }) => {
     };
 
     document.addEventListener('mousedown', handleClickOutside);
+
+    if (videoRef.current) {
+      videoRef.current.play().catch((e) => console.log('Autoplay blocked', e));
+    }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -29,6 +35,10 @@ const Admission_popup = ({ onClose }) => {
 
         {/* Second Ad */}
         <div className="ad-box">
+          <video className="ad-video" ref={videoRef} controls autoplay muted loop playsInline preload="metadata">
+            <source src = {advideo} type="video/mp4" />
+            
+            </video>
           <img src={Image1} alt="Advertisement 1" className="ad-image" />
           <div className="button_container">
             <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="primary-button">Click for Details</a>
