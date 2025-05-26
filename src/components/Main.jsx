@@ -162,16 +162,16 @@ const galleryItems = [
         image: Free_Course,
         title: "Free Photography and Film Making Training Course",
         link: "/Page40"
-    },
-    {
-        id: 9,
-        image: Aids_img,
-        title: "Role of Youth in Combating AIDS",
-        link: "/Page39"
-    },
-    {
-        id: 10,
-        image: PRO_img,
+        },
+        {
+            id: 9,
+            image: Aids_img,
+            title: "Role of Youth in Combating AIDS",
+            link: "/Page39"
+        },
+        {
+            id: 10,
+            image: PRO_img,
         title: "Rules and Responsiblities of PRO",
         link: "/Page37"
     },
@@ -538,12 +538,17 @@ const MainContent = () => {
 
         <a href="https://adms.akubihar.ac.in/" target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' ,fontWeight:'bold',position:'relative',left:'10px'}}>    Admission 2024 </a>
         <a href={Syllabus} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', fontWeight:'bold',position:'relative',left:'10px' }}>SJMC Prospectus 2024  </a>
-        <a href={MOOC_Training4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Mastering MOOC Creation with Studio Shooting and AI-Powered Content at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
-        <a href={MOOC_Training3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}> MOOC Training Day 3: Focus on Engaging Content for Students <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
-        <a href={MOOC_Training2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU's MOOC Training Program Day 2  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
-        <a href={MOOC_Training1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>MOOC Training Program Begins at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        {/* /* <a href={MOOC_Training4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Mastering MOOC Creation with Studio Shooting and AI-Powered Content at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a> */ }
+        <a href={MOOC_Training4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Mastering MOOC Creation with Studio Shooting and AI-Powered Content at AKU   </a>
+        {/* <a href={MOOC_Training3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}> MOOC Training Day 3: Focus on Engaging Content for Students <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a> */}
+        <a href={MOOC_Training3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}> MOOC Training Day 3: Focus on Engaging Content for Students </a>
+        {/* <a href={MOOC_Training2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU's MOOC Training Program Day 2  <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a> */}
+         <a href={MOOC_Training2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU's MOOC Training Program Day 2  </a>
+        {/* <a href={MOOC_Training1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>MOOC Training Program Begins at AKU <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a> */}
+        <a href={MOOC_Training1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>MOOC Training Program Begins at AKU</a>
         <a href={Film_masterclass} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Film Acting Masterclass by AKU & BSFD & FC </a>
-        <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a>
+        {/* <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE <img src={Gif} alt="newicon" height="8" width="27" style={{ marginLeft: '5px', position:'relative'}} />  </a> */}
+        <a href={Women_Collab} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>AKU  Incubation Center Women Entrepreneur Collaboration with NSE  </a>
         <a href={Free_Course_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Photography and Film Making Free Training Course 2024</a>
         <a href={Aids_reel_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>S.J.M.C. Hosts Lecture and Reels Competition on AIDS Awareness </a>
         <a href={Pro_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px',position:'relative',left:'10px' }}>Lecture on Rules and Responsiblities of Public Relation Officer </a>
