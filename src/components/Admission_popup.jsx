@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './ad_popup.css'; // Import the CSS for styling
-import Image1 from '../asset/popup (1).jpg'
+import Image1 from '../asset/Banner_new.jpg'
 // import Image2 from '../asset/popup (2).jpg'
 import advideo from '../asset/skill courses.mp4' //videos should be uploaded on CDN and then used here to reduce build size
 
