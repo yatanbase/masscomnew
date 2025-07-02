@@ -34,7 +34,6 @@
     align-items: center;
     text-align: center;
     width: auto; /* Increased size for the ad */
-    gap: 05 px;
 }
 
 .ad-image {
