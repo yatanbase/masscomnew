@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for SJMC Website
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://yatanbase.github.io/masscomnew/sitemap.xml
