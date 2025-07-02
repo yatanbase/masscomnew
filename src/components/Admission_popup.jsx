@@ -38,6 +38,9 @@ const Admission_popup = ({ onClose }) => {
         <div className="ad-box">
           <video className="ad-video" ref={videoRef} controls autoplay muted loop playsInline preload="metadata">
             <source src = {advideo} type="video/mp4" />
+            <div className="button_container">
+            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="primary-button">Click for Details</a>
+          </div>
             
             </video>
           <img src={Image1} alt="Advertisement 1" className="ad-image" />
