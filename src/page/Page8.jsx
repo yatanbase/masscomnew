@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import './page8.css';
 import Home from '../components/HomeButton'
 
-import ImageJuly1 from '../asset/media_center/2025/July/hindustan_02_07_2025_pg04.jpeg';
-import ImageJuly2 from '../asset/media_center/2025/July/dainik_jagran_03_07_2025_pg01.jpeg';
-
-
 import Image48 from '../asset/media_center/2024/26 October 2024/image (4).jpg'
 import Image47 from '../asset/media_center/2024/26 October 2024/image (3).jpg'
 import Image46 from '../asset/media_center/2024/26 October 2024/image (2).jpg'
@@ -91,6 +87,7 @@ import Image2_20 from '../asset/media_center/2023/29 November 2023/29_july (4).j
 import Image2_21 from '../asset/media_center/2023/14 September 2023/14_sep (1).jpg'
 
 //2025
+
 import Image3_1 from '../asset/media_center/2025/10-02-2025/image (1).jpeg'
 import Image3_2 from '../asset/media_center/2025/10-02-2025/image (2).jpeg'
 import Image3_3 from '../asset/media_center/2025/10-02-2025/image (3).jpeg'
