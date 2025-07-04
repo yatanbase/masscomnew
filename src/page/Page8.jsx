@@ -105,8 +105,8 @@ import Image3_13 from '../asset/media_center/2025/march/28 march.jpg'
 import Image3_14 from '../asset/media_center/2025/march/28 march.png'
 import Image3_15 from '../asset/media_center/2025/march/30 march (1).jpg'
 import Image3_16 from '../asset/media_center/2025/march/30 march (2).jpg'
-import ImageJune1 from '../asset/media_center/2025/June/dainik_jagran_28_06_2025_pg04.jpeg.jpeg';
-import ImageJuly1 from '../asset/media_center/2025/July/hindustan_02_07_2025_pg04.jpeg.jpeg';
+import ImageJune1 from '../asset/media_center/2025/June/dainik_jagran_28_06_2025_pg04.jpeg';
+import ImageJuly1 from '../asset/media_center/2025/July/hindustan_02_07_2025_pg04.jpeg';
 
  
 
