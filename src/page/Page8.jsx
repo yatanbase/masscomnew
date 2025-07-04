@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './page8.css';
 import Home from '../components/HomeButton'
 
+import ImageJuly1 from '../asset/media_center/2025/July/hindustan_02_07_2025_pg04.jpeg';
+import ImageJuly2 from '../asset/media_center/2025/July/dainik_jagran_03_07_2025_pg01.jpeg';
+
+
 import Image48 from '../asset/media_center/2024/26 October 2024/image (4).jpg'
 import Image47 from '../asset/media_center/2024/26 October 2024/image (3).jpg'
 import Image46 from '../asset/media_center/2024/26 October 2024/image (2).jpg'
