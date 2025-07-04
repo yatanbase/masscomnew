@@ -119,7 +119,7 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
-    { src: ImageJune1, date: '28/06/2025' }
+    { src: ImageJune1, date: '28/06/2025' },
     { src: ImageJuly1, date: '02/07/2025' },
     { src: Image3_6, date: '13/03/2025' },
     { src: Image3_7, date: '26/03/2025' },
@@ -137,8 +137,6 @@ function Page8() {
     { src: Image3_2, date: '10/02/2025' },
     { src: Image3_3, date: '10/02/2025' },
     { src: Image3_4, date: '10/02/2025' },
-    { src: ImageJune1, date: '28/06/2025' }
-    { src: ImageJuly1, date: '02/07/2025' },
   ];
 
   const images2024 = [
