@@ -425,12 +425,12 @@ const MainContent = () => {
                 <li className="dropdown-submenu">
                   <a className="dropdown-item dropdown-toggle" href="#">Faculty</a>
                   <ul className="dropdown-menu">
-        <li><NavLink to="/Faculty" className="dropdown-item">Regular Faculty</NavLink></li>
+        <li><NavLink to="/Consultant" className="dropdown-item">Regular Faculty</NavLink></li>
         <li><NavLink to="/GuestFaculty" className="dropdown-item">SJMC Guest Faculty</NavLink></li>
       </ul>
     </li>
     {/* Faculty Submenu ENDS */}
-            <li><NavLink to={"/Consultant"} className="dropdown-item">Faculty</NavLink></li>
+            {/* <li><NavLink to={"/Consultant"} className="dropdown-item">Faculty</NavLink></li> */}
             <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
