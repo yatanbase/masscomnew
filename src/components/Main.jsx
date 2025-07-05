@@ -401,11 +401,7 @@ const MainContent = () => {
     <ul className="dropdown-menu" aria-labelledby="faculty-tab">
 
     </ul>
-  </div>
-</li>
-
-                </ul>
-            </div>
+  
         </li>
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
