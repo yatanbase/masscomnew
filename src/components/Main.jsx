@@ -413,30 +413,42 @@ const MainContent = () => {
                     <li><hr className="dropdown-divider" /></li>
                 </ul>
             </div>
-        </li>
-                <li className="nav-item" role="presentation">
-    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
-        <ul className="dropdown-menu" aria-labelledby="contact-tab">
+        </li><li className="nav-item" role="presentation">
+  <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+    <a
+      style={{ fontWeight: 'bold' }}
+      className="nav-link dropdown-toggle text-reset"
+      id="contact-tab"
+      data-bs-toggle="dropdown"
+      href="#Facilities"
+      role="tab"
+      aria-controls="contact"
+      aria-selected="false"
+      onClick={toggleFacultyDropdown}
+    >
+      Faculty/Staff
+    </a>
 
-            <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
-            <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
-             {/* Faculty Submenu STARTS */}
-                <li className="dropdown-submenu">
-                  <a className="dropdown-item dropdown-toggle" href="#">Faculty</a>
-                  <ul className="dropdown-menu">
-        <li><NavLink to="/Faculty" className="dropdown-item">Regular Faculty</NavLink></li>
-        <li><NavLink to="/GuestFaculty" className="dropdown-item">SJMC Guest Faculty</NavLink></li>
-      </ul>
-    </li>
-    {/* Faculty Submenu ENDS */}
-            <li><NavLink to={"/Consultant"} className="dropdown-item">Faculty</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
-           
-            <li><hr className="dropdown-divider" /></li>
+    <ul className="dropdown-menu" aria-labelledby="contact-tab">
+      <li><NavLink to="/AdvisoryCommittee" className="dropdown-item">Academic Advisory Committee</NavLink></li>
+      <li><NavLink to="/Faculty" className="dropdown-item">Head Of Department</NavLink></li>
+
+      {/* Faculty Submenu STARTS */}
+      <li className="dropdown-submenu">
+        <a className="dropdown-item dropdown-toggle" href="#">Faculty</a>
+        <ul className="dropdown-menu">
+          <li><NavLink to="/Faculty" className="dropdown-item">Regular Faculty</NavLink></li>
+          <li><NavLink to="/GuestFaculty" className="dropdown-item">SJMC Guest Faculty</NavLink></li>
         </ul>
-    </div>
+      </li>
+      {/* Faculty Submenu ENDS */}
+
+      <li><NavLink to="/Staff" className="dropdown-item">Administrative Staff</NavLink></li>
+      <li><hr className="dropdown-divider" /></li>
+    </ul>
+  </div>
 </li>
+
 
                 
                 <li className="nav-item" role="presentation">
