@@ -386,8 +386,8 @@ const MainContent = () => {
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Infrastructure</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
-            <li><NavLink to={"/Studio"} className="dropdown-item">Studio</NavLink></li>
-            <li><NavLink to={"/Media_lab"} className="dropdown-item">Media Lab</NavLink></li>
+            <li><NavLink to={"/Studio"} className="dropdown-item">Audio/Visual/Virtual Studio</NavLink></li>
+            <li><NavLink to={"/Media_lab"} className="dropdown-item">Print/Digital Media Lab</NavLink></li>
             <li><NavLink to={"/Library"} className="dropdown-item">Library</NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
@@ -416,14 +416,14 @@ const MainContent = () => {
         </li>
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
+        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
 
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
-            <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
+            <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
     
-            <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
+            <li><NavLink to={"/Consultant"} className="dropdown-item">Faculty</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
         </ul>
