@@ -118,7 +118,7 @@ const MainContent = () => {
 </li>
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-        <a className="nav-link dropdown-toggle" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Peoples</a>
+        <a className="nav-link dropdown-toggle" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
             <li><NavLink to={"/page5"} className="dropdown-item">Faculty</NavLink></li>
             <li><NavLink to={"/page4"} className="dropdown-item">Staff</NavLink></li>
