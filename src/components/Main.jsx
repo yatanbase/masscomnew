@@ -400,27 +400,6 @@ const MainContent = () => {
     </a>
     <ul className="dropdown-menu" aria-labelledby="faculty-tab">
 
-      {/* Teaching Faculty Submenu */}
-      <li className="dropdown-submenu">
-        <a className="dropdown-item dropdown-toggle" href="#">Teaching Faculty</a>
-        <ul className="dropdown-menu">
-          <li><NavLink to="/AdvisoryCommittee" className="dropdown-item">Academic Advisory Committee</NavLink></li>
-          <li><NavLink to="/Faculty" className="dropdown-item">Head of Department</NavLink></li>
-          <li><NavLink to="/Consultant" className="dropdown-item">Teaching Faculty</NavLink></li>
-          <li><NavLink to="/Staff" className="dropdown-item">Administrative Staff</NavLink></li>
-        </ul>
-      </li>
-
-      {/* SJMC Guest Faculty Submenu */}
-      <li className="dropdown-submenu">
-        <a className="dropdown-item dropdown-toggle" href="#">SJMC Faculty (Guest)</a>
-        <ul className="dropdown-menu">
-          <li><NavLink to="/GuestSpeakers" className="dropdown-item">Guest Speakers</NavLink></li>
-          <li><NavLink to="/IndustryExperts" className="dropdown-item">Industry Experts</NavLink></li>
-        </ul>
-      </li>
-
-      <li><hr className="dropdown-divider" /></li>
     </ul>
   </div>
 </li>
