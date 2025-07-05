@@ -87,6 +87,7 @@ import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
 import Announcement4 from '../News/Announcement4.pdf'
 import Aids_reel_pdf from '../asset/News/एसजेएमसी में एड्स जागरूकता पर व्याख्यान का हुआ आयोजन.pdf'
+import Syllabus from '../News/news_pdf_syllabus.pdf'
 import Syllabus from '../News/SJMC Prospectus 2025.pdf'
 import Home from '../components/HomeButton'
 import Clubs from '../components/ClubsButton'
@@ -417,12 +418,10 @@ const MainContent = () => {
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
-        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
 
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
             <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
-            <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
 
             <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
             <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
@@ -500,7 +499,7 @@ const MainContent = () => {
       <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Mass Communication is not limited to journalism alone. To a great extent mass media is a modern reality which covers all aspects of human life. Moreover, a great change can be observed in the concept of people working in mass media. Careers in Mass Communication are not only high paying but also bring in a great deal of job satisfaction and expression of creativity.</p>
       <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Generating a cadre of trained human resources specialized in understanding and addressing issues related to mass communication is one of the critical needs of the hour, and educational institutions have to play a crucial role in this regard. The institute would ensure tailored programmes to meet the needs of developing societies. This will make SJMC different from other institutes of Journalism &Mass Communication training in this state and elsewhere. This will also give a different identity and character to our alumni.</p>
       <p style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>
-                With this view, the School of Journalism & Mass Communication may come up with courses specifically aimed at teaching and research on Communication & Information system Establishment of this institute was essential because of the current trend of proliferation of media institutions in Bihar without appropriate curricula. Media scholars and professionals have over the years debated the benchmark for journalism curriculum of developing countries since the curricula differ structurally and pedagogically from one another.
+                With this view, the School of Journalism &Mass Communication may come up with courses specifically aimed at teaching and research on Communication & Information system Establishment of this institute was essential because of the current trend of proliferation of media institutions in Bihar without appropriate curricula. Media scholars and professionals have over the years debated the benchmark for journalism curriculum of developing countries since the curricula differ structurally and pedagogically from one another.
                 </p>
                 <br></br>
                 {/* <h5>Department Overview</h5>
