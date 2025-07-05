@@ -423,7 +423,7 @@ const MainContent = () => {
             <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
     
             <li><NavLink to={"/Consultant"} className="dropdown-item">Faculty</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
            
             <li><hr className="dropdown-divider" /></li>
         </ul>
