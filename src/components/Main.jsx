@@ -415,25 +415,60 @@ const MainContent = () => {
                 </ul>
             </div>
         </li>
+               <<li className="nav-item" role="presentation">
+  <div className={dropdown ${facultyDropdownOpen ? 'show' : ''}}>
+    <a style={{ fontWeight: 'bold' }} className="nav-link dropdown-toggle text-reset" id="faculty-tab" data-bs-toggle="dropdown" href="#Faculty" role="tab" aria-controls="faculty" aria-selected="false" onClick={toggleFacultyDropdown}>
+      Faculty/Staff
+    </a>
+    <ul className="dropdown-menu" aria-labelledby="faculty-tab">
+
+      {/* Teaching Faculty Submenu */}
+      <li className="dropdown-submenu">
+        <a className="dropdown-item dropdown-toggle" href="#">Teaching Faculty</a>
+        <ul className="dropdown-menu">
+          <li><NavLink to="/AdvisoryCommittee" className="dropdown-item">Academic Advisory Committee</NavLink></li>
+          <li><NavLink to="/Faculty" className="dropdown-item">Head of Department</NavLink></li>
+          <li><NavLink to="/Consultant" className="dropdown-item">Teaching Faculty</NavLink></li>
+          <li><NavLink to="/Staff" className="dropdown-item">Administrative Staff</NavLink></li>
+        </ul>
+      </li>
+
+      {/* SJMC Guest Faculty Submenu */}
+      <li className="dropdown-submenu">
+        <a className="dropdown-item dropdown-toggle" href="#">SJMC Faculty (Guest)</a>
+        <ul className="dropdown-menu">
+          <li><NavLink to="/GuestSpeakers" className="dropdown-item">Guest Speakers</NavLink></li>
+          <li><NavLink to="/IndustryExperts" className="dropdown-item">Industry Experts</NavLink></li>
+        </ul>
+      </li>
+
+      <li><hr className="dropdown-divider" /></li>
+    </ul>
+  </div>
+</li>
+
+                </ul>
+            </div>
+        </li>
                 <li className="nav-item" role="presentation">
-    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
+    <div className={dropdown ${facultyDropdownOpen ? 'show' : ''}}>
+        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
 
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
-            <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
-
-            <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
-
+            <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
+    
+            <li><NavLink to={"/Consultant"} className="dropdown-item">Teaching Faculty</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
+           
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
 </li>
 
-
+                
                 <li className="nav-item" role="presentation">
-    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+    <div className={dropdown ${facultyDropdownOpen ? 'show' : ''}}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Annual Report</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
         <li><NavLink to={AnnualReport1} target='_blank' className="dropdown-item">Annual Report 2022-23</NavLink></li>
@@ -442,11 +477,11 @@ const MainContent = () => {
         </ul>
     </div>
 </li>
-
-
-
+                 
+               
+                 
                 <li className="nav-item" role="presentation">
-    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+    <div className={dropdown ${facultyDropdownOpen ? 'show' : ''}}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>eResource</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
             <li><a   href="https://www.ugc.gov.in/" className="dropdown-item"> UGC </a></li>
@@ -458,7 +493,7 @@ const MainContent = () => {
             <li><a   href="https://www.inflibnet.ac.in/ " className="dropdown-item"> INFLIBNET </a></li>
             <li><a   href="https://epathshala.nic.in/ " className="dropdown-item"> EPATHSHALA </a></li>
             <li><a   href="https://www.isro.gov.in/" className="dropdown-item"> ISRO </a></li>
-
+             
             <li><NavLink to={"/PhD"} className="dropdown-item"> </NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
