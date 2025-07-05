@@ -265,11 +265,11 @@ const galleryItems = [
         title: "Student Activities",
         link: "/Student_activities"
     },
- 
+
 ];
 
 const MainContent = () => {
-    
+
 
     const [showAd, setShowAd] = useState(true);         //for popup admission ad
 
@@ -316,31 +316,31 @@ const MainContent = () => {
         { id: 1, message: 'Important update regarding our new product launch!' },
         { id: 2, message: 'Limited time offer! Get 20% off your next purchase.' },
       ]);
-    
-      
-    
+
+
+
       useEffect(() => {
         const announcementInterval = setInterval(() => {
           setCurrentAnnouncementIndex((prevIndex) =>
             (prevIndex + 1) % announcements.length
           );
         }, 3000); // Change the interval time as needed (in milliseconds)
-    
+
         return () => clearInterval(announcementInterval);
       }, [announcements]);
-    
+
       const currentAnnouncement = announcements[currentAnnouncementIndex];
-    
+
 
     const navigate = useNavigate();
 
     const ugc = () => {
         navigate('https://www.ugc.gov.in/');
       };
-    
+
 
     const nda = useNavigate('https://nad.gov.in/ ');
-    
+
     const nptel = useNavigate('https://nptel.ac.in/ ');
 
     const swayam = useNavigate('https://swayam.gov.in/ ');
@@ -359,14 +359,14 @@ const MainContent = () => {
         <>
 
 {showAd && <Advertisement onClose={handleCloseAd} />}
-       
+
         {/* <Toolbar /> */}
       <Header />
-      
+
       <Track/>
         <main className="container py-4">
             <ul className="nav nav-pills nav-fill nav-list-style">
-                 
+
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>About Department</a>
@@ -381,7 +381,7 @@ const MainContent = () => {
         </ul>
     </div>
 </li>
- 
+
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Infrastructure</a>
@@ -393,34 +393,46 @@ const MainContent = () => {
         </ul>
     </div>
 </li>
-<<li className="nav-item" role="presentation">
-  <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-    <a style={{ fontWeight: 'bold' }} className="nav-link dropdown-toggle text-reset" id="faculty-tab" data-bs-toggle="dropdown" href="#Faculty" role="tab" aria-controls="faculty" aria-selected="false" onClick={toggleFacultyDropdown}>
-      Faculty/Staff
-    </a>
-    <ul className="dropdown-menu" aria-labelledby="faculty-tab">
-
-    </ul>
-  
+<li className="nav-item" role="presentation">
+            <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+                <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Academic Program</a>
+                <ul className="dropdown-menu" aria-labelledby="contact-tab">
+                    <li><a href="/MA" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
+                    <li><a href="/PhD" className="dropdown-item">Ph.D. in Mass communication</a></li>
+                    <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
+                    <li  onClick={togglePgdDropdown}>
+                        <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
+                        <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
+                            <li><a href={Course5} target='_blank' className="dropdown-item">Development Communication</a></li>
+                            <li><a href={Course1} target='_blank' className="dropdown-item">Online and digital journalism</a></li>
+                            <li><a href={Course3} target='_blank' className="dropdown-item">Photography</a></li>
+                            <li><a href={Course2} target='_blank' className="dropdown-item">Science Communication</a></li>
+                            <li><a href={Course4} target='_blank' className="dropdown-item">Film Making</a></li>
+                        </ul>
+                    </li>
+                    <li><hr className="dropdown-divider" /></li>
+                </ul>
+            </div>
         </li>
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>People</a>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Faculty/Staff</a>
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
 
             <li><NavLink to={"/AdvisoryCommittee"} className="dropdown-item">Academic Advisory Committee </NavLink></li>
+            <li><NavLink to={"/Faculty"} className="dropdown-item">Faculty In-Charge</NavLink></li>
             <li><NavLink to={"/Faculty"} className="dropdown-item">Head Of Department</NavLink></li>
-            <li><NavLink to={"/Faculty"} className="dropdown-item">Board Of Studies</NavLink></li>
-    
-            <li><NavLink to={"/Consultant"} className="dropdown-item">Teaching Faculty</NavLink></li>
-            <li><NavLink to={"/Staff"} className="dropdown-item">Administrative Staff</NavLink></li>
-           
+
+            <li><NavLink to={"/Consultant"} className="dropdown-item">Consultant</NavLink></li>
+            <li><NavLink to={"/Staff"} className="dropdown-item">Staff</NavLink></li>
+
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
 </li>
 
-                
+
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Annual Report</a>
@@ -431,9 +443,9 @@ const MainContent = () => {
         </ul>
     </div>
 </li>
-                 
-               
-                 
+
+
+
                 <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
         <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>eResource</a>
@@ -447,7 +459,7 @@ const MainContent = () => {
             <li><a   href="https://www.inflibnet.ac.in/ " className="dropdown-item"> INFLIBNET </a></li>
             <li><a   href="https://epathshala.nic.in/ " className="dropdown-item"> EPATHSHALA </a></li>
             <li><a   href="https://www.isro.gov.in/" className="dropdown-item"> ISRO </a></li>
-             
+
             <li><NavLink to={"/PhD"} className="dropdown-item"> </NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
@@ -465,9 +477,9 @@ const MainContent = () => {
             </div>
         </li>
             </ul>
-            
+
             <div className="tab-content" id="myTabContent">
-                
+
 <div className="tab-pane fade show tab-border active" id="home" role="tabpanel" aria-labelledby="home-tab" style={{margin:'10px', border:'none'}}>
 
     <div className='partent' style={{}}>
@@ -554,17 +566,17 @@ const MainContent = () => {
         <a href="/News6" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Student Film Recognised.</a>
 
         <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>
-        
+
         <a href="/News7" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Discussion on Journalism at PBF  </a>
-        
+
         <a href="/News3" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Training Workshop for Media.</a>
-        
+
         <a href="/News2" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Human Rights Awareness</a>
-        
+
         <a href="/News1" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Street Play and Script Writing Contest </a>
-        
+
         <a href="/News5" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Screening of Seven Films </a>
-        
+
         </div>
 
     </div>
@@ -573,7 +585,7 @@ const MainContent = () => {
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
         <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>
-        
+
         </div>
     <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Media Center</h4>
     </div>
@@ -584,7 +596,7 @@ const MainContent = () => {
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
         <img src={Book} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
-        
+
         </div>
     <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Upcoming Events</h4>
     </div>
@@ -595,13 +607,13 @@ const MainContent = () => {
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
         <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
-        
+
         </div>
     <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Aryabhatta Times</h4>
     </div>
     </div>
     </a>
-   
+
 
 
 
@@ -610,13 +622,13 @@ const MainContent = () => {
             <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
                 <h4 className='heading-news'>Important Links</h4>
 
-               
+
                 <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
-        
+
         <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>
-        
+
         <a href={Announcement3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
-        
+
         <a href={Announcement4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>MoU between SJMC & BIPARD  </a>
 
 
@@ -826,7 +838,7 @@ const MainContent = () => {
 </div>
 
         </main>
-        
+
         <Footer/>
         <Home/>
         <Clubs/>
@@ -839,3 +851,4 @@ export default MainContent;
 
 
 
+~
