@@ -1,6 +1,6 @@
 import React from 'react';
 import Sandeep from '../asset/sandeep.jpg';
-import Anupam from '../asset/anup.png';
+import Anupam from '../asset/anup.jpg';
 import ShivamImage from '../asset/shivam.jpg';
 import IshaImage from '../asset/isha.jpg';
 
@@ -16,6 +16,15 @@ function Page52() {
           borderRadius: '10px',
         }}
       >
+        <h2
+          style={{
+            fontWeight: 'bold',
+            marginBottom: '40px',
+            textShadow: '1px 1px 2px #000000',
+          }}
+        >
+        </h2>
+
         {/* ===== 1. Dr. Sandeep Kumar Dubey ===== */}
         <div className="row align-items-center mb-5">
           <div className="col-md-4 text-center">
@@ -33,12 +42,14 @@ function Page52() {
           </div>
           <div className="col-md-8 text-start">
             <h4 style={{ fontWeight: 'bold' }}>Dr. Sandeep Kumar Dubey</h4>
-            <h6 style={{ fontWeight: 'normal', color: '#555' }}>Assistant Professor</h6>
+            <h6 style={{ fontWeight: 'normal', color: '#555' }}>
+              Assistant Professor
+            </h6>
             <p style={{ textAlign: 'justify' }}>
               Dr. Sandeep Kumar Dubey holds a Ph.D. and M.Phil. in Mass Communication from Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha, focusing on art cinema and Hindi journalism. He completed an MA in Mass Communication from the University of Allahabad and a PG Diploma in Electronic Media Management and Film Production.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              Currently, he is an Assistant Professor at Aryabhatta Knowledge University, Patna. He was previously Assistant Professor and Head of the Journalism & Mass Communication Department at Invertis University, Bareilly.
+              Currently, he is an Assistant Professor  at Aryabhatta Knowledge University, Patna. He was previously Assistant Professor and Head of the Journalism & Mass Communication Department at Invertis University, Bareilly.
             </p>
             <p style={{ textAlign: 'justify' }}>
               Specializing in documentary/film production, radio/TV production, and journalism, he has taught video/audio production, graphic design, and communication research. Dr. Dubey co-supervised two Ph.D. scholars, published multiple book chapters and research articles, and received the ICSSR Doctoral Fellowship.
@@ -68,7 +79,9 @@ function Page52() {
           </div>
           <div className="col-md-8 text-start">
             <h4 style={{ fontWeight: 'bold' }}>Dr. Anupam Priyadarshi</h4>
-            <h6 style={{ fontWeight: 'normal', color: '#555' }}>Assistant Professor</h6>
+            <h6 style={{ fontWeight: 'normal', color: '#555' }}>
+              Assistant Professor 
+            </h6>
             <p style={{ textAlign: 'justify' }}>
               Dr. Anupam Priyadarshi is a UGC NET (Journalism and Mass Communication) qualified scholar with a Ph.D. in Theatre & Performance Studies (JNU), specializing in Mass Communication (IIMC, New Delhi) and Social Sciences Research.
             </p>
@@ -79,7 +92,7 @@ function Page52() {
               His publications include two peer-reviewed articles, two co-authored books, and multiple journalistic by-lines, alongside ICSSR-funded project reports.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              An accomplished theatre practitioner, he has acted, scripted, and directed plays addressing social issues.
+              An accomplished theatre practitioner, he has acted, scripted, and directed plays addressing social issues. His interdisciplinary expertise bridges academia, media production, and grassroots research, making him a versatile researcher and educator.
             </p>
           </div>
         </div>
@@ -103,7 +116,9 @@ function Page52() {
           </div>
           <div className="col-md-8 text-start">
             <h4 style={{ fontWeight: 'bold' }}>Dr. Shivam Rastogi</h4>
-            <h6 style={{ fontWeight: 'normal', color: '#555' }}>Assistant Professor</h6>
+            <h6 style={{ fontWeight: 'normal', color: '#555' }}>
+              Assistant Professor 
+            </h6>
             <p style={{ textAlign: 'justify' }}>
               Dr. Shivam Rastogi has done Ph.D. in Journalism and Mass Communication from Central University of South Bihar, Gaya, Bihar in 2025. He completed his Master’s in Communication and Media Studies from the same university.
             </p>
@@ -114,7 +129,7 @@ function Page52() {
               Dr. Rastogi qualified NET-JRF in 2019 and worked with various community radio stations across Bihar. He has presented research papers in five National and two International conferences, authored two book chapters, and published five research papers in CARE-listed journals.
             </p>
             <p style={{ textAlign: 'justify' }}>
-              He also completed two workshops on research methodology and SPSS data analysis, and two Faculty Development Programmes.
+              He also completed two workshops on research methodology and SPSS data analysis, and two Faculty Development Programmes that enhanced his academic and teaching skills.
             </p>
           </div>
         </div>
@@ -138,7 +153,9 @@ function Page52() {
           </div>
           <div className="col-md-8 text-start">
             <h4 style={{ fontWeight: 'bold' }}>Ms. Isha Birlay</h4>
-            <h6 style={{ fontWeight: 'normal', color: '#555' }}>Assistant Professor</h6>
+            <h6 style={{ fontWeight: 'normal', color: '#555' }}>
+               Assistant Professor
+            </h6>
             <p style={{ textAlign: 'justify' }}>
               I have completed my graduation from St. Xavier’s College of Management and Technology, Patna in Mass Communication. Then I have completed my post-graduation from the School of Journalism and Mass Communication at Aryabhatta Knowledge University, Patna in Journalism and Mass Communication.
             </p>
@@ -150,6 +167,7 @@ function Page52() {
             </p>
           </div>
         </div>
+
       </div>
     </div>
   );
