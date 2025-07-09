@@ -54,10 +54,10 @@ import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
-import SmartClass from './page/SmartClass';
-import ConferenceRoom from './page/ConferenceRoom'; 
-import SeminarRoom from './page/SeminarRoom
 
+import Seminar from './page/Seminar';
+import Conference from './page/Conference'; // ✅ Corrected import
+import SmartClass from './page/SmartClass';
 
 import News1 from './News/News1';
 import News2 from './News/News2';
@@ -67,17 +67,12 @@ import News5 from './News/News5';
 import News6 from './News/News6';
 import News7 from './News/News7';
 
-
-
-
 function App() {
   return (
-    < >
-      
+    <>
       <BrowserRouter>
-      
         <Routes>
-        <Route path="/" element={<MainContent />} />
+          <Route path="/" element={<MainContent />} />
           <Route path="/MA" element={<Page1 />} />
           <Route path="/PhD" element={<Page2 />} />
           <Route path="/About" element={<About />} />
@@ -95,9 +90,9 @@ function App() {
           <Route path="/page15" element={<Page15 />} />
           <Route path="/page16" element={<Page16 />} />
           <Route path="/Disaster_management" element={<Page17 />} />
+          <Route path="/Scipt_writing" element={<Page18 />} />
           <Route path="/Digital_education" element={<Page19 />} />
           <Route path="/Film_screening" element={<Page20 />} />
-          <Route path="/Scipt_writing" element={<Page18 />} />
           <Route path="/Refresher_training" element={<Page21 />} />
           <Route path="/Student_activities" element={<Page22 />} />
           <Route path="/AdvisoryCommittee" element={<Page23 />} />
@@ -116,30 +111,26 @@ function App() {
           <Route path="/Page36" element={<Page36 />} />
           <Route path="/Page37" element={<Page37 />} />
           <Route path="/Page38" element={<Page38 />} />
-          <Route path="/Page39" element={<Page39/>} />
-          <Route path="/Page40" element={<Page40/>} />
-          <Route path="/Page41" element={<Page41/>} />
-          <Route path="/Page42" element={<Page42/>} />
-          <Route path="/Page44" element={<Page44/>} />
-          <Route path="/Page43" element={<Page43/>} />
-          <Route path="/Page45" element={<Page45/>} />
-          <Route path="/Page46" element={<Page46/>} />
-          <Route path="/Page47" element={<Page47/>} />
-          <Route path="/Page48" element={<Page48/>} />
-          <Route path="/Page49" element={<Page49/>} />
-          <Route path="/Page50" element={<Page50/>} />
-          <Route path="/Page51" element={<Page51/>} />
+          <Route path="/Page39" element={<Page39 />} />
+          <Route path="/Page40" element={<Page40 />} />
+          <Route path="/Page41" element={<Page41 />} />
+          <Route path="/Page42" element={<Page42 />} />
+          <Route path="/Page43" element={<Page43 />} />
+          <Route path="/Page44" element={<Page44 />} />
+          <Route path="/Page45" element={<Page45 />} />
+          <Route path="/Page46" element={<Page46 />} />
+          <Route path="/Page47" element={<Page47 />} />
+          <Route path="/Page48" element={<Page48 />} />
+          <Route path="/Page49" element={<Page49 />} />
+          <Route path="/Page50" element={<Page50 />} />
+          <Route path="/Page51" element={<Page51 />} />
           <Route path="/GuestFaculty" element={<Page52 />} />
-         <Route path="/board-of-studies" element={<Page53 />} />
-         <Route path="/SmartClass" element={<SmartClass />} />
-        <Route path="/ConferenceRoom" element={<ConferenceRoom />} />
-         <Route path="/SeminarRoom" element={<SeminarRoom />} />
 
-
-
-
-          
-          
+          <Route path="/board-of-studies" element={<Page53 />} />
+          <Route path="/Seminar" element={<Seminar />} />
+          <Route path="/Conference" element={<Conference />} />
+          <Route path="/SmartClass" element={<SmartClass />} />
+ 
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />
@@ -148,10 +139,8 @@ function App() {
           <Route path="/News6" element={<News6 />} />
           <Route path="/News7" element={<News7 />} />
         </Routes>
-       
       </BrowserRouter>
-      
-    </ >
+    </>
   );
 }
 

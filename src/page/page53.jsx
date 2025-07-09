@@ -1,7 +1,8 @@
 import React from 'react';
 import AtishImage from '../asset/atish.jpg';
 import HODImage from '../asset/DrManishaPrakash.jpeg';
-import SandeepImage from '../asset/sandeep.jpg'; // Make sure the path is correct
+import SandeepImage from '../asset/sandeep.jpg';
+import Home from '../components/HomeButton';
 
 const Page53 = () => {
   const cardStyle = {
@@ -31,11 +32,12 @@ const Page53 = () => {
 
   return (
     <div style={{ padding: '40px' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <Home />
+      </div>
       <h2 style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: '50px', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }}>
         Board of Studies
       </h2>
-
-      {/* ====== 1. Prof. Atish Prashar ====== */}
       <div style={cardStyle}>
         <img src={AtishImage} alt="Prof. Atish Prashar" style={imageStyle} />
         <div style={textStyle}>
@@ -49,7 +51,6 @@ const Page53 = () => {
         </div>
       </div>
 
-      {/* ====== 2. Dr. Manisha Prakash ====== */}
       <div style={cardStyle}>
         <img src={HODImage} alt="Dr. Manisha Prakash" style={imageStyle} />
         <div style={textStyle}>
@@ -63,7 +64,6 @@ const Page53 = () => {
         </div>
       </div>
 
-      {/* ====== 3. Dr. Sandeep Kumar Dubey ====== */}
       <div style={cardStyle}>
         <img src={SandeepImage} alt="Dr. Sandeep Kumar Dubey" style={imageStyle} />
         <div style={textStyle}>
@@ -72,9 +72,7 @@ const Page53 = () => {
             Assistant Professor , Aryabhatta Knowledge University, Patna<br />
             Former Head of Department, Journalism & Mass Communication, Invertis University, Bareilly<br />
             <strong>Email:</strong> drskdjmc@gmail.com<br />
-            <strong>Phone:</strong> 9935131246</p>
-          <p>
-            Ph.D. and M.Phil. in Mass Communication (MG Hindi Vishwavidyalaya, Wardha); MA (Allahabad University), PG Diploma in Electronic Media. Specialization in documentary/film, radio/TV production, journalism. Published author and ICSSR Doctoral Fellow.
+            <strong>Phone:</strong> 9935131246
           </p>
         </div>
       </div>
@@ -84,4 +82,3 @@ const Page53 = () => {
 };
 
 export default Page53;
-
