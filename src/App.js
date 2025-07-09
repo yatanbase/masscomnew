@@ -54,6 +54,9 @@ import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
+import SmartClass from './pages/SmartClass';
+import ConferenceRoom from './pages/ConferenceRoom'; 
+import SeminarRoom from './pages/SeminarRoom
 
 
 import News1 from './News/News1';
@@ -128,6 +131,9 @@ function App() {
           <Route path="/Page51" element={<Page51/>} />
           <Route path="/GuestFaculty" element={<Page52 />} />
          <Route path="/board-of-studies" element={<Page53 />} />
+         <Route path="/SmartClass" element={<SmartClass />} />
+        <Route path="/ConferenceRoom" element={<ConferenceRoom />} />
+         <Route path="/SeminarRoom" element={<SeminarRoom />} />
 
 
 
