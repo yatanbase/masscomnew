@@ -54,9 +54,9 @@ import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
-import SmartClass from './pages/SmartClass';
-import ConferenceRoom from './pages/ConferenceRoom'; 
-import SeminarRoom from './pages/SeminarRoom
+import SmartClass from './page/SmartClass';
+import ConferenceRoom from './page/ConferenceRoom'; 
+import SeminarRoom from './page/SeminarRoom
 
 
 import News1 from './News/News1';
