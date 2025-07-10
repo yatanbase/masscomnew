@@ -1,6 +1,6 @@
 import React from 'react';
 import Sandeep from '../asset/sandeep.jpg';
-import Anupam from '../asset/anup.png';
+import Anupam from '../asset/anup.jpeg';
 import ShivamImage from '../asset/shivam.jpg';
 import IshaImage from '../asset/isha.jpg';
 
