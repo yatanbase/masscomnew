@@ -56,9 +56,9 @@ function Conference() {
             {/* Description */}
             <div className="border-top pt-3" style={{ lineHeight: '1.7', fontSize: '1rem' }}>
               <p>
-                The <strong>Conference Room</strong> at SJMC is a modern space crafted for academic deliberations and formal discussions.
-                It is equipped with advanced AV systems, high-speed internet, and a professional setup to support hybrid and offline interactions.
+                The SJMC Conference Room, located on the 3rd floor of the Excellence Building, is a modern and professionally equipped space ideal for meetings and small-scale events. With a comfortable seating capacity for 30 participants, it features the same high-quality infrastructure as the Seminar Hall, including a fully air-conditioned environment, Smart board and sound system. This room is designed for focused discussions, presentations, and administrative meetings. Over time, it has hosted various national and international academic and administrative events, becoming a vital space for strategic planning and intellectual exchange. The Conference Room has seen collaborations with renowned institutions and government departments, contributing to policy discussions, project reviews, and academic planning. Its compact yet functional design supports effective dialogue and decision-making, making it an essential venue within the SJMC for both internal and external engagements. The room reflects the institution’s commitment to excellence in both education and administration.
               </p>
+              {/* Description 
               <p>
                 The room is regularly used for faculty meetings, curriculum planning, external reviews, and official presentations.
                 The seating layout supports structured conversation and effective group engagement.
@@ -67,6 +67,7 @@ function Conference() {
                 This space reflects the university’s emphasis on <em>governance, collaboration, and innovation</em>—providing a quiet,
                 modern environment to nurture academic decisions and knowledge exchange.
               </p>
+              */}
             </div>
           </div>
         </div>
