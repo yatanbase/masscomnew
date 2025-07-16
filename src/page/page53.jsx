@@ -2,6 +2,9 @@ import React from 'react';
 import AtishImage from '../asset/atish.jpg';
 import HODImage from '../asset/DrManishaPrakash.jpeg';
 import SandeepImage from '../asset/sandeep.jpg';
+import atishprakash from '../asset/atishprakash.jpg';
+import nikhil from '../asset/nikhil.jpg';
+import ajay from '../asset/ajay.jpg';
 import Home from '../components/HomeButton';
 
 const Page53 = () => {
@@ -51,6 +54,8 @@ const Page53 = () => {
         </div>
       </div>
 
+     
+
       <div style={cardStyle}>
         <img src={HODImage} alt="Dr. Manisha Prakash" style={imageStyle} />
         <div style={textStyle}>
@@ -64,7 +69,7 @@ const Page53 = () => {
         </div>
       </div>
 
-      <div style={cardStyle}>
+     <div style={cardStyle}>
         <img src={SandeepImage} alt="Dr. Sandeep Kumar Dubey" style={imageStyle} />
         <div style={textStyle}>
           <h3 style={{ fontWeight: 'bold' }}>Dr. Sandeep Kumar Dubey</h3>
@@ -73,6 +78,48 @@ const Page53 = () => {
             Former Head of Department, Journalism & Mass Communication, Invertis University, Bareilly<br />
             <strong>Email:</strong> drskdjmc@gmail.com<br />
             <strong>Phone:</strong> 9935131246
+          </p>
+        </div>
+      </div>
+      
+      <div style={cardStyle}>
+        <img src={atishprakash} alt="Prof. ATISH PRASHAR" style={imageStyle} />
+        <div style={textStyle}>
+          <h3 style={{ fontWeight: 'bold' }}>Prof. ATISH PRASHAR</h3>
+          <p>
+            Professor, Department of Mass Communication and Media,
+        Central University of South Bihar
+       <br />
+            <strong>Email:</strong> atishprashar@cusb.ac.in<br />
+            <strong>Phone:</strong> 9810490789
+          </p>
+        </div>
+      </div>
+
+      <div style={cardStyle}>
+        <img src={ajay} alt="AJAY KUMAR " style={imageStyle} />
+        <div style={textStyle}>
+          <h3 style={{ fontWeight: 'bold' }}>AJAY KUMAR </h3>
+          <p>
+            BIHAR HEAD, 
+               PRABHAT KHABAR
+        <br />
+            <strong>Email:</strong> ajay.kumar@prabhatkhabar.in<br />
+            <strong>Phone:</strong> 91 94310 24489
+          </p>
+        </div>
+      </div>
+
+      <div style={cardStyle}>
+        <img src={nikhil} alt="Dr. NIKHIL ANAND GIRI" style={imageStyle} />
+        <div style={textStyle}>
+          <h3 style={{ fontWeight: 'bold' }}>Dr. NIKHIL ANAND GIRI</h3>
+          <p>
+            ASSISTANT PROFESSOR PG DEPTT. OF JOURNALISM & MASS COMMUNICATION, <br />
+            MAULANA MAZHARUL HAQUE ARABIC AND PERSIAN UNIVERSITY, Patna
+       <br />
+            <strong>Email:</strong> nikhilanandgiri@gmail.com<br />
+            <strong>Phone:</strong> 91 9717600960
           </p>
         </div>
       </div>

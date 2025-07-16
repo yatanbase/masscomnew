@@ -373,7 +373,7 @@ const MainContent = () => {
         <ul className="dropdown-menu" aria-labelledby="contact-tab">
             <li><NavLink to={"/About"} className="dropdown-item">About us</NavLink></li>
             <li><NavLink to={"/Vision_and_mission"} className="dropdown-item">Vision & Mission</NavLink></li>
-            <li><NavLink to={"/RoleOfSJMC"} className="dropdown-item">Role Of SJMC</NavLink></li>
+            <li><NavLink to={"/RoleOfSJMC"} className="dropdown-item">Role of SJMC</NavLink></li>
             <li><NavLink to={"/Some_Moments"} className="dropdown-item">Our Gallery</NavLink></li>
             <li><NavLink to={"/Founder_Director"} className="dropdown-item">Founder Director</NavLink></li>
             <li><NavLink to={"/Careers"} className="dropdown-item">Careers</NavLink></li>
@@ -392,7 +392,7 @@ const MainContent = () => {
 
            <li><NavLink to="/SmartClass" className="dropdown-item">Smart Class</NavLink></li>
            <li><NavLink to="/Conference" className="dropdown-item">Conference Room</NavLink></li>
-            <li><NavLink to="/Seminar" className="dropdown-item">Seminar Room</NavLink></li>
+            <li><NavLink to="/Seminar" className="dropdown-item">Seminar Hall</NavLink></li>
             <li><hr className="dropdown-divider" /></li>
         </ul>
     </div>
@@ -401,18 +401,19 @@ const MainContent = () => {
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
                 <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Academic Program</a>
                 <ul className="dropdown-menu" aria-labelledby="contact-tab">
-                    <li><a href="/MA" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
                     <li><a href="/PhD" className="dropdown-item">Ph.D. in Mass communication</a></li>
-                    <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
+                    <li><a href="/MA" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
                     <li  onClick={togglePgdDropdown}>
                         <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
                         <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
                             <li><a href={Course5} target='_blank' className="dropdown-item">Development Communication</a></li>
-                            <li><a href={Course1} target='_blank' className="dropdown-item">Online and digital journalism</a></li>
-                            <li><a href={Course3} target='_blank' className="dropdown-item">Photography</a></li>
-                            <li><a href={Course2} target='_blank' className="dropdown-item">Science Communication</a></li>
-                            <li><a href={Course4} target='_blank' className="dropdown-item">Film Making</a></li>
+                            <li><a href={Course1} target='_blank' className="dropdown-item">Film Making</a></li>
+                            <li><a href={Course3} target='_blank' className="dropdown-item">Online and digital journalism</a></li>
+                            <li><a href={Course2} target='_blank' className="dropdown-item">Photography</a></li>
+                            <li><a href={Course4} target='_blank' className="dropdown-item">Science Communication</a></li>
                         </ul>
+                 <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
+
                     </li>
                     <li><hr className="dropdown-divider" /></li>
                 </ul>

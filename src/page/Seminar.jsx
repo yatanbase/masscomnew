@@ -19,7 +19,7 @@ function SeminarRoom() {
         {/* Title */}
         <div className="text-center mb-3">
           <h2 className="fw-bold" style={{ fontFamily: 'Kanit, sans-serif' }}>
-            <i className="fa fa-users me-2 text-success"></i> Seminar Room
+            <i className="fa fa-users me-2 text-success"></i> Seminar Hall
           </h2>
           <div
             className="mx-auto"
