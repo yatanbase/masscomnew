@@ -443,32 +443,39 @@ const MainContent = () => {
   </div>
 </li>
 
-          <li className="nav-item" role="presentation"> 
+                
+                <li className="nav-item" role="presentation">
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-    <a style={{ fontWeight: 'bold' }}  className="nav-link dropdown-toggle text-reset"  id="annual-report-tab"  data-bs-toggle="dropdown"  href="#AnnualReport"  role="tab"
-    aria-controls="annual-report"  aria-selected="false"  onClick={toggleFacultyDropdown}>Resources</a>
-
-    <ul className="dropdown-menu" aria-labelledby="annual-report-tab">
-      {/* Annual Reports */}
-      <li><NavLink to={AnnualReport1} target='_blank' className="dropdown-item">Annual Report 2022-23</NavLink></li>
-      <li><NavLink to={AnnualReport2} target='_blank' className="dropdown-item">Annual Report 2021-22</NavLink></li>
-
-      <li><hr className="dropdown-divider" /></li>
-
-      {/* eResources */}
-      <li><a href="https://www.ugc.gov.in/" className="dropdown-item">UGC</a></li>
-      <li><a href="https://www.nda.gov.in/" className="dropdown-item">NDA</a></li>
-      <li><a href="https://www.nptel.ac.in/" className="dropdown-item">NPTEL</a></li>
-      <li><a href="https://www.swayam.gov.in/" className="dropdown-item">SWAYAM</a></li>
-      <li><a href="https://www.swayamprabhay.gov.in/" className="dropdown-item">SWAYAM PRABHA</a></li>
-      <li><a href="https://egyankosh.ac.in/" className="dropdown-item">EGYANKOSH</a></li>
-      <li><a href="https://www.inflibnet.ac.in/" className="dropdown-item">INFLIBNET</a></li>
-      <li><a href="https://epathshala.nic.in/" className="dropdown-item">EPATHSHALA</a></li>
-      <li><a href="https://www.isro.gov.in/" className="dropdown-item">ISRO</a></li>
-    </ul>
-  </div>
+        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Annual Report</a>
+        <ul className="dropdown-menu" aria-labelledby="contact-tab">
+        <li><NavLink to={AnnualReport1} target='_blank' className="dropdown-item">Annual Report 2022-23</NavLink></li>
+            <li><NavLink to={AnnualReport2} target='_blank'  className="dropdown-item">Annual Report 2021-22</NavLink></li>
+            <li><hr className="dropdown-divider" /></li>
+        </ul>
+    </div>
 </li>
-
+                 
+               
+                 
+                <li className="nav-item" role="presentation">
+    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+        <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>eResource</a>
+        <ul className="dropdown-menu" aria-labelledby="contact-tab">
+            <li><a   href="https://www.ugc.gov.in/" className="dropdown-item"> UGC </a></li>
+            <li><a   href="https://www.nda.gov.in/" className="dropdown-item"> NDA </a></li>
+            <li><a   href="https://www.nptel.ac.in/" className="dropdown-item"> NPTEL </a></li>
+            <li><a   href="https://www.swayam.gov.in/" className="dropdown-item"> SWAYAM </a></li>
+            <li><a   href="https://www.swayamprabhay.gov.in/" className="dropdown-item"> SWAYAM PRABHA </a></li>
+            <li><a   href="https://egyankosh.ac.in/" className="dropdown-item"> EGYANKOSH </a></li>
+            <li><a   href="https://www.inflibnet.ac.in/ " className="dropdown-item"> INFLIBNET </a></li>
+            <li><a   href="https://epathshala.nic.in/ " className="dropdown-item"> EPATHSHALA </a></li>
+            <li><a   href="https://www.isro.gov.in/" className="dropdown-item"> ISRO </a></li>
+             
+            <li><NavLink to={"/PhD"} className="dropdown-item"> </NavLink></li>
+            <li><hr className="dropdown-divider" /></li>
+        </ul>
+    </div>
+</li>
 <li className="nav-item" role="presentation">
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
                 <a style={{fontWeight:'bold',color: "inherit"}} className="nav-link dropdown-toggle dropdown-item text-reset text-decoration-none" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Contact</a>

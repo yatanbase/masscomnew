@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: flex;
     justify-content: center;
     align-items: start;
@@ -15,14 +15,13 @@
 .ads-container {
     display: flex;
     position: relative;
-    top: 5vh;
+    top: 15vh;
     justify-content: center;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     background-color: white;
     flex-wrap: wrap;
-    max-width: 1000px;
 }
 
 .ad-box {
@@ -32,51 +31,24 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
 }
 
+/* ✅ Updated Video Style */
 .ad-video {
     width: 100%;
-    max-width: 750px;
+    max-width: 600px;
     height: auto;
-    max-height: 450px;
+    max-height: 350px;
     border-radius: 8px;
     margin-bottom: 1rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
-.button_container {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; /* ✅ Fixed: space below button to avoid overlap */
-}
-
-.primary-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF5733;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.primary-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
-.primary-button:active {
-    background-color: #397d39;
-    transform: scale(1);
-}
-
+/* ✅ Updated Image Style */
 .ad-image {
     width: 100%;
-    max-width: 750px;
+    max-width: 600px;
     height: auto;
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -94,10 +66,38 @@
     cursor: pointer;
 }
 
+.button_container {
+    margin-top: 1.5rem;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733; /* Orange button */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.primary-button:active {
+    background-color: #397d39;
+    transform: scale(1);
+}
+
 /* ✅ Mobile Responsive Style */
 @media only screen and (max-width: 600px) {
     .ads-container {
-        top: 5vh;
+        top: 10vh;
         padding: 1rem;
         flex-direction: column;
     }
@@ -107,12 +107,12 @@
     }
 
     .ad-video {
-        max-width: 95vw;
-        max-height: 300px;
+        max-width: 90vw;
+        max-height: 250px;
     }
 
     .ad-image {
-        max-width: 95vw;
+        max-width: 90vw;
     }
 
     .ad-close {

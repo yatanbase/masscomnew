@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: flex;
     justify-content: center;
     align-items: start;
@@ -15,14 +15,13 @@
 .ads-container {
     display: flex;
     position: relative;
-    top: 5vh;
+    top: 5vh; /* 🔼 Changed from 15vh to 5vh */
     justify-content: center;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     background-color: white;
     flex-wrap: wrap;
-    max-width: 1000px;
 }
 
 .ad-box {
@@ -45,9 +44,28 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
+.ad-image {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.ad-close {
+    position: absolute;
+    top: 3px;
+    right: 105px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 .button_container {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem; /* ✅ Fixed: space below button to avoid overlap */
 }
 
 .primary-button {
@@ -74,27 +92,6 @@
     transform: scale(1);
 }
 
-.ad-image {
-    width: 100%;
-    max-width: 750px;
-    height: auto;
-    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-
-.ad-close {
-    position: absolute;
-    top: 3px;
-    right: 105px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-/* ✅ Mobile Responsive Style */
 @media only screen and (max-width: 600px) {
     .ads-container {
         top: 5vh;

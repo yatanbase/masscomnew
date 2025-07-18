@@ -443,10 +443,21 @@ const MainContent = () => {
   </div>
 </li>
 
-          <li className="nav-item" role="presentation"> 
-    <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-    <a style={{ fontWeight: 'bold' }}  className="nav-link dropdown-toggle text-reset"  id="annual-report-tab"  data-bs-toggle="dropdown"  href="#AnnualReport"  role="tab"
-    aria-controls="annual-report"  aria-selected="false"  onClick={toggleFacultyDropdown}>Resources</a>
+          <li className="nav-item" role="presentation">
+  <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+    <a
+      style={{ fontWeight: 'bold' }}
+      className="nav-link dropdown-toggle text-reset"
+      id="annual-report-tab"
+      data-bs-toggle="dropdown"
+      href="#AnnualReport"
+      role="tab"
+      aria-controls="annual-report"
+      aria-selected="false"
+      onClick={toggleFacultyDropdown}
+    >
+      Annual Report
+    </a>
 
     <ul className="dropdown-menu" aria-labelledby="annual-report-tab">
       {/* Annual Reports */}

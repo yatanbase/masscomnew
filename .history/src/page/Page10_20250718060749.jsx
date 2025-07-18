@@ -1,17 +1,20 @@
 import React, { useEffect } from 'react';
+import Home from '../components/HomeButton';
 
 function Page10() {
   useEffect(() => {
-    window.location.replace("https://akubihar.ac.in/Administration/Recruitments.aspx");
+    // Auto-redirect user to the recruitment page
+    window.location.href = "https://akubihar.ac.in/Administration/Recruitments.aspx";
   }, []);
 
   return (
-    <noscript>
-      <div style={{ margin: '50px' }} className="container text-center">
+    <div style={{ margin: '50px' }}>
+      <div className="container text-center">
+        <Home />
         <h4>Redirecting to Career Page...</h4>
         <p>If you are not redirected automatically, <a href="https://akubihar.ac.in/Administration/Recruitments.aspx">click here</a>.</p>
       </div>
-    </noscript>
+    </div>
   );
 }
 
