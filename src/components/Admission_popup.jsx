@@ -1,9 +1,15 @@
 import React, { useEffect, useRef } from 'react';
-import './ad_popup.css'; // Import the CSS for styling
-//import Image1 from '../asset/Banner_new.jpg'
-import Image1 from '../asset/Adms_banner.jpeg'
-// import Image2 from '../asset/popup (2).jpg'
-import advideo from '../asset/skill course.mp4' //videos should be uploaded on CDN and then used here to reduce build size
+import './ad_popup.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'; // ✅ Navigation added
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation'; // ✅ Navigation CSS
+
+import advideo from '../asset/skill course.mp4';
+import Image1 from '../asset/Adms_banner1.jpg';
+import Image2 from '../asset/Adms_banner2.jpg';
+import Image3 from '../asset/Adms_banner3.jpg';
 
 const Admission_popup = ({ onClose }) => {
   const adRef = useRef(null);
@@ -30,21 +36,40 @@ const Admission_popup = ({ onClose }) => {
   return (
     <div className="ad-overlay">
       <div className="ads-container" ref={adRef}>
-        <button className="ad-close" onClick={onClose}> x </button>
-        
-       
+        <button className="ad-close" onClick={onClose}>×</button>
 
-        {/* Second Ad */}
         <div className="ad-box">
-          <video className="ad-video" ref={videoRef} controls autoplay muted loop playsInline preload="metadata">
-            <source src = {advideo} type="video/mp4" />
-            </video>
+          {/* ✅ VIDEO */}
+          <video className="ad-video" ref={videoRef} controls autoPlay muted loop playsInline preload="metadata">
+            <source src={advideo} type="video/mp4" />
+          </video>
+
+          {/* ✅ SLIDING IMAGE BANNERS with Arrows */}
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]} // ✅ Navigation added
+            spaceBetween={10}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            pagination={{ clickable: true }}
+            navigation={true} // ✅ Arrows enabled
+          >
+            <SwiperSlide>
+              <img src={Image1} alt="Ad 1" className="ad-image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Image2} alt="Ad 2" className="ad-image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Image3} alt="Ad 3" className="ad-image" />
+            </SwiperSlide>
+          </Swiper>
+
+          {/* ✅ Button Below */}
           <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/" target='_blank' className="primary-button">Click for Details</a>
-          </div>
-          <img src={Image1} alt="Advertisement 1" className="ad-image" />
-          <div className="button_container">
-            <a href="https://adms.akubihar.ac.in/MMSY.aspx" target='_blank' className="primary-button">Click for Details</a>
+            <a href="https://adms.akubihar.ac.in/" target="_blank" rel="noreferrer" className="primary-button">
+              Click for Details
+            </a>
           </div>
         </div>
       </div>

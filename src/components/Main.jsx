@@ -90,6 +90,7 @@ import Aids_reel_pdf from '../asset/News/एसजेएमसी में ए�
 import Syllabus from '../News/SJMC Prospectus 2025.pdf'
 import Home from '../components/HomeButton'
 import Clubs from '../components/ClubsButton'
+import SocialMediaPopup from '../components/ClubsButton'
 import MCLogo from '../asset/media_center_logo.png'
 import AryabhattaTimes_Logo from '../asset/AryabhattaTimes_logo.png'
 import Form from '../components/Form'

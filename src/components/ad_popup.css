@@ -47,7 +47,7 @@
 
 .button_container {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem; /* ✅ Fixed: space below button to avoid overlap */
+    margin-bottom: 1.5rem;
 }
 
 .primary-button {
@@ -74,6 +74,24 @@
     transform: scale(1);
 }
 
+/* ✅ Swiper Slider Styles for Image Carousel */
+.swiper {
+    width: 100%;
+    max-width: 750px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Old ad-image class kept for legacy compatibility */
 .ad-image {
     width: 100%;
     max-width: 750px;
@@ -85,13 +103,14 @@
 
 .ad-close {
     position: absolute;
-    top: 3px;
-    right: 105px;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
     font-size: 24px;
     color: white;
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* ✅ Mobile Responsive Style */
@@ -115,7 +134,17 @@
         max-width: 95vw;
     }
 
+    .swiper {
+        max-width: 95vw;
+    }
+
+    .swiper-slide img {
+        border-radius: 5px;
+    }
+
     .ad-close {
-        right: 20px;
+        right: 0.5rem;
+        top: 0.5rem;
+        font-size: 20px;
     }
 }
