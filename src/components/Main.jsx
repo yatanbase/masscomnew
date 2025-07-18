@@ -408,10 +408,10 @@ const MainContent = () => {
                         <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
                         <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
                             <li><a href={Course5} target='_blank' className="dropdown-item">Development Communication</a></li>
-                            <li><a href={Course1} target='_blank' className="dropdown-item">Film Making</a></li>
-                            <li><a href={Course3} target='_blank' className="dropdown-item">Online and digital journalism</a></li>
-                            <li><a href={Course2} target='_blank' className="dropdown-item">Photography</a></li>
-                            <li><a href={Course4} target='_blank' className="dropdown-item">Science Communication</a></li>
+                            <li><a href={Course4} target='_blank' className="dropdown-item">Film Making</a></li>
+                            <li><a href={Course1} target='_blank' className="dropdown-item"> digital and Online journalism</a></li>
+                            <li><a href={Course3} target='_blank' className="dropdown-item">Photography</a></li>
+                            <li><a href={Course2} target='_blank' className="dropdown-item">Science Communication</a></li>
                         </ul>
                     <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
 

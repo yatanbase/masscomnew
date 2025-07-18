@@ -407,10 +407,10 @@ const MainContent = () => {
                         <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
                         <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
                             <li><a href={Course5} target='_blank' className="dropdown-item">Development Communication</a></li>
-                            <li><a href={Course1} target='_blank' className="dropdown-item">Film Making</a></li>
-                            <li><a href={Course3} target='_blank' className="dropdown-item">Online and digital journalism</a></li>
-                            <li><a href={Course2} target='_blank' className="dropdown-item">Photography</a></li>
-                            <li><a href={Course4} target='_blank' className="dropdown-item">Science Communication</a></li>
+                            <li><a href={Course4} target='_blank' className="dropdown-item">Film Making</a></li>
+                            <li><a href={Course1} target='_blank' className="dropdown-item">Digital and Online journalism</a></li>
+                            <li><a href={Course3} target='_blank' className="dropdown-item">Photography</a></li>
+                            <li><a href={Course2} target='_blank' className="dropdown-item">Science Communication</a></li>
                         </ul>
                     <li><a href={Certificates} className="dropdown-item" target="_blank">Certificate Courses for Writing in Media</a></li>
 
@@ -733,7 +733,7 @@ const MainContent = () => {
         <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    PG. Dimploma Courses in Development Communication/Online and Digital Journalism/ Photography/Science Communication/Film Making
+                    PG. Dimploma Courses in Development Communication/Digitaland Digital Journalism/ Photography/Science Communication/Film Making
                 </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
