@@ -1,60 +1,77 @@
-import React from 'react'
-import Image1 from '../asset/Our gallery/unicef/image (1).jpeg'
-import Image2 from '../asset/Our gallery/unicef/image (2).jpeg'
-import Image3 from '../asset/Our gallery/unicef/image (3).jpeg'
-import Image4 from '../asset/Our gallery/unicef/image (4).jpeg'
-import Image5 from '../asset/Our gallery/unicef/image (5).jpeg'
-import Image6 from '../asset/Our gallery/unicef/image (6).jpeg'
-import Image7 from '../asset/Our gallery/unicef/image (7).jpeg'
+// Page47.jsx
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
-import Home from '../components/HomeButton'
+import Image1 from '../asset/Our gallery/unicef/image (1).jpeg';
+import Image2 from '../asset/Our gallery/unicef/image (2).jpeg';
+import Image3 from '../asset/Our gallery/unicef/image (3).jpeg';
+import Image4 from '../asset/Our gallery/unicef/image (4).jpeg';
+import Image5 from '../asset/Our gallery/unicef/image (5).jpeg';
+import Image6 from '../asset/Our gallery/unicef/image (6).jpeg';
+import Image7 from '../asset/Our gallery/unicef/image (7).jpeg';
+
+import Home from '../components/HomeButton';
+
+const images = [
+  { id: 1, src: Image1, alt: 'Image 1' },
+  { id: 2, src: Image2, alt: 'Image 2' },
+  { id: 3, src: Image3, alt: 'Image 3' },
+  { id: 4, src: Image4, alt: 'Image 4' },
+  { id: 5, src: Image5, alt: 'Image 5' },
+  { id: 6, src: Image6, alt: 'Image 6' },
+  { id: 7, src: Image7, alt: 'Image 7' },
+];
 
 const Page47 = () => {
   return (
-    <div style={{ margin: '50px' }}>
-     <Home/>
-    <div className="container">
-      <div className="row justify-content-center align-items-center">
-        <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
-          <div className="row justify-content-center">
-            <div className="col-md-12 text-center">
-              <h2>Communication For Social and Behavior Change</h2>
-            </div>
-          </div>
-          <div className="row justify-content-around">
-            {/* Adjust image size and display */}
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image1} alt="Staff 1" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image2} alt="Staff 2" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image3} alt="Staff 3" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image4} alt="Staff 4" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image5} alt="Staff 5" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image6} alt="Staff 6" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image7} alt="Staff 6" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-            </div>
-     
-           
-            
+    <div style={{ padding: '20px' }}>
+      <Home />
+      <div className="container">
+        <div className="row justify-content-center">
+          <div
+            className="col-md-10"
+            style={{
+              backgroundColor: '#f9f9f9',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              borderRadius: '10px',
+              padding: '30px',
+              marginTop: '60px',
+            }}
+          >
+            <h2 className="text-center mb-4" style={{ fontWeight: 'bold' }}>
+              Communication For Social and Behavior Change
+            </h2>
 
-
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              spaceBetween={20}
+              slidesPerView={1}
+              style={{ paddingBottom: '30px' }}
+            >
+              {images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="img-fluid rounded border"
+                    style={{
+                      width: '100%',
+                      maxHeight: '500px',
+                      objectFit: 'cover',
+                    }}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Page47
+export default Page47;

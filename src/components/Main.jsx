@@ -288,6 +288,9 @@ const MainContent = () => {
     const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
     const [facultyDropdownOpen, setFacultyDropdownOpen] = useState(false);
     const [pgDiplomaDropdownOpen, setPgDiplomaDropdownOpen] = useState(false);
+    const [annualDropdownOpen, setannualDropdownOpen] = useState(false);
+    const [ResourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+    
 
     const toggleFacultyDropdown = () => {
         if (pgDiplomaDropdownOpen) {
@@ -299,6 +302,14 @@ const MainContent = () => {
     const togglePgdDropdown = (e) => {
         e.stopPropagation(); // Stop event propagation
         setPgDiplomaDropdownOpen(!pgDiplomaDropdownOpen);
+    };
+    const toggleannualdDropdown = (e) => {
+        e.stopPropagation(); // Stop event propagation
+        setannualDropdownOpen(!annualDropdownOpen);
+    };
+    const toggleResourcesdDropdown = (e) => {
+        e.stopPropagation(); // Stop event propagation
+        setResourcesDropdownOpen(!ResourcesDropdownOpen);
     };
 
     const copyToClipboard = (text) => {
@@ -450,23 +461,32 @@ const MainContent = () => {
     aria-controls="annual-report"  aria-selected="false"  onClick={toggleFacultyDropdown}>Resources</a>
 
     <ul className="dropdown-menu" aria-labelledby="annual-report-tab">
-      {/* Annual Reports */}
-      <li><NavLink to={AnnualReport1} target='_blank' className="dropdown-item">Annual Report 2022-23</NavLink></li>
-      <li><NavLink to={AnnualReport2} target='_blank' className="dropdown-item">Annual Report 2021-22</NavLink></li>
-
-      <li><hr className="dropdown-divider" /></li>
-
-      {/* eResources */}
-      <li><a href="https://www.ugc.gov.in/" className="dropdown-item">UGC</a></li>
-      <li><a href="https://www.nda.gov.in/" className="dropdown-item">NDA</a></li>
-      <li><a href="https://www.nptel.ac.in/" className="dropdown-item">NPTEL</a></li>
-      <li><a href="https://www.swayam.gov.in/" className="dropdown-item">SWAYAM</a></li>
-      <li><a href="https://www.swayamprabhay.gov.in/" className="dropdown-item">SWAYAM PRABHA</a></li>
-      <li><a href="https://egyankosh.ac.in/" className="dropdown-item">EGYANKOSH</a></li>
-      <li><a href="https://www.inflibnet.ac.in/" className="dropdown-item">INFLIBNET</a></li>
-      <li><a href="https://epathshala.nic.in/" className="dropdown-item">EPATHSHALA</a></li>
-      <li><a href="https://www.isro.gov.in/" className="dropdown-item">ISRO</a></li>
-    </ul>
+     
+      <li  onClick={toggleannualdDropdown}>
+                        <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">Annual Report</a>
+                            <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
+                             {/* Annual Reports */}
+                         <li><NavLink to={AnnualReport1} target='_blank' className="dropdown-item">Annual Report 2022-23</NavLink></li>
+                          <li><NavLink to={AnnualReport2} target='_blank' className="dropdown-item">Annual Report 2021-22</NavLink></li>
+                        <li><hr className="dropdown-divider" /></li>
+                        </ul>
+                           </li>
+      <li  onClick={toggleResourcesdDropdown}>
+                        <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">eResources</a>
+                        <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>
+                            <li><a href="https://www.ugc.gov.in/" className="dropdown-item">UGC</a></li>
+                            <li><a href="https://www.nda.gov.in/" className="dropdown-item">NDA</a></li>
+                            <li><a href="https://www.nptel.ac.in/" className="dropdown-item">NPTEL</a></li>
+                            <li><a href="https://www.swayam.gov.in/" className="dropdown-item">SWAYAM</a></li>
+                            <li><a href="https://www.swayamprabhay.gov.in/" className="dropdown-item">SWAYAM PRABHA</a></li>
+                            <li><a href="https://egyankosh.ac.in/" className="dropdown-item">EGYANKOSH</a></li>
+                            <li><a href="https://www.inflibnet.ac.in/" className="dropdown-item">INFLIBNET</a></li>
+                            <li><a href="https://epathshala.nic.in/" className="dropdown-item">EPATHSHALA</a></li>
+                            <li><a href="https://www.isro.gov.in/" className="dropdown-item">ISRO</a></li>
+                        <li><hr className="dropdown-divider" /></li>
+                        </ul>
+                         </li>
+</ul>
   </div>
 </li>
 

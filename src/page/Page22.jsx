@@ -1,48 +1,65 @@
-import React from 'react'
-import Image1 from '../asset/Student activities/students (1).jpeg'
-import Image2 from '../asset/Student activities/students (2).jpeg'
-import Image3 from '../asset/Student activities/students (3).jpeg'
-import Image4 from '../asset/Student activities/students (4).jpeg'
-import Image5 from '../asset/Student activities/students (5).jpeg'
-import Home from '../components/HomeButton'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
-function Page22() {
+import Image1 from '../asset/Student activities/students (1).jpeg';
+import Image2 from '../asset/Student activities/students (2).jpeg';
+import Image3 from '../asset/Student activities/students (3).jpeg';
+import Image4 from '../asset/Student activities/students (4).jpeg';
+import Image5 from '../asset/Student activities/students (5).jpeg';
+
+import Home from '../components/HomeButton';
+
+const images = [
+  { id: 1, src: Image1, alt: 'Image 1' },
+  { id: 2, src: Image2, alt: 'Image 2' },
+  { id: 3, src: Image3, alt: 'Image 3' },
+  { id: 4, src: Image4, alt: 'Image 4' },
+  { id: 5, src: Image5, alt: 'Image 5' },
+];
+
+const Page22 = () => {
   return (
     <div style={{ margin: '50px' }}>
-     <Home/>
-    <div className="container">
-      <div className="row justify-content-center align-items-center">
-        <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
-          <div className="row justify-content-center">
-            <div className="col-md-12 text-center">
-              <h2>Student Activities</h2>
-            </div>
-          </div>
-          <div className="row justify-content-around">
-            {/* Adjust image size and display */}
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image1} alt="Image1" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image2} alt="Image2" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' ,width:'500px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image3} alt="Image 3" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image4} alt="Image4" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px',marginRight:'-100px'}} />
-            </div>
-            <div className="col-md-4 text-center mb-3">
-              <img src={Image5} alt="Image5" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' , height: '210px', marginLeft:'-100px'}} />
-            </div>
-          
+      <Home />
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+          <div
+            style={{
+              backgroundColor: '#f0f0f0',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',
+              marginTop: '100px',
+              padding: '30px',
+            }}
+            className="col-md-9 mx-auto text-center"
+          >
+            <h2 className="mb-4">Student Activities</h2>
 
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              spaceBetween={20}
+              slidesPerView={1}
+              style={{ paddingBottom: '30px' }}
+            >
+              {images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="img-fluid rounded border"
+                    style={{ maxHeight: '500px', objectFit: 'contain' }}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Page22
+export default Page22;

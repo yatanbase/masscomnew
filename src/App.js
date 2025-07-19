@@ -59,6 +59,7 @@ import Seminar from './page/Seminar';
 import Conference from './page/Conference'; // ✅ Corrected import
 import SmartClass from './page/SmartClass';
 
+
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -130,6 +131,7 @@ function App() {
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
+       
  
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />

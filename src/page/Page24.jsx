@@ -1,48 +1,55 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import Image1 from '../asset/page_8_1.jpeg';
 import Image2 from '../asset/page_8_2.jpeg';
 import Image3 from '../asset/page_8_3.jpeg';
 import Image4 from '../asset/page_8_4.jpeg';
 import Image5 from '../asset/page_8_5.jpeg';
 import Image6 from '../asset/page_8_6.jpg';
-import Home from '../components/HomeButton'
+import Home from '../components/HomeButton';
 
 function Page24() {
   return (
-    <div style={{ margin: '50px' }}>
-      <Home/>
-     
-      <div className="container">
-        <div className="row justify-content-center align-items-center">
-          <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
-            <div className="row justify-content-center">
-              <div className="col-md-12 text-center">
-                <h2>SOME MOMENTS</h2>
-              </div>
-            </div>
-            <div className="row justify-content-around">
-              {/* Adjust image size and display */}
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image1} alt="Staff 1" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image2} alt="Staff 2" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image3} alt="Staff 3" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image4} alt="Staff 4" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image5} alt="Staff 5" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image6} alt="Staff 6" className="img-fluid rounded border p-3" style={{ maxHeight: '300px', maxWidth: '100%', height: '210px' }} />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div style={{ margin: '30px auto', maxWidth: '1000px' }}>
+      <Home />
+      <div
+        style={{
+          backgroundColor: '#f8f9fa',
+          boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+          borderRadius: '15px',
+          padding: '25px',
+        }}
+      >
+        <h2
+          className="text-center mb-4"
+          style={{
+            fontSize: '34px',
+            color: '#0056b3',
+            fontWeight: '600',
+            letterSpacing: '1px',
+            textTransform: 'uppercase',
+          }}
+        >
+          Some Moments
+        </h2>
+
+        <Carousel fade interval={3000} pause="hover">
+          {[Image1, Image2, Image3, Image4, Image5, Image6].map((img, index) => (
+            <Carousel.Item key={index}>
+              <img
+                className="d-block w-100"
+                src={img}
+                alt={`Slide ${index + 1}`}
+                style={{
+                  maxHeight: '500px',
+                  objectFit: 'cover',
+                  borderRadius: '15px',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+                }}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

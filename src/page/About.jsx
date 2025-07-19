@@ -1,36 +1,84 @@
-import React from 'react'
-import Home from '../components/HomeButton'
+import React from 'react';
+import Home from '../components/HomeButton';
 import myImage from '../asset/img2.jpeg';
 
 function About() {
+  const content = [
+    "The School of Journalism and Mass Communication (SJMC) was established by the Bihar Government on April 12, 2017. Former Rajya Sabha MP Shri Pavan K Verma contributed approximately ₹9 crores from his MPLADs funds. Aryabhatta Knowledge University prepared the DPR for the institute.",
+    "The government envisions SJMC as a future Centre of Excellence, aligning with both national and international institutions to modernize its journalism curriculum and raise the standard of media education in Bihar.",
+    "Mass communication today plays a vital role in society's development and empowerment. It has become a key academic discipline, drawing increasing numbers of students passionate about impactful communication.",
+    "The digital revolution has reshaped media landscapes, bringing both opportunities and challenges. At SJMC, we embrace these changes, preparing students and educators to lead in a dynamic media world.",
+    "Mass Communication extends beyond journalism. It encapsulates all forms of human interaction through media — from news to entertainment, shaping how we perceive the world around us.",
+    "Our mission includes producing skilled professionals who understand media's complexities and its power to influence society. SJMC stands committed to nurturing talent tailored to today’s media industry needs.",
+    "From cave paintings to the digital age, communication has evolved dramatically. Mass communication gained ground when humans learned to speak to the masses — a legacy we continue at SJMC.",
+    "In a diverse, pluralistic society like ours, media plays a crucial role in communication and social cohesion. We celebrate this diversity while fostering tolerance and shared understanding through journalism.",
+    "We are witnessing a global explosion in communication technologies. SJMC ensures students understand these transformations and are well-equipped to navigate and lead in the global media ecosystem.",
+    "Understanding media influence — how it shapes behavior, attitudes, and public opinion — is central to our academic focus at SJMC.",
+    "To meet the demands of a rapidly evolving industry, we plan to offer courses in communication technologies and systems, staying at the forefront of innovation and applied research.",
+    "SJMC was founded in response to the unregulated growth of media institutions in Bihar. We are committed to setting a high benchmark in curriculum design and media education.",
+  ];
+
   return (
-    <div> <Home/><div  className="container" style={{marginTop:'20px'}}>
-    <div className="row justify-content-center align-items-center">
-      <div style={{ backgroundColor:'#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}} className="col-md-9 p-4 mx-auto ">
+    <div>
+      <Home />
+      <div className="container my-5">
+        <div
+          className="mx-auto p-4"
+          style={{
+            background: '#f9f9f9',
+            borderRadius: '12px',
+            boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1)',
+            maxWidth: '1000px'
+          }}
+        >
+          {/* Image Section */}
+          <div className="text-center mb-5">
+            <img
+              src={myImage}
+              alt="SJMC"
+              style={{
+                width: '60%',
+                borderRadius: '12px',
+                boxShadow: '0 0 20px rgba(0, 0, 0, 0.3)',
+              }}
+            />
+          </div>
 
+          {/* Heading */}
+          <h2
+            className="text-center mb-4"
+            style={{
+              background: 'linear-gradient(90deg, #1a73e8, #00acc1)',
+              color: '#fff',
+              padding: '16px',
+              borderRadius: '10px',
+              boxShadow: '4px 6px 14px rgba(0, 0, 0, 0.15)',
+            }}
+          >
+            🎓 About SJMC
+          </h2>
 
-    <div> <div className="mu-latest-course-single" style={{margin: '50px'}}>
-    <figure className="mu-latest-course-img">
-      <a href="#" style={{width: '100%',display: 'flex' , justifyContent: 'center'}}><img src={myImage} alt="img" style={{width: '50%' , boxShadow: ' 0 0 25px black' , borderRadius: '10px'}}/></a>
-    </figure>
-    <div className="mu-latest-course-single-content">
-      <h2 style={{textAlign: 'center', borderBottom: '1px solid black'}}><a href="#" style={{color: 'black' , textDecoration: 'none'}}>About SJMC</a></h2>
-      <br />
-      <p className="text-justify">School of Journalism and Mass Communication (SJMC) was established by Bihar government vide Cabinet decision 15/ पी 5- 09/ 2016-629 dated April 12, 2017. The then Rajya Sabha MP Shri Pavan K Verma contributed approximately Rs. nine crores from his MPLADs funds to set up the said institute, the DPR for which was prepared by Aryabhatta Knowledge University.</p>
-      <p className="text-justify">The Bihar government has proposed to develop SJMC as the potential Centre of Excellence. SJMC will work with other national as well as international Centres to harmonize its journalism curricula in order to promote quality journalism education in the state.</p>
-      <p className="text-justify">Journalism & Mass Communication has emerged as a major area of interest and has immensely contributed to the development & empowerment of society. As an academic discipline, it has rapidly acquired importance and has become a major attraction for students. SJMC will run a number of specialized degree and short term courses to meet the manpower requirements of the rapidly expanding media and communication industry.</p>
-      <p className="text-justify">The information technology revolution has significantly contributed to the expansion of mass media. It has also posed major challenges for students, teachers and practitioners of mass media. It is a challenge which we accept as an essential part of life at SJMC.</p>
-      <p className="text-justify">Mass Communication is not limited to journalism alone. To a great extent mass media is a modern reality which covers all aspects of human life. Moreover, a great change can be observed in the concept of people working in mass media. Careers in Mass Communication are not only high paying but also bring in a great deal of job satisfaction and expression of creativity.</p>
-      <p className="text-justify">Generating a cadre of trained human resources specialized in understanding and addressing issues related to mass communication is one of the critical needs of the hour, and educational institutions have to play a crucial role in this regard. The institute would ensure tailored programmes to meet the needs of developing societies. This will make SJMC different from other institutes of Journalism & Mass Communication training in this state and elsewhere. This will also give a different identity and character to our alumni.</p>
-      <p className="text-justify">The history of communication stretches from prehistoric forms of art and writing through modern communication methods such as the Internet.  Mass communication began when humans could transmit messages from a single source to multiple receivers.</p>
-      <p className="text-justify">The society we live in has been dependent on media for information dissemination and communication. The benefits of media cannot be overemphasized in a pluralist society, with so many ethnic groups, religious cultures, traditions, beliefs and people from different diverse group. Pluralistic societies exist around the world. Pluralism typically contains four components, which at the simplest level are diversity, tolerance, commitment and communication. SJMC considers communication as an imperative for development for a pluralistic society and is committed to serving society by providing world class teaching, training and research, thus preparing students to take on the challenges of a highly competitive world.</p>
-      <p className="text-justify">The world has witnessed a phenomenal and unprecedented explosion in communication technology and media. All boundaries have been transcended, and the entire global community seems to have been brought together into one unified whole. And it is here that mass-communication, as a stream of study, and as a career, becomes so important and enviable.</p>
-      <p className="text-justify">The study of mass communication is chiefly concerned with how the content of mass communication persuades or otherwise affects the behavior, attitude, opinion, or emotion of the person or people receiving the information.</p>
-      <p className="text-justify">With this view, the School of Journalism & Mass Communication may come up with courses specifically aimed at teaching and research on Communication & Information system. The institute is one of its kind in the region aimed at constantly innovating its programmes in order to meet the challenges thrown up by developments in the industry by reviewing the syllabi every year to make changes and suitable modifications to make them relevant to the needs of the industry and society.</p>
-      <p className="text-justify">Establishment of this institute was essential because of the current trend of proliferation of media institutions in Bihar without appropriate curricula. Media scholars and professionals have over the years debated the benchmark for journalism curriculum of developing countries since the curricula differ structurally and pedagogically from one another.</p>
+          {/* Paragraphs */}
+          {content.map((text, index) => (
+            <p
+              key={index}
+              style={{
+                textAlign: 'justify',
+                fontSize: '17px',
+                lineHeight: '1.8',
+                marginBottom: '20px',
+                transition: 'color 0.3s ease',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#1a73e8')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#1a1a1a')}
+            >
+              {text}
+            </p>
+          ))}
+        </div>
+      </div>
     </div>
-  </div></div></div></div></div></div>
-  )
+  );
 }
 
-export default About
+export default About;
