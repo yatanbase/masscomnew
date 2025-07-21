@@ -1,7 +1,10 @@
-import React from 'react';
-import MainContent from './components/Main';
-import Page1 from './page/page1';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import MainContent from './components/Main';
+import Admission_popup from './components/Admission_popup'; // ✅ Added
+
+import Page1 from './page/page1';
 import Page2 from './page/page2';
 import About from './page/About';
 import Page4 from './page/Page4';
@@ -56,9 +59,8 @@ import Page52 from './page/Page52';
 import Page53 from './page/page53';
 
 import Seminar from './page/Seminar';
-import Conference from './page/Conference'; // ✅ Corrected import
+import Conference from './page/Conference';
 import SmartClass from './page/SmartClass';
-
 
 import News1 from './News/News1';
 import News2 from './News/News2';
@@ -69,8 +71,24 @@ import News6 from './News/News6';
 import News7 from './News/News7';
 
 function App() {
+  const [showAd, setShowAd] = useState(false);
+
+  useEffect(() => {
+    const adShown = localStorage.getItem('adShown');
+    if (!adShown) {
+      setShowAd(true);
+      localStorage.setItem('adShown', 'true');
+    }
+  }, []);
+
+  const handleCloseAd = () => {
+    setShowAd(false);
+  };
+
   return (
     <>
+      {showAd && <Admission_popup onClose={handleCloseAd} />}
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainContent />} />
@@ -126,13 +144,10 @@ function App() {
           <Route path="/Page50" element={<Page50 />} />
           <Route path="/Page51" element={<Page51 />} />
           <Route path="/GuestFaculty" element={<Page52 />} />
-
           <Route path="/board-of-studies" element={<Page53 />} />
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
-       
- 
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />

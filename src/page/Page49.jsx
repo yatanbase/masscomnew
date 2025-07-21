@@ -1,12 +1,19 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
+import Home from '../components/HomeButton';
+
 import Image1 from '../asset/Our gallery/25 march/IMG-20250330-WA0040.jpg';
 import Image3 from '../asset/Our gallery/25 march/IMG-20250330-WA0042.jpg';
 import Image4 from '../asset/Our gallery/25 march/IMG-20250330-WA0043.jpg';
 import Image5 from '../asset/Our gallery/25 march/IMG-20250330-WA0044.jpg';
 import Image6 from '../asset/Our gallery/25 march/IMG-20250330-WA0045.jpg';
 import Image7 from '../asset/Our gallery/25 march/IMG-20250330-WA0046.jpg';
-
-import Home from '../components/HomeButton';
 
 const images = [
   { id: 1, src: Image1, alt: 'Image 1' },
@@ -19,33 +26,44 @@ const images = [
 
 const Page49 = () => {
   return (
-    <div style={{ margin: '50px 0' }}>
+    <div style={{ marginTop: '60px' }}>
       <Home />
       <div className="container">
-        <div className="row justify-content-center">
-          <div
-            className="col-md-10 p-4"
-            style={{
-              backgroundColor: '#f0f0f0',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',
-              marginTop: '80px',
-              borderRadius: '10px'
-            }}
+        <div
+          className="p-4"
+          style={{
+            backgroundColor: '#f0f0f0',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',
+            borderRadius: '10px'
+          }}
+        >
+          <h2 className="text-center mb-4">March 25</h2>
+          
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop={true}
+            style={{ width: '100%', borderRadius: '10px' }}
           >
-            <h2 className="text-center mb-4">March 25</h2>
-            <div className="row">
-              {images.map((image) => (
-                <div key={image.id} className="col-md-4 mb-4 text-center">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="img-fluid rounded border p-2"
-                    style={{ height: '210px', objectFit: 'cover', width: '100%' }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+            {images.map((image) => (
+              <SwiperSlide key={image.id}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  style={{
+                    width: '100%',
+                    height: '500px',
+                    objectFit: 'cover',
+                    borderRadius: '10px',
+                  }}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

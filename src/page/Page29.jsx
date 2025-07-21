@@ -1,79 +1,99 @@
-import React from 'react'
-import Image1 from '../asset/Our gallery/Orientation/orientation (1).jpeg'
-import Image2 from '../asset/Our gallery/Orientation/orientation (2).jpeg'
-import Image3 from '../asset/Our gallery/Orientation/orientation (3).jpeg'
-import Image4 from '../asset/Our gallery/Orientation/orientation (4).jpeg'
-import Image5 from '../asset/Our gallery/Orientation/orientation (5).jpeg'
-import Image6 from '../asset/Our gallery/Orientation/orientation (6).jpeg'
-import Image7 from '../asset/Our gallery/Orientation/orientation (7).jpeg'
-import Image8 from '../asset/Our gallery/Orientation/orientation (8).jpeg'
-import pdf from '../asset/News/orientation_sjmc.pdf'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
+import Image1 from '../asset/Our gallery/Orientation/orientation (1).jpeg';
+import Image2 from '../asset/Our gallery/Orientation/orientation (2).jpeg';
+import Image3 from '../asset/Our gallery/Orientation/orientation (3).jpeg';
+import Image4 from '../asset/Our gallery/Orientation/orientation (4).jpeg';
+import Image5 from '../asset/Our gallery/Orientation/orientation (5).jpeg';
+import Image6 from '../asset/Our gallery/Orientation/orientation (6).jpeg';
+import Image7 from '../asset/Our gallery/Orientation/orientation (7).jpeg';
+import Image8 from '../asset/Our gallery/Orientation/orientation (8).jpeg';
+import pdf from '../asset/News/orientation_sjmc.pdf';
 
 const Page29 = () => {
+  const images = [
+    { src: Image1, alt: "Orientation at SJMC 1" },
+    { src: Image2, alt: "Orientation at SJMC 2" },
+    { src: Image3, alt: "Orientation at SJMC 3" },
+    { src: Image4, alt: "Orientation at SJMC 4" },
+    { src: Image5, alt: "Orientation at SJMC 5" },
+    { src: Image6, alt: "Orientation at SJMC 6" },
+    { src: Image7, alt: "Orientation at SJMC 7" },
+    { src: Image8, alt: "Orientation at SJMC 8" }
+  ];
+
   return (
-    <div>
-      
-      <div style={{ margin: '50px' }}>
-      
-     
+    <div style={{ margin: '50px' }}>
       <div className="container">
         <div className="row justify-content-center align-items-center">
-          <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', marginTop: '100px' }} className="col-md-9 p-4 mx-auto text-center">
-            <div className="row justify-content-center">
-
-              <a href={pdf} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className="col-md-12 text-center" >
-                <h4>Orientation at SJMC 2024</h4>
-
-               
-                <div className="col-md-12 text-center" style={{display:'flex' , justifyContent:'center'}}>
-                <div style={{width:'40%', height:'30px', backgroundColor:'orange', display:'flex',justifyContent:'center'}}>
-                <div style={{width:'90%', height:'30px', backgroundColor:'black'}}>   <h5 style={{color:'white'}}>DOWNLOAD ATTACHMENT <span style={{ marginLeft: '3px', fontWeight:'bolder' }}>&#x2B07;</span></h5>   </div>
+          <div style={{ 
+            backgroundColor: '#f0f0f0', 
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)', 
+            marginTop: '100px',
+            padding: '20px'
+          }} className="col-md-10 mx-auto text-center">
+            
+            <a href={pdf} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div>
+                <h4 style={{ fontWeight: 'bold' }}>Orientation at SJMC 2024</h4>
+                <div className="d-flex justify-content-center my-3">
+                  <div style={{width:'250px', height:'40px', backgroundColor:'orange', display:'flex', justifyContent:'center', alignItems:'center'}}>
+                    <div style={{width:'95%', height:'35px', backgroundColor:'black', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                      <span style={{color:'white', fontSize:'15px', fontWeight:'bold'}}>
+                        DOWNLOAD ATTACHMENT <span style={{ marginLeft: '3px' }}>&#x2B07;</span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                </div>
-               
-                
-                <br></br>
-                 </div>
-                 </a> 
-              
-            </div>
-            <div className="row justify-content-around">
-              {/* Adjust image size and display */}
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image1} alt="Staff 1" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
               </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image2} alt="Staff 2" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image4} alt="Staff 3" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image3} alt="Staff 4" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
-              </div>
+            </a>
 
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image5} alt="Staff 4" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image6} alt="Staff 4" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' }} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image7} alt="Staff 4" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100%' ,marginLeft:'20px',position:'relative',left:'60px'}} />
-              </div>
-              <div className="col-md-4 text-center mb-3">
-                <img src={Image8} alt="Staff 4" className="img-fluid rounded border p-3" style={{ height: '250px    ', maxWidth: '100',position:'relative',right:'60px' }} />
-              </div>
-              
-            </div>
+            {/* Swiper Slider */}
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              loop={true}
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              style={{ padding: '20px 0' }}
+            >
+              {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <div className="d-flex justify-content-center align-items-center p-2">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="img-fluid rounded border"
+                      style={{ 
+                        height: '250px', 
+                        width: '100%', 
+                        objectFit: 'cover',
+                        maxWidth: '400px'
+                      }} 
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
           </div>
         </div>
       </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Page29
+export default Page29;

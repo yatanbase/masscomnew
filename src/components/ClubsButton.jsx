@@ -15,13 +15,13 @@ function VerticalButtons() {
     backgroundColor: '#780000',
     color: 'white',
     border: 'none',
-    padding: '12px 16px',
-    borderRadius: '0 0 10px 10px',
-    fontSize: '14px',
+    padding: '14px 20px',
+    borderRadius: '0 0 12px 12px',
+    fontSize: '16px',
     fontWeight: 'bold',
     display: 'flex',
     alignItems: 'center',
-    gap: '10px',
+    gap: '12px',
     cursor: 'pointer',
     boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
     whiteSpace: 'nowrap',
@@ -34,26 +34,34 @@ function VerticalButtons() {
     position: 'absolute',
     top: '0',
     right: '100%',
-    marginRight: '10px',
+    marginRight: '12px',
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#fff',
-    padding: '10px',
-    borderRadius: '10px',
-    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+    padding: '12px',
+    borderRadius: '12px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
     zIndex: 1001,
+    minWidth: '220px',
   };
 
   const linkStyle = {
     display: 'flex',
     alignItems: 'center',
-    gap: '10px',
+    gap: '14px',
     textDecoration: 'none',
     fontWeight: 'bold',
-    marginBottom: '10px',
-    padding: '8px 12px',
-    borderRadius: '8px',
+    marginBottom: '12px',
+    padding: '12px 16px',
+    borderRadius: '10px',
     color: 'white',
+    fontSize: '16px',
+    transition: 'all 0.3s ease-in-out',
+  };
+
+  const hoverStyle = {
+    transform: 'scale(1.05)',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
   };
 
   return (
@@ -76,8 +84,15 @@ function VerticalButtons() {
         <div style={{ position: 'relative' }}>
           {showSocial && (
             <div style={socialPopupStyle}>
-              <a  href="https://www.facebook.com/people/School-of-Journalism-and-Mass-Communication-Patna/100063903589436/"  target="_blank"  rel="noopener noreferrer"  style={{ ...linkStyle, backgroundColor: '#3b5998' }} >
-                <FontAwesomeIcon icon={faFacebook} />
+              <a
+                href="https://www.facebook.com/people/School-of-Journalism-and-Mass-Communication-Patna/100063903589436/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ ...linkStyle, backgroundColor: '#3b5998' }}
+                onMouseOver={(e) => Object.assign(e.currentTarget.style, hoverStyle)}
+                onMouseOut={(e) => Object.assign(e.currentTarget.style, linkStyle)}
+              >
+                <FontAwesomeIcon icon={faFacebook} size="lg" />
                 Facebook
               </a>
 
@@ -86,8 +101,10 @@ function VerticalButtons() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ ...linkStyle, backgroundColor: '#000000' }}
+                onMouseOver={(e) => Object.assign(e.currentTarget.style, hoverStyle)}
+                onMouseOut={(e) => Object.assign(e.currentTarget.style, linkStyle)}
               >
-                <FontAwesomeIcon icon={faXTwitter} />
+                <FontAwesomeIcon icon={faXTwitter} size="lg" />
                 X (Twitter)
               </a>
 
@@ -96,8 +113,10 @@ function VerticalButtons() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ ...linkStyle, backgroundColor: '#FF0000' }}
+                onMouseOver={(e) => Object.assign(e.currentTarget.style, hoverStyle)}
+                onMouseOut={(e) => Object.assign(e.currentTarget.style, linkStyle)}
               >
-                <FontAwesomeIcon icon={faYoutube} />
+                <FontAwesomeIcon icon={faYoutube} size="lg" />
                 AKU YouTube
               </a>
 
@@ -106,24 +125,28 @@ function VerticalButtons() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ ...linkStyle, backgroundColor: '#FF0000' }}
+                onMouseOver={(e) => Object.assign(e.currentTarget.style, hoverStyle)}
+                onMouseOut={(e) => Object.assign(e.currentTarget.style, linkStyle)}
               >
-                <FontAwesomeIcon icon={faYoutube} />
+                <FontAwesomeIcon icon={faYoutube} size="lg" />
                 SJMC YouTube
               </a>
 
               <a
-                href="https://wa.me/919241027682" // Updated WhatsApp number
+                href="https://wa.me/919241027682"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ ...linkStyle, backgroundColor: '#25D366', marginBottom: 0 }}
+                onMouseOver={(e) => Object.assign(e.currentTarget.style, hoverStyle)}
+                onMouseOut={(e) => Object.assign(e.currentTarget.style, linkStyle)}
               >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faWhatsapp} size="lg" />
                 WhatsApp
               </a>
             </div>
           )}
 
-          {/* Rotated Button */}
+          {/* Rotated Toggle Button */}
           <div
             style={clubStyle}
             onClick={() => setShowSocial(!showSocial)}
