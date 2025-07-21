@@ -441,7 +441,7 @@ const MainContent = () => {
 <li><NavLink to="/AdvisoryCommittee" className="dropdown-item"> Academic Advisory Committee </NavLink></li>
 <li> <NavLink to="/board-of-studies" className="dropdown-item"> Board of Studies</NavLink></li>
 
-<li> <NavLink to="/Faculty" className="dropdown-item"> Head Of Department</NavLink></li>
+<li> <NavLink to="/Faculty" className="dropdown-item"> Head of Department</NavLink></li>
 
 
 <li className="dropdown-submenu">
