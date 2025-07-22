@@ -1,5 +1,5 @@
 import React from 'react';
-import AtishImage from '../asset/atish.jpg';
+import AtishImage from '../asset/atishprakash.jpg';
 import HODImage from '../asset/DrManishaPrakash.jpeg';
 import SandeepImage from '../asset/sandeep.jpg';
 import atishprakash from '../asset/atishprakash.jpg';
