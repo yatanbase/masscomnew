@@ -107,6 +107,9 @@ import Image3_15 from '../asset/media_center/2025/march/30 march (1).jpg'
 import Image3_16 from '../asset/media_center/2025/march/30 march (2).jpg'
 import ImageJune1 from '../asset/media_center/2025/June/dainik_jagran_28_06_2025_pg04.jpeg';
 import ImageJuly1 from '../asset/media_center/2025/July/hindustan_02_07_2025_pg04.jpeg';
+import ImageJuly2 from '../asset/media_center/2025/July/hin22-07-25.jpeg';
+import ImageJuly3 from '../asset/media_center/2025/July/dani22-07-25.jpeg';
+import ImageJuly4 from '../asset/media_center/2025/July/prabhat22-07-25.jpeg';
 
  
 
@@ -119,8 +122,10 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
-    
-    { src: ImageJuly1, date: '02/07/2025' },
+    { src: ImageJuly1, date: '22/07/2025' },
+     { src: ImageJuly2, date: '22/07/2025' },
+      { src: ImageJuly3, date: '22/07/2025' },
+       { src: ImageJuly4, date: '02/07/2025' },
     { src: ImageJune1, date: '28/06/2025' },
     { src: Image3_6, date: '13/03/2025' },
     { src: Image3_7, date: '26/03/2025' },
