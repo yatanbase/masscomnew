@@ -1,8 +1,6 @@
 import React from 'react';
 import AtishImage from '../asset/atishprakash.jpg';
 import HODImage from '../asset/DrManishaPrakash.jpeg';
-import SandeepImage from '../asset/sandeep.jpg';
-import atishprakash from '../asset/atishprakash.jpg';
 import nikhil from '../asset/nikhil.jpg';
 import ajay from '../asset/ajay.jpg';
 import Home from '../components/HomeButton';
@@ -98,7 +96,7 @@ const Page53 = () => {
         </div>
       </div>
 
-      {/* Dr. Sandeep Kumar Dubey */}
+      {/* Dr. Sandeep Kumar Dubey 
       <div style={cardStyle}>
         <img src={SandeepImage} alt="Dr. Sandeep Kumar Dubey" style={imageStyle} />
         <div style={textStyle}>
