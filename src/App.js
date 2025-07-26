@@ -41,6 +41,7 @@ import Page34 from './page/Page34';
 import Page35 from './page/Page35';
 import Page36 from './page/Page36';
 import Page37 from './page/Page37';
+import Page54 from './page/Page54';
 import Page38 from './page/Page38';
 import Page39 from './page/Page39';
 import Page40 from './page/Page40';
@@ -129,6 +130,7 @@ function App() {
           <Route path="/Page35" element={<Page35 />} />
           <Route path="/Page36" element={<Page36 />} />
           <Route path="/Page37" element={<Page37 />} />
+          <Route path="/Page54" element={<Page54 />} />
           <Route path="/Page38" element={<Page38 />} />
           <Route path="/Page39" element={<Page39 />} />
           <Route path="/Page40" element={<Page40 />} />
@@ -148,6 +150,7 @@ function App() {
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
+          
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />

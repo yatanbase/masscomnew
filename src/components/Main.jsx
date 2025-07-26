@@ -14,6 +14,7 @@ import g3 from '../asset/slide3.jpeg';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom/dist';
 import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+
 import Image1 from '../asset/home_slider_1.jpg';
 import Image2 from '../asset/home_slider_2.jpg';
 import Image3 from '../asset/home_slider_3.jpg';
@@ -71,6 +72,7 @@ import Bookistan from '../asset/Our gallery/Bookistan/image (2).jpeg'
 import aryabhatta_cover from '../asset/Our gallery/aryabhatta on space day/image (1).jpeg'
 import Aryabhatta_times from '../asset/Our gallery/aryabhatta times/image (4).jpg'
 import PRO_img from '../asset/Our gallery/PRO/banner.jpg'
+import PRO1_img from '../asset/Our gallery/PRO1/img1.jpeg'
 import Aids_img from '../asset/Our gallery/aids/banner.jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
@@ -265,6 +267,12 @@ const galleryItems = [
         image: Students,
         title: "Student Activities",
         link: "/Student_activities"
+    },
+    {
+            id: 54,
+            image: PRO1_img,
+        title: "🎬 Film Screening of Student Films (2025-2026)",
+        link: "/Page54"
     },
  
 ];
