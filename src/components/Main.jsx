@@ -73,6 +73,7 @@ import aryabhatta_cover from '../asset/Our gallery/aryabhatta on space day/image
 import Aryabhatta_times from '../asset/Our gallery/aryabhatta times/image (4).jpg'
 import PRO_img from '../asset/Our gallery/PRO/banner.jpg'
 import PRO1_img from '../asset/Our gallery/PRO1/img1.jpeg'
+import PKAHANI_img from '../asset/Our gallery/PKAHANI/k1.jpg'
 import Aids_img from '../asset/Our gallery/aids/banner.jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
@@ -100,6 +101,21 @@ import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
 
 const galleryItems = [
+    {
+            id: 54,
+            image: PRO1_img,
+        title: "🎬 Film Screening of Student Films",
+        link: "/Page54"
+    },
+
+    {
+            id: 55,
+            image: PKAHANI_img,
+        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting"
+,
+        link: "/PKAHANI"
+    },
+   
     {
         id: 28,
         image: March27,
@@ -268,12 +284,7 @@ const galleryItems = [
         title: "Student Activities",
         link: "/Student_activities"
     },
-    {
-            id: 54,
-            image: PRO1_img,
-        title: "🎬 Film Screening of Student Films (2025-2026)",
-        link: "/Page54"
-    },
+    
  
 ];
 

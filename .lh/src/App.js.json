@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1752058703396,
@@ -40,6 +40,10 @@
                 {
                     "date": 1752086462254,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,11 +53,8 @@\n import Page50 from './page/Page50';\r\n import Page51 from './page/Page51';\r\n import Page52 from './page/Page52';\r\n import Page53 from './page/page53';\r\n-import SmartClass from './page/SmartClass';\r\n-import ConferenceRoom from './page/ConferenceRoom'; \r\n-import SeminarRoom from './page/SeminarRoom\r\n \r\n import Seminar from './page/Seminar';\r\n import Conference from './page/Conference'; // ✅ Corrected import\r\n import SmartClass from './page/SmartClass';\r\n"
+                },
+                {
+                    "date": 1753841601950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n import Page35 from './page/Page35';\r\n import Page36 from './page/Page36';\r\n import Page37 from './page/Page37';\r\n import Page54 from './page/Page54';\r\n+import PKAHANI from './page/PKAHANI';\r\n import Page38 from './page/Page38';\r\n import Page39 from './page/Page39';\r\n import Page40 from './page/Page40';\r\n import Page41 from './page/Page41';\r\n@@ -143,8 +144,9 @@\n           <Route path=\"/Page47\" element={<Page47 />} />\r\n           <Route path=\"/Page48\" element={<Page48 />} />\r\n           <Route path=\"/Page49\" element={<Page49 />} />\r\n           <Route path=\"/Page50\" element={<Page50 />} />\r\n+          <Route path=\"/PKAHANI\" element={<PKAHANI />} />\r\n           <Route path=\"/Page51\" element={<Page51 />} />\r\n           <Route path=\"/GuestFaculty\" element={<Page52 />} />\r\n           <Route path=\"/board-of-studies\" element={<Page53 />} />\r\n           <Route path=\"/Seminar\" element={<Seminar />} />\r\n"
                 }
             ],
             "date": 1752058703396,
