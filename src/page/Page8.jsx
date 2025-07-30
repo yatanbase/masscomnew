@@ -93,7 +93,6 @@ import Image3_2 from '../asset/media_center/2025/10-02-2025/image (2).jpeg'
 import Image3_3 from '../asset/media_center/2025/10-02-2025/image (3).jpeg'
 import Image3_4 from '../asset/media_center/2025/10-02-2025/image (4).jpeg'
 import Image3_5 from '../asset/media_center/2025/23 march/image.jpg'
-
 import Image3_6 from '../asset/media_center/2025/march/13 march.jpg'
 import Image3_7 from '../asset/media_center/2025/march/26 march.jpg'
 import Image3_8 from '../asset/media_center/2025/march/26 march.png'
@@ -112,6 +111,9 @@ import ImageJuly3 from '../asset/media_center/2025/July/dani22-07-25.jpeg';
 import ImageJuly4 from '../asset/media_center/2025/July/prabhat22-07-25.jpeg';
 import ImageJuly5 from '../asset/media_center/2025/July/danik bhasker24-07-25.jpg';
 import ImageJuly6 from '../asset/media_center/2025/July/prabhat24-07-25.jpg';
+import ImageJuly7 from '../asset/media_center/2025/July/danik29-07-25.jpeg';
+import ImageJuly8 from '../asset/media_center/2025/July/prabhat29-07-25.jpeg';
+
 
  
 
@@ -124,6 +126,8 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
+    { src: ImageJuly7, date: '29/07/2025' },
+     { src: ImageJuly8, date: '29/07/2025' },
     { src: ImageJuly5, date: '24/07/2025' },
      { src: ImageJuly6, date: '24/07/2025' },
    { src: ImageJuly1, date: '22/07/2025' },
@@ -266,18 +270,19 @@ function Page8() {
             </div>
           ) : (
             <>
-              {[...images, ...images].map((image, index) => (
-                <div className="aslide" key={index} onClick={() => handleImageClick(image.src)}>
-                  <img src={image.src} alt={`Image ${index + 1}`} />
-                  <p style={{textAlign:'left', color:'gray'}}>Date : {image.date}</p>
-                </div>
-              ))}
-            </>
-          )}
-        </div>
-      </div>
-    </>
-  );
+    {[...images, ...images].map((image, index) => (
+  <div className="aslide" key={index} onClick={() => handleImageClick(image.src)}>
+    {/* ⚠️ "Image" word hatakar meaningful alt lagaya */}
+    <img src={image.src} alt={image.caption || `Slide ${index + 1}`} />
+    <p style={{ textAlign: 'left', color: 'gray' }}>Date : {image.date}</p>
+  </div>
+))}
+</>
+)}
+</div>
+</div>
+</>
+);
 
   return (
     <div className='slidecontainer' style={{ margin: '40px' }}>
