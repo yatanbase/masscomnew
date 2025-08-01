@@ -22,7 +22,7 @@
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     background-color: white;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .ad-box {
@@ -82,20 +82,29 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    height: auto !important; /* Added: Let Swiper height adjust */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {
     width: 100%;
     height: auto;
+    object-fit: contain; /* Ensures image fits well */
     display: block;
     border-radius: 5px;
 }
 
-/* Old ad-image class kept for legacy compatibility */
+/* Legacy compatibility */
 .ad-image {
     width: 100%;
     max-width: 750px;
     height: auto;
+    object-fit: contain; /* Ensures image is not cropped */
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     margin-top: 1rem;

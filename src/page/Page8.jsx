@@ -113,6 +113,9 @@ import ImageJuly5 from '../asset/media_center/2025/July/danik bhasker24-07-25.jp
 import ImageJuly6 from '../asset/media_center/2025/July/prabhat24-07-25.jpg';
 import ImageJuly7 from '../asset/media_center/2025/July/danik29-07-25.jpeg';
 import ImageJuly8 from '../asset/media_center/2025/July/prabhat29-07-25.jpeg';
+import ImageJuly11 from '../asset/media_center/2025/July/hindustan30-07-25.jpeg';
+import ImageJuly9 from '../asset/media_center/2025/July/prabahat30-07-25.jpeg';
+import ImageJuly10 from '../asset/media_center/2025/July/danik30-07-25.jpeg';
 
 
  
@@ -126,6 +129,9 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
+    { src: ImageJuly11, date: '30/07/2025' },
+     { src: ImageJuly9, date: '30/07/2025' },
+    { src: ImageJuly10, date: '30/07/2025' },
     { src: ImageJuly7, date: '29/07/2025' },
      { src: ImageJuly8, date: '29/07/2025' },
     { src: ImageJuly5, date: '24/07/2025' },

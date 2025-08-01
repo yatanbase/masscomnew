@@ -14,7 +14,7 @@ const Page31 = () => {
           <p style={{ fontFamily: 'Kanit, sans', marginTop: '10px' }}>at SJMC</p>
         </div>
       </div>
-      
+      {}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)', width: '100%', height: 'auto', marginTop: '20px', padding: '20px' }} className="col-md-9 p-4 text-center">
