@@ -84,7 +84,7 @@ function Page54() {
       <div className="container">
         <div className="p-4 mx-auto text-center" style={styles.card}>
           <h2 className="mb-4 fw-bold text-primary">
-            🎬 Film Screening of Student Films (2025-2026)
+           Masterclass in Scene Creation: A Collaboration Between Actor & Director
             <br /><small>24 July 2025</small>
           </h2>
 
@@ -108,7 +108,8 @@ function Page54() {
                 >
                   <img src={img.src} alt="Gallery" style={styles.img} />
                   {/* ✅ Hover text only visible on hover */}
-                  <div className="overlay" style={styles.overlay}>🎬 Film Screening | 24 July 2025</div>
+                  <div className="overlay" style={styles.overlay}>Masterclass in Scene Creation: A Collaboration Between Actor & Director
+| 24 July 2025</div>
                 </div>
               </div>
             ))}
