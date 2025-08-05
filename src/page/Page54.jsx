@@ -129,7 +129,8 @@ function Page54() {
 
           {/* ✅ Tooltip shows only when moving mouse */}
           <div style={{ ...styles.tooltip, top: hoverPos.y, left: hoverPos.x }}>
-            🎬 Film Screening | 24 July 2025
+      Masterclass in Scene Creation: A Collaboration Between Actor & Director
+| 24 July 2025
           </div>
         </div>
       )}
