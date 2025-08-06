@@ -59,7 +59,12 @@ import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
-
+import Pbord from './page/Pbord';
+import PBOS from './page/PBOS';
+import CampusConnection from './page/CampusConnection';
+import GauraiyaDiwas from './page/GauraiyaDiwas';
+import IQACTrainingProgram from './page/IQACTrainingProgram';
+import VJDivas from './page/VJDivas';
 import Seminar from './page/Seminar';
 import Conference from './page/Conference';
 import SmartClass from './page/SmartClass';
@@ -93,6 +98,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<MainContent />} />
           <Route path="/" element={<MainContent />} />
           <Route path="/MA" element={<Page1 />} />
           <Route path="/PhD" element={<Page2 />} />
@@ -132,6 +138,12 @@ function App() {
           <Route path="/Page36" element={<Page36 />} />
           <Route path="/Page37" element={<Page37 />} />
           <Route path="/Page54" element={<Page54 />} />
+          <Route path="/Pbord" element={<Pbord />} />
+          <Route path="/PBOS" element={<PBOS />} />
+          <Route path="/CampusConnection" element={<CampusConnection />} />
+          <Route path="/GauraiyaDiwas" element={<GauraiyaDiwas />} />
+          <Route path="/IQACTrainingProgram" element={<IQACTrainingProgram />} />
+          <Route path="/VJDivas" element={<VJDivas />} />
           <Route path="/Page38" element={<Page38 />} />
           <Route path="/Page39" element={<Page39 />} />
           <Route path="/Page40" element={<Page40 />} />
@@ -152,7 +164,7 @@ function App() {
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
-          
+          <Route path="/SmartClass" element={<SmartClass />} />         
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />

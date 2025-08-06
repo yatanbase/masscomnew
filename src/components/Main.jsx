@@ -59,8 +59,6 @@ import Film_class from '../asset/Our gallery/FILM MASTERCLASS/image (2).jpg'
 import March25 from '../asset/Our gallery/25 march/IMG-20250330-WA0042.jpg'
 import March26 from '../asset/Our gallery/26 march/IMG-20250330-WA0058.jpg'
 import March27 from '../asset/Our gallery/Guru Dakshata program/IMG-20250330-WA0031.jpg'
-
-
 import MOOC_Training4 from '../asset/News/28 march.pdf'
 import MOOC_Training3 from '../asset/News/27 march.pdf'
 import MOOC_Training2 from '../asset/News/26 march.pdf'
@@ -73,6 +71,13 @@ import aryabhatta_cover from '../asset/Our gallery/aryabhatta on space day/image
 import Aryabhatta_times from '../asset/Our gallery/aryabhatta times/image (4).jpg'
 import PRO_img from '../asset/Our gallery/PRO/banner.jpg'
 import PRO1_img from '../asset/Our gallery/PRO1/img1.jpeg'
+import PBOS_img from '../asset/Our gallery/PBOS/img1.jpeg'
+import Pbord_img from '../asset/Our gallery/Pbord/img1.jpg'
+import CampusConnection_img from '../asset/Our gallery/CampusConnection/img2.JPG'
+import GauraiyaDiwas_img from '../asset/Our gallery/GauraiyaDiwas/img1.JPG'
+import JagranSpeechCompetition_img from '../asset/Our gallery/JagranSpeechCompetition/img1.JPG'
+import IQACTrainingProgram_img from '../asset/Our gallery/IQACTrainingProgram/img1.JPG'
+import VJDivas_img from '../asset/Our gallery/VJDivas/img1.jpeg'
 import PKAHANI_img from '../asset/Our gallery/PKAHANI/k1.jpg'
 import Aids_img from '../asset/Our gallery/aids/banner.jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
@@ -83,8 +88,6 @@ import aryabhattaTimes from '../asset/News/Aryabhatta_time_launch.pdf'
 import Youth_pdf from '../asset/News/youth as co creators pr final.pdf'
 import Pro_pdf from '../asset/News/PRO_PR (Sep 28).pdf'
 import Free_Course_pdf from '../asset/News/PR (October 22).pdf'
-
-
 import Announcement1 from '../News/Announcement1.pdf'
 import Announcement2 from '../News/Announcement2.pdf'
 import Announcement3 from '../News/Announcement3.pdf'
@@ -102,17 +105,57 @@ import Track from '../components/traffic'
 
 const galleryItems = [
     {
-            id: 54,
-            image: PRO1_img,
+        id: 57,
+        image: PBOS_img,
+        title: "BOS MEETING-II | 26 July 2025",
+        link: "/PBOS"
+     }, 
+     {
+        id: 61,
+        image: JagranSpeechCompetition_img,
+        title: "Jagran Speech Competition | 15 July 2025",
+        link: "JagranSpeechCompetition"
+    }, 
+    {
+        id: 58,
+        image: VJDivas_img,
+        title: "Vishwa Jansankhya Diwas (nukkar natak) | 12 July 2025",
+        link: "/VJDivas"
+    }, 
+    {
+        id: 59,
+        image: CampusConnection_img,
+        title: "Campus Connection University Outreach program by Akashvani Patna (FM 102.5) | 10 July 2025",
+        link: "/CampusConnection"
+    }, 
+    {
+        id: 54,
+        image: Pbord_img,
+        title: "Board of Studies Meeting | 07 May 2025",
+        link: "/Pbord"
+    },
+    {
+        id: 60,
+        image: GauraiyaDiwas_img,
+        title: "Gauraiya Diwas | 30 April 2025",
+        link: "/GauraiyaDiwas"
+    },    
+    {
+        id: 60,
+        image: IQACTrainingProgram_img,
+        title: "IQAC Training Program | 07 Feb 2025",
+        link: "/IQACTrainingProgram"
+    }, 
+    {
+        id: 56,
+        image: PRO1_img,
         title: "🎬 Film Screening of Student Films",
         link: "/Page54"
     },
-
     {
-            id: 55,
-            image: PKAHANI_img,
-        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting"
-,
+        id: 55,
+        image: PKAHANI_img,
+        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting",
         link: "/PKAHANI"
     },
    
