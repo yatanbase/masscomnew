@@ -104,7 +104,7 @@ const galleryItems = [
     {
             id: 54,
             image: PRO1_img,
-        title: "MASTER CLASS ON SCENE CREATION BY ACTOR AND DIRECTOR",
+        title: "Master Class On Scene Creation By Actor and Director",
         link: "/Page54"
     },
 

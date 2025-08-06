@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "../components/HomeButton";
+import React, { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from '../components/HomeButton';
 
 // ✅ Import Images
 import Image1 from "../asset/Our gallery/26 march/IMG-20250330-WA0057.jpg";
@@ -9,6 +9,8 @@ import Image3 from "../asset/Our gallery/26 march/IMG-20250330-WA0059.jpg";
 import Image4 from "../asset/Our gallery/26 march/IMG-20250330-WA0060.jpg";
 import Image5 from "../asset/Our gallery/26 march/IMG-20250330-WA0061.jpg";
 
+function Page50() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 const images = [
   { src: Image1, title: "Film Acting Masterclass – Image 1", date: "26 March 2025" },
   { src: Image2, title: "Film Acting Masterclass – Image 2", date: "26 March 2025" },
@@ -17,33 +19,42 @@ const images = [
   { src: Image5, title: "Film Acting Masterclass – Image 5", date: "26 March 2025" },
 ];
 
-function Page50() {
-  const [zoomIndex, setZoomIndex] = useState(null);
 
-  const handleNext = () => setZoomIndex((prev) => (prev + 1) % images.length);
-  const handlePrev = () => setZoomIndex((prev) => (prev - 1 + images.length) % images.length);
+  const [zoomIndex, setZoomIndex] = useState(null);
+  const [hoverPos, setHoverPos] = useState({ x: 0, y: 0, visible: false });
+
+  // ✅ Keyboard navigation for zoom mode
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (zoomIndex === null) return;
+      if (e.key === 'ArrowRight') setZoomIndex((prev) => (prev + 1) % images.length);
+      if (e.key === 'ArrowLeft') setZoomIndex((prev) => (prev - 1 + images.length) % images.length);
+      if (e.key === 'Escape') setZoomIndex(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [zoomIndex, images.length]);
+
+  // ✅ Tooltip for zoom mode
+  let tooltipTimer;
+  const handleMouseMove = (e) => {
+    setHoverPos({ x: e.clientX, y: e.clientY, visible: true });
+    clearTimeout(tooltipTimer);
+    tooltipTimer = setTimeout(() => setHoverPos((p) => ({ ...p, visible: false })), 1500);
+  };
+
+  const handleNext = (e) => { e.stopPropagation(); setZoomIndex((prev) => (prev + 1) % images.length); };
+  const handlePrev = (e) => { e.stopPropagation(); setZoomIndex((prev) => (prev - 1 + images.length) % images.length); };
 
   const styles = {
-    container: { margin: "50px" },
-    card: { background: "#fff", borderRadius: "12px", boxShadow: "0 6px 15px rgba(0,0,0,0.2)", marginTop: "30px" },
-
-    // ✅ Grid Layout
-    grid: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "15px" },
-
-    // ✅ Image Container
-    imgBox: { position: "relative", borderRadius: "8px", overflow: "hidden", cursor: "zoom-in" },
-
-    img: { width: "100%", height: "230px", objectFit: "cover", transition: "transform 0.3s ease" },
-
-    // ✅ Overlay Text
-    overlay: { position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.6)", color: "#fff", textAlign: "center", padding: "10px", fontSize: "14px", opacity: 0, transition: "opacity 0.3s ease" },
-
-    // ✅ Zoom Mode
-    zoom: { position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", background: "rgba(0,0,0,0.9)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", zIndex: 9999 },
-
-    arrow: { position: "absolute", top: "50%", fontSize: "3rem", color: "#fff", cursor: "pointer", userSelect: "none", transform: "translateY(-50%)" },
-    close: { position: "absolute", top: 20, right: 30, fontSize: "2.5rem", color: "#fff", cursor: "pointer" },
-    caption: { color: "#fff", marginTop: "10px", fontSize: "18px", textAlign: "center" }
+    container: { margin: '50px' },
+    card: { background: '#fff', borderRadius: '12px', boxShadow: '0 6px 15px rgba(0,0,0,0.2)', marginTop: '30px' },
+    imgBox: { position: 'relative', overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' },
+    img: { objectFit: 'cover', height: '200px', width: '100%', transition: 'transform 0.3s ease' },
+    overlay: { position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.6)', color: '#fff', opacity: 0, textAlign: 'center', padding: '5px', transition: 'opacity 0.3s' },
+    zoom: { position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999 },
+    tooltip: { position: 'absolute', background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontSize: '14px', transform: 'translate(-50%,-120%)', whiteSpace: 'nowrap', opacity: hoverPos.visible ? 1 : 0, transition: 'opacity 0.3s' },
+    arrow: { position: 'absolute', fontSize: '3rem', color: '#fff', cursor: 'pointer', opacity: 0.4, userSelect: 'none', transition: 'opacity 0.3s' }
   };
 
   return (
@@ -52,42 +63,52 @@ function Page50() {
       <div className="container">
         <div className="p-4 mx-auto text-center" style={styles.card}>
           <h2 className="mb-4 fw-bold text-primary">
-            🎬 Film Acting Masterclass – March 26  
+           🎬 Film Acting Masterclass
             <br /><small>26 March 2025</small>
           </h2>
 
-          {/* ✅ Responsive Grid Layout */}
-          <div style={styles.grid}>
+          {/* ✅ Image Grid */}
+          <div className="row">
             {images.map((img, i) => (
-              <div
-                key={i}
-                style={styles.imgBox}
-                onMouseEnter={(e) => e.currentTarget.querySelector(".overlay").style.opacity = 1}
-                onMouseLeave={(e) => e.currentTarget.querySelector(".overlay").style.opacity = 0}
-                onClick={() => setZoomIndex(i)}
-              >
-                <img src={img.src} alt={img.title} style={styles.img} />
-                <div className="overlay" style={styles.overlay}>{img.title}</div>
+              <div key={i} className="col-6 col-md-4 mb-3">
+                <div
+                  style={styles.imgBox}
+                  onMouseEnter={(e) => {
+                    const overlay = e.currentTarget.querySelector('.overlay');
+                    overlay.style.opacity = 1;
+                    e.currentTarget.querySelector('img').style.transform = 'scale(1.05)';
+                  }}
+                  onMouseLeave={(e) => {
+                    const overlay = e.currentTarget.querySelector('.overlay');
+                    overlay.style.opacity = 0; // ✅ overlay disappears immediately
+                    e.currentTarget.querySelector('img').style.transform = 'scale(1)';
+                  }}
+                  onClick={() => setZoomIndex(i)}
+                >
+                  <img src={img.src} alt="Gallery" style={styles.img} />
+                  {/* ✅ Hover text only visible on hover */}
+                  <div className="overlay" style={styles.overlay}>🎬 Film Acting Masterclass| 26 March 2025</div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* ✅ Full Screen Zoom Mode */}
+      {/* ✅ Zoom Mode */}
       {zoomIndex !== null && (
-        <div style={styles.zoom}>
-          <span style={styles.close} onClick={() => setZoomIndex(null)}>&times;</span>
-          <span style={{ ...styles.arrow, left: "30px" }} onClick={handlePrev}>&#10094;</span>
+        <div style={styles.zoom} onMouseMove={handleMouseMove}>
+          <span onClick={() => setZoomIndex(null)} style={{ position: 'absolute', top: 20, right: 30, fontSize: '2.5rem', color: '#fff', cursor: 'pointer' }}>&times;</span>
+          <span onClick={handlePrev} style={{ ...styles.arrow, left: 30 }}>&#10094;</span>
 
-          <img src={images[zoomIndex].src} alt="Zoomed" style={{ maxWidth: "90%", maxHeight: "80%", borderRadius: "8px" }} />
+          <img src={images[zoomIndex].src} alt="Zoomed" style={{ width: '100%', height: '100%', objectFit: 'contain' }} draggable={false} />
 
-          <span style={{ ...styles.arrow, right: "30px" }} onClick={handleNext}>&#10095;</span>
+          <span onClick={handleNext} style={{ ...styles.arrow, right: 30 }}>&#10095;</span>
 
-          {/* ✅ Caption under Image */}
-          <div style={styles.caption}>
-            {images[zoomIndex].title} – {images[zoomIndex].date}  
-            <br /><small>Image {zoomIndex + 1} of {images.length}</small>
+          {/* ✅ Tooltip shows only when moving mouse */}
+          <div style={{ ...styles.tooltip, top: hoverPos.y, left: hoverPos.x }}>
+      🎬 Film Acting Masterclass 26 March 2025
+| 26 March 2025
           </div>
         </div>
       )}
