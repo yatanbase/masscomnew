@@ -77,7 +77,7 @@ function Page37() {
       <div className="container">
         <div className="p-4 mx-auto text-center" style={styles.card}>
           <h2 className="mb-4 fw-bold text-primary">
-           The Role And Responsibilities | 28 Sep 2024
+           The Role And Responsibilities
 
             <br /><small>28 Sep 2024</small>
           </h2>
