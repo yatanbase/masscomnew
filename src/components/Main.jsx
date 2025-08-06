@@ -129,13 +129,13 @@ const galleryItems = [
         link: "/CampusConnection"
     }, 
     {
-        id: 54,
+        id: 56,
         image: Pbord_img,
         title: "Board of Studies Meeting | 07 May 2025",
         link: "/Pbord"
     },
     {
-        id: 60,
+        id: 62,
         image: GauraiyaDiwas_img,
         title: "Gauraiya Diwas | 30 April 2025",
         link: "/GauraiyaDiwas"
@@ -147,9 +147,9 @@ const galleryItems = [
         link: "/IQACTrainingProgram"
     }, 
     {
-        id: 56,
+        id: 54,
         image: PRO1_img,
-        title: "🎬 Film Screening of Student Films",
+        title: "🎬 Master Class On Scene By Actor And Director",
         link: "/Page54"
     },
     {
