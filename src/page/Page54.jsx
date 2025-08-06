@@ -84,7 +84,7 @@ function Page54() {
       <div className="container">
         <div className="p-4 mx-auto text-center" style={styles.card}>
           <h2 className="mb-4 fw-bold text-primary">
-            🎬 Film Screening of Student Films (2025-2026)
+            🎬 Master Class On Scene By Actor And Director 
             <br /><small>24 July 2025</small>
           </h2>
 
@@ -108,7 +108,7 @@ function Page54() {
                 >
                   <img src={img.src} alt="Gallery" style={styles.img} />
                   {/* ✅ Hover text only visible on hover */}
-                  <div className="overlay" style={styles.overlay}>🎬 Film Screening | 24 July 2025</div>
+                  <div className="overlay" style={styles.overlay}>🎬 Master Class On Scene By Actor And Director | 24 July 2025</div>
                 </div>
               </div>
             ))}
@@ -128,7 +128,7 @@ function Page54() {
 
           {/* ✅ Tooltip shows only when moving mouse */}
           <div style={{ ...styles.tooltip, top: hoverPos.y, left: hoverPos.x }}>
-            🎬 Film Screening | 24 July 2025
+            🎬 Master Class On Scene By Actor And Director | 24 July 2025
           </div>
         </div>
       )}
