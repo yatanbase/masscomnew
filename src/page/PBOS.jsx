@@ -5,7 +5,6 @@ import Image100 from '../asset/Our gallery/PBOS/img1.jpeg';
 import Image101 from '../asset/Our gallery/PBOS/img2.jpeg';
 import Image102 from '../asset/Our gallery/PBOS/img3.jpeg';
 import Image103 from '../asset/Our gallery/PBOS/img4.jpeg';
-import Image104 from '../asset/Our gallery/PBOS/img5.jpeg';
 
 function PBOS() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -15,7 +14,6 @@ function PBOS() {
     { src: Image101, date: '26 July 2025' },
     { src: Image102, date: '26 July 2025' },
     { src: Image103, date: '26 July 2025' },
-    { src: Image104, date: '26 July 2025' },
 
   ];
 

@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from '../components/HomeButton';
-
-import Image100 from '../asset/Our gallery/Pbord/img1.jpg';
-import Image101 from '../asset/Our gallery/Pbord/img2.jpg';
-import Image102 from '../asset/Our gallery/Pbord/img3.jpg';
-import Image103 from '../asset/Our gallery/Pbord/img4.jpg';
+import Image103 from '../asset/Our gallery/Pbord/img1.jpg';
 import Image104 from '../asset/Our gallery/Pbord/img5.jpg';
 import Image105 from '../asset/Our gallery/Pbord/img6.jpg';
 import Image106 from '../asset/Our gallery/Pbord/img7.jpg';
@@ -20,9 +16,6 @@ function Pbord () {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const images = [
-    { src: Image100, date: '07 May 2025' },
-    { src: Image101, date: '07 May 2025' },
-    { src: Image102, date: '207 May 2025' },
     { src: Image103, date: '07 May 2025' },
     { src: Image104, date: '07 May 2025' },
     { src: Image105, date: '07 May 2025' },
