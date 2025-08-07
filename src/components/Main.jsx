@@ -110,6 +110,19 @@ const galleryItems = [
         title: "BOS MEETING-II | 26 July 2025",
         link: "/PBOS"
      }, 
+      {
+        id: 54,
+        image: PRO1_img,
+        title: "🎬 Master Class On Scene By Actor And Director",
+        link: "/Page54"
+    },
+    
+     {
+        id: 55,
+        image: PKAHANI_img,
+        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting",
+        link: "/PKAHANI"
+    },
      {
         id: 61,
         image: JagranSpeechCompetition_img,
@@ -129,13 +142,13 @@ const galleryItems = [
         link: "/CampusConnection"
     }, 
     {
-        id: 54,
+        id: 56,
         image: Pbord_img,
         title: "Board of Studies Meeting | 07 May 2025",
         link: "/Pbord"
     },
     {
-        id: 60,
+        id: 62,
         image: GauraiyaDiwas_img,
         title: "Gauraiya Diwas | 30 April 2025",
         link: "/GauraiyaDiwas"
@@ -146,24 +159,7 @@ const galleryItems = [
         title: "IQAC Training Program | 07 Feb 2025",
         link: "/IQACTrainingProgram"
     }, 
-    {
-        id: 56,
-        image: PRO1_img,
-        title: "🎬 Film Screening of Student Films",
-    },
-   {
-        id: 54,
-            image: PRO1_img,
-        title: "Master Class On Scene Creation By Actor and Director",
-
-        link: "/Page54"
-    },
-    {
-        id: 55,
-        image: PKAHANI_img,
-        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting",
-        link: "/PKAHANI"
-    },
+   
    
     {
         id: 28,

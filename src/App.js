@@ -63,6 +63,7 @@ import Pbord from './page/Pbord';
 import PBOS from './page/PBOS';
 import CampusConnection from './page/CampusConnection';
 import GauraiyaDiwas from './page/GauraiyaDiwas';
+import JagranSpeechCompetition from './page/JagranSpeechCompetition';
 import IQACTrainingProgram from './page/IQACTrainingProgram';
 import VJDivas from './page/VJDivas';
 import Seminar from './page/Seminar';
@@ -142,6 +143,7 @@ function App() {
           <Route path="/PBOS" element={<PBOS />} />
           <Route path="/CampusConnection" element={<CampusConnection />} />
           <Route path="/GauraiyaDiwas" element={<GauraiyaDiwas />} />
+          <Route path="/JagranSpeechCompetition" element={<JagranSpeechCompetition />} />
           <Route path="/IQACTrainingProgram" element={<IQACTrainingProgram />} />
           <Route path="/VJDivas" element={<VJDivas />} />
           <Route path="/Page38" element={<Page38 />} />
