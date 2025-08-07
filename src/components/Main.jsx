@@ -141,7 +141,7 @@ const galleryItems = [
         link: "/GauraiyaDiwas"
     },    
     {
-        id: 60,
+        id: 62,
         image: IQACTrainingProgram_img,
         title: "IQAC Training Program | 07 Feb 2025",
         link: "/IQACTrainingProgram"
@@ -150,6 +150,12 @@ const galleryItems = [
         id: 56,
         image: PRO1_img,
         title: "🎬 Film Screening of Student Films",
+    },
+   {
+        id: 54,
+            image: PRO1_img,
+        title: "Master Class On Scene Creation By Actor and Director",
+
         link: "/Page54"
     },
     {
