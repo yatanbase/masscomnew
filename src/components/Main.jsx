@@ -107,7 +107,7 @@ const galleryItems = [
     {
         id: 57,
         image: PBOS_img,
-        title: "BOS MEETING-II | 26 July 2025",
+        title: "BOS MEETING | 26 July 2025",
         link: "/PBOS"
      }, 
       {
@@ -132,7 +132,7 @@ const galleryItems = [
     {
         id: 58,
         image: VJDivas_img,
-        title: "Vishwa Jansankhya Diwas (nukkar natak) | 12 July 2025",
+        title: "विश्व जनसंख्या दिवस के अवसर पर नुक्कड़ नाटक| 11 July 2025",
         link: "/VJDivas"
     }, 
     {

@@ -7,14 +7,8 @@ import Image101 from '../asset/Our gallery/CampusConnection/img2.JPG';
 import Image102 from '../asset/Our gallery/CampusConnection/img3.JPG';
 import Image103 from '../asset/Our gallery/CampusConnection/img4.JPG';
 import Image104 from '../asset/Our gallery/CampusConnection/img5.JPG';
-import Image105 from '../asset/Our gallery/CampusConnection/img6.JPG';
-import Image106 from '../asset/Our gallery/CampusConnection/img7.JPG';
-import Image107 from '../asset/Our gallery/CampusConnection/img8.JPG';
-import Image108 from '../asset/Our gallery/CampusConnection/img9.JPG';
-import Image109 from '../asset/Our gallery/CampusConnection/img10.JPG';
-import Image110 from '../asset/Our gallery/CampusConnection/img11.JPG';
-import Image111 from '../asset/Our gallery/CampusConnection/img12.JPG';
-import Image112 from '../asset/Our gallery/CampusConnection/img13.JPG';
+import Image105 from '../asset/Our gallery/CampusConnection/img1.JPG';
+
 
 function CampusConnection() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -26,13 +20,6 @@ function CampusConnection() {
     { src: Image103, date: '10 July 2025' },
     { src: Image104, date: '10 July 2025' },
     { src: Image105, date: '10 July 2025' },
-    { src: Image106, date: '10 July 2025' },
-    { src: Image107, date: '10 July 2025' },
-    { src: Image108, date: '10 July 2025' },
-    { src: Image109, date: '10 July 2025' },
-    { src: Image110, date: '10 July 2025' },
-    { src: Image111, date: '10 July 2025' },
-    { src: Image112, date: '10 July 2025' },
   ];
 
   const [zoomIndex, setZoomIndex] = useState(null);
