@@ -61,6 +61,8 @@ import Page52 from './page/Page52';
 import Page53 from './page/page53';
 import Pbord from './page/Pbord';
 import PBOS from './page/PBOS';
+import Nikon from './page/Nikon';
+import HindiDiwas_25 from './page/HindiDiwas_25';
 import CampusConnection from './page/CampusConnection';
 import GauraiyaDiwas from './page/GauraiyaDiwas';
 import JagranSpeechCompetition from './page/JagranSpeechCompetition';
@@ -69,7 +71,6 @@ import VJDivas from './page/VJDivas';
 import Seminar from './page/Seminar';
 import Conference from './page/Conference';
 import SmartClass from './page/SmartClass';
-
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -141,6 +142,8 @@ function App() {
           <Route path="/Page54" element={<Page54 />} />
           <Route path="/Pbord" element={<Pbord />} />
           <Route path="/PBOS" element={<PBOS />} />
+          <Route path="/Nikon" element={<Nikon />} />
+          <Route path="/HindiDiwas_25" element={<HindiDiwas_25 />} />
           <Route path="/CampusConnection" element={<CampusConnection />} />
           <Route path="/GauraiyaDiwas" element={<GauraiyaDiwas />} />
           <Route path="/JagranSpeechCompetition" element={<JagranSpeechCompetition />} />

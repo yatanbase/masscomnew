@@ -72,6 +72,8 @@ import Aryabhatta_times from '../asset/Our gallery/aryabhatta times/image (4).jp
 import PRO_img from '../asset/Our gallery/PRO/banner.jpg'
 import PRO1_img from '../asset/Our gallery/PRO1/img1.jpeg'
 import PBOS_img from '../asset/Our gallery/PBOS/img1.jpeg'
+import Nikon_img from '../asset/Our gallery/Nikon/img.jpeg'
+import HindiDiwas_25_img from '../asset/Our gallery/HindiDiwas_25/img1.jpeg'
 import Pbord_img from '../asset/Our gallery/Pbord/img1.jpg'
 import CampusConnection_img from '../asset/Our gallery/CampusConnection/img2.JPG'
 import GauraiyaDiwas_img from '../asset/Our gallery/GauraiyaDiwas/img1.JPG'
@@ -105,6 +107,12 @@ import Track from '../components/traffic'
 
 const galleryItems = [
     {
+        id: 64,
+        image: Nikon_img,
+        title: "One Day Workshop On Lighting And Grammar Of Photography| 07 Aug 2025",
+        link: "/Nikon"
+     },      
+    {
         id: 57,
         image: PBOS_img,
         title: "BOS MEETING | 26 July 2025",
@@ -113,14 +121,14 @@ const galleryItems = [
       {
         id: 54,
         image: PRO1_img,
-        title: "🎬 Master Class On Scene By Actor And Director",
+        title: "🎬 Master Class On Scene By Actor And Director | 24 July 2025",
         link: "/Page54"
     },
     
      {
         id: 55,
         image: PKAHANI_img,
-        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting",
+        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting | 23 July 2025",
         link: "/PKAHANI"
     },
      {
@@ -142,6 +150,12 @@ const galleryItems = [
         link: "/CampusConnection"
     }, 
     {
+        id: 65,
+        image: HindiDiwas_25_img,
+        title: "Hindi Patrakarita Udbhav Diwas | 30 May 2025",
+        link: "/HindiDiwas_25"
+     }, 
+    {
         id: 56,
         image: Pbord_img,
         title: "Board of Studies Meeting | 07 May 2025",
@@ -154,7 +168,7 @@ const galleryItems = [
         link: "/GauraiyaDiwas"
     },    
     {
-        id: 62,
+        id: 63,
         image: IQACTrainingProgram_img,
         title: "IQAC Training Program | 07 Feb 2025",
         link: "/IQACTrainingProgram"
