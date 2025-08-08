@@ -18,7 +18,7 @@ const Page31 = () => {
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ backgroundColor: '#f0f0f0', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)', width: '100%', height: 'auto', marginTop: '20px', padding: '20px' }} className="col-md-9 p-4 text-center">
-                  <a href="https://forms.gle/HHoeDzS3JeWVe1bz6" target="_blank" style={{ textDecoration: 'none' }}>
+                  <a href="https://forms.gle/FYAy6pywBM3Mwp7B6" target="_blank" style={{ textDecoration: 'none' }}>
                     <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                       <img src={FDP} alt="Gallery Image 2" style={{ width: '25vw', height: 'auto', objectFit: 'cover', boxShadow: '2px 2px 7px 2px rgba(0, 0, 0, 0.9)', borderRadius: '20px' }} />
                       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif', fontSize: '1.6rem', color: 'black', marginTop: '10px',marginBottom:'0px' }}>
