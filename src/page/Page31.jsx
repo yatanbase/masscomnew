@@ -1,6 +1,6 @@
 import React from 'react';
 import Book from '../asset/events.png';
-import FDP from '../asset/upcoming events/Training Programme.jpg'
+import FDP from '../asset/upcoming events/fdp.jpeg'
 
 const Page31 = () => {
   return (
@@ -22,7 +22,7 @@ const Page31 = () => {
                     <div style={{ width: '100%', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                       <img src={FDP} alt="Gallery Image 2" style={{ width: '25vw', height: 'auto', objectFit: 'cover', boxShadow: '2px 2px 7px 2px rgba(0, 0, 0, 0.9)', borderRadius: '20px' }} />
                       <p style={{ textAlign: 'center', fontFamily: 'Times New Roman, serif', fontSize: '1.6rem', color: 'black', marginTop: '10px',marginBottom:'0px' }}>
-                        Date : 08 Aug 2025<br />
+                        Date : 12 Aug 2025<br />
                         <span style={{ color: 'darkred', fontSize: '1.2rem',position:'relative',bottom:'10px'}}>know more &gt;</span>
                       </p>
                     </div>
