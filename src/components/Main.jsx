@@ -81,6 +81,7 @@ import JagranSpeechCompetition_img from '../asset/Our gallery/JagranSpeechCompet
 import IQACTrainingProgram_img from '../asset/Our gallery/IQACTrainingProgram/img1.JPG'
 import VJDivas_img from '../asset/Our gallery/VJDivas/img1.jpeg'
 import PKAHANI_img from '../asset/Our gallery/PKAHANI/k1.jpg'
+import Wastemanegment_img from '../asset/Our gallery/Wastemanegment/k1.jpg'
 import Aids_img from '../asset/Our gallery/aids/banner.jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
@@ -106,6 +107,13 @@ import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
 
 const galleryItems = [
+    
+     {
+        id: 65,
+        image: Wastemanegment_img,
+        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting | 23 July 2025",
+        link: "/Wastemanegment"
+    },
     {
         id: 64,
         image: Nikon_img,

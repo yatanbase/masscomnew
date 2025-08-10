@@ -43,6 +43,7 @@ import Page36 from './page/Page36';
 import Page37 from './page/Page37';
 import Page54 from './page/Page54';
 import PKAHANI from './page/PKAHANI';
+import Wastemanegment from './page/Wastemanegment';
 import Page38 from './page/Page38';
 import Page39 from './page/Page39';
 import Page40 from './page/Page40';
@@ -163,6 +164,7 @@ function App() {
           <Route path="/Page49" element={<Page49 />} />
           <Route path="/Page50" element={<Page50 />} />
           <Route path="/PKAHANI" element={<PKAHANI />} />
+          <Route path="/Wastemanegment" element={<Wastemanegment />} />
           <Route path="/Page51" element={<Page51 />} />
           <Route path="/GuestFaculty" element={<Page52 />} />
           <Route path="/board-of-studies" element={<Page53 />} />
