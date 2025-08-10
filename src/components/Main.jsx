@@ -111,7 +111,7 @@ const galleryItems = [
      {
         id: 65,
         image: Wastemanegment_img,
-        title: "Kahani Radio Ki: Chronicles of Indian Broadcasting | 23 July 2025",
+        title: "Training Program for Skill Development on Waste Management",
         link: "/Wastemanegment"
     },
     {

@@ -43,39 +43,39 @@ function Wastemanegment() {
   const images = [
     { src: Image100, date: '08 Aug 2025' },
     { src: Image106, date: '08 Aug 2025' },
-    { src: Image101, date: '23 Aug 2025' },
-    { src: Image102, date: '23 Aug 2025' },
-    { src: Image103, date: '23 Aug 2025' },
-    { src: Image104, date: '23 Aug 2025' },
-    { src: Image105, date: '23 Aug 2025' },
+    { src: Image101, date: '08 Aug 2025' },
+    { src: Image102, date: '08 Aug 2025' },
+    { src: Image103, date: '08 Aug 2025' },
+    { src: Image104, date: '08 Aug 2025' },
+    { src: Image105, date: '08 Aug 2025' },
     { src: Image107, date: '08 Aug 2025' },
     { src: Image108, date: '08 Aug 2025' },
-    { src: Image109, date: '23 Aug 2025' },
-    { src: Image110, date: '23 Aug 2025' },
-    { src: Image111, date: '23 Aug 2025' },
-    { src: Image112, date: '23 Aug 2025' },
-    { src: Image113, date: '23 Aug 2025' },
+    { src: Image109, date: '08 Aug 2025' },
+    { src: Image110, date: '08 Aug 2025' },
+    { src: Image111, date: '08 Aug 2025' },
+    { src: Image112, date: '08 Aug 2025' },
+    { src: Image113, date: '08 Aug 2025' },
     { src: Image114, date: '08 Aug 2025' },
     { src: Image115, date: '08 Aug 2025' },
-    { src: Image116, date: '23 Aug 2025' },
-    { src: Image117, date: '23 Aug 2025' },
-    { src: Image118, date: '23 Aug 2025' },
-    { src: Image119, date: '23 Aug 2025' },
-    { src: Image120, date: '23 Aug 2025' },
+    { src: Image116, date: '08 Aug 2025' },
+    { src: Image117, date: '08 Aug 2025' },
+    { src: Image118, date: '08 Aug 2025' },
+    { src: Image119, date: '08 Aug 2025' },
+    { src: Image120, date: '08 Aug 2025' },
     { src: Image121, date: '08 Aug 2025' },
     { src: Image122, date: '08 Aug 2025' },
-    { src: Image123, date: '23 Aug 2025' },
-    { src: Image124, date: '23 Aug 2025' },
-    { src: Image125, date: '23 Aug 2025' },
-    { src: Image126, date: '23 Aug 2025' },
-    { src: Image127, date: '23 Aug 2025' },
+    { src: Image123, date: '08 Aug 2025' },
+    { src: Image124, date: '08 Aug 2025' },
+    { src: Image125, date: '08 Aug 2025' },
+    { src: Image126, date: '08 Aug 2025' },
+    { src: Image127, date: '08 Aug 2025' },
     { src: Image128, date: '08 Aug 2025' },
     { src: Image129, date: '08 Aug 2025' },
-    { src: Image130, date: '23 Aug 2025' },
-    { src: Image131, date: '23 Aug 2025' },
-    { src: Image132, date: '23 Aug 2025' },
-    { src: Image134, date: '23 Aug 2025' },
-    { src: Image135, date: '23 Aug 2025' },
+    { src: Image130, date: '08 Aug 2025' },
+    { src: Image131, date: '08 Aug 2025' },
+    { src: Image132, date: '08 Aug 2025' },
+    { src: Image134, date: '08 Aug 2025' },
+    { src: Image135, date: '08 Aug 2025' },
 
   ];
 
@@ -140,7 +140,7 @@ function Wastemanegment() {
                   onClick={() => setZoomIndex(i)}
                 >
                   <img src={img.src} alt="Gallery" style={styles.img} />
-                  <div className="overlay" style={styles.overlay}>Training Program for Skill Development on Waste Management | 08 Aug 2025| {img.date}</div>
+                  <div className="overlay" style={styles.overlay}>Training Program for Skill Development on Waste Management | {img.date}</div>
                 </div>
               </div>
             ))}
