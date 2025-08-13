@@ -82,6 +82,7 @@ import IQACTrainingProgram_img from '../asset/Our gallery/IQACTrainingProgram/im
 import VJDivas_img from '../asset/Our gallery/VJDivas/img1.jpeg'
 import PKAHANI_img from '../asset/Our gallery/PKAHANI/k1.jpg'
 import Wastemanegment_img from '../asset/Our gallery/Wastemanegment/k1.jpg'
+import Project_Shield_img from '../asset/Our gallery/Project_Shield/k1.jpeg'
 import Aids_img from '../asset/Our gallery/aids/banner.jpeg'
 import Bookistan_club from '../asset/News/Bookistan club.pdf'
 import Bookistan_pdf from '../asset/News/Parsai (PR 17 August).pdf'
@@ -107,9 +108,15 @@ import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
 
 const galleryItems = [
+     {
+        id: 67,
+        image: Project_Shield_img,
+        title: "OUTSMART THE SCAMMERS PROJECT SHIELD | 12 Aug 2025",
+        link: "/Project_Shield"
+    },
     
      {
-        id: 65,
+        id: 66,
         image: Wastemanegment_img,
         title: "Training Program for Skill Development on Waste Management",
         link: "/Wastemanegment"

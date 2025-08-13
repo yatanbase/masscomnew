@@ -7,12 +7,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation'; // ✅ Navigation CSS
 
 import advideo from '../asset/skill course.mp4';
-import Image5 from '../asset/Adms_banner5.jpeg';
-import Image1 from '../asset/Adms_banner4.jpeg';
-import Image2 from '../asset/Adms_banner1.jpg';
-import Image3 from '../asset/Adms_banner2.jpg';
-import Image4 from '../asset/Adms_banner3.jpg';
-import Image6 from '../asset/tyu.jpg';
+import Image5 from '../asset/Adms_banner1.jpeg';
+import Image1 from '../asset/Adms_banner2.jpeg';
+import Image2 from '../asset/Adms_banner3.jpeg';
+import Image3 from '../asset/Adms_banner4.jpeg';
+import Image4 from '../asset/Adms_banner5.jpg';
 
 
 const Admission_popup = ({ onClose }) => {
@@ -72,9 +71,6 @@ const Admission_popup = ({ onClose }) => {
             </SwiperSlide>
             <SwiperSlide>
               <img src={Image5} alt="Ad 5" className="ad-image" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={Image6} alt="Ad 5" className="ad-image" />
             </SwiperSlide>
           </Swiper>
 

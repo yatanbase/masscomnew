@@ -117,9 +117,10 @@ import ImageJuly11 from '../asset/media_center/2025/July/hindustan30-07-25.jpeg'
 import ImageJuly9 from '../asset/media_center/2025/July/prabahat30-07-25.jpeg';
 import ImageJuly10 from '../asset/media_center/2025/July/danik30-07-25.jpeg';
 
+// August
 
- 
-
+ import ImageAug from '../asset/media_center/2025/August/Danik_Bhasker.jpeg';
+ import ImageAug1 from '../asset/media_center/2025/August/prabhat.jpeg';
 
 
 
@@ -129,6 +130,8 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
+     { src: ImageAug1, date: '13/08/2025' },
+    { src: ImageAug, date: '13/08/2025' },
     { src: ImageJuly11, date: '30/07/2025' },
      { src: ImageJuly9, date: '30/07/2025' },
     { src: ImageJuly10, date: '30/07/2025' },

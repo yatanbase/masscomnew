@@ -44,6 +44,7 @@ import Page37 from './page/Page37';
 import Page54 from './page/Page54';
 import PKAHANI from './page/PKAHANI';
 import Wastemanegment from './page/Wastemanegment';
+import Project_Shield from './page/Project_Shield';
 import Page38 from './page/Page38';
 import Page39 from './page/Page39';
 import Page40 from './page/Page40';
@@ -165,6 +166,7 @@ function App() {
           <Route path="/Page50" element={<Page50 />} />
           <Route path="/PKAHANI" element={<PKAHANI />} />
           <Route path="/Wastemanegment" element={<Wastemanegment />} />
+          <Route path="/Project_Shield" element={<Project_Shield />} />
           <Route path="/Page51" element={<Page51 />} />
           <Route path="/GuestFaculty" element={<Page52 />} />
           <Route path="/board-of-studies" element={<Page53 />} />
