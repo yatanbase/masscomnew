@@ -1,7 +1,8 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import Slide1 from '../asset/k4.jpeg';
+import Slide1 from '../asset/k14.jpeg';
+import Slide25 from '../asset/k4.jpeg';
 import Slide2 from '../asset/k19.jpg';
  import Slide3 from '../asset/k23.jpg';
 import Slide4 from '../asset/home_slider_4.jpg';
@@ -24,8 +25,8 @@ import Slide22 from '../asset/slider/slider_2.jpg'
 
 const slideImages = [
  
-  
   { url: Slide1, caption: '' },
+  { url: Slide25, caption: '' },
   { url: Slide2, caption: '' },
   { url: Slide3, caption: '' },
   { url: Slide19, caption: '' },

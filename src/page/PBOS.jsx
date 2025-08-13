@@ -61,7 +61,7 @@ function PBOS() {
         <div className="p-4 mx-auto text-center" style={styles.card}>
           <h2 className="mb-4 fw-bold text-primary">
              BOS MEETING-II 
-            <br /><small>26 July 2025</small>
+<br /><small>26 July 2025</small>
           </h2>
 
           {/* ✅ Image Grid */}
@@ -84,7 +84,7 @@ function PBOS() {
                 >
                   <img src={img.src} alt="Gallery" style={styles.img} />
                   {/* ✅ Hover text only visible on hover */}
-                  <div className="overlay" style={styles.overlay}>BOS MEETING-II | 26 July 2025</div>
+                  <div className="overlay" style={styles.overlay}>BOS MEETING-II|26 July 2025</div>
                 </div>
               </div>
             ))}

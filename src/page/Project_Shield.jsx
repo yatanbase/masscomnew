@@ -11,29 +11,29 @@ import Image106 from '../asset/Our gallery/Project_Shield/k7.jpeg';
 import Image107 from '../asset/Our gallery/Project_Shield/k8.jpeg';
 import Image108 from '../asset/Our gallery/Project_Shield/k9.jpeg';
 import Image109 from '../asset/Our gallery/Project_Shield/k10.jpeg';
-import Image110 from '../asset/Our gallery/Project_Shield/k11.jpeg';
+//import Image110 from '../asset/Our gallery/Project_Shield/k11.jpeg';
 import Image111 from '../asset/Our gallery/Project_Shield/k12.jpeg';
 import Image112 from '../asset/Our gallery/Project_Shield/k13.jpeg';
 import Image113 from '../asset/Our gallery/Project_Shield/k14.jpeg';
 import Image114 from '../asset/Our gallery/Project_Shield/k15.jpeg';
 import Image115 from '../asset/Our gallery/Project_Shield/k16.jpeg';
 import Image116 from '../asset/Our gallery/Project_Shield/k17.jpeg';
-import Image117 from '../asset/Our gallery/Project_Shield/k18.jpeg';
-import Image118 from '../asset/Our gallery/Project_Shield/k19.jpeg';
+//import Image117 from '../asset/Our gallery/Project_Shield/k18.jpeg';
+//import Image118 from '../asset/Our gallery/Project_Shield/k19.jpeg';
 import Image119 from '../asset/Our gallery/Project_Shield/k20.jpeg';
 import Image120 from '../asset/Our gallery/Project_Shield/k21.jpeg';
 import Image121 from '../asset/Our gallery/Project_Shield/k22.jpeg';
 import Image122 from '../asset/Our gallery/Project_Shield/k23.jpeg';
-import Image123 from '../asset/Our gallery/Project_Shield/k27.jpeg';
+//import Image123 from '../asset/Our gallery/Project_Shield/k27.jpeg';
 import Image124 from '../asset/Our gallery/Project_Shield/k24.jpeg';
 import Image125 from '../asset/Our gallery/Project_Shield/k25.jpeg';
 import Image126 from '../asset/Our gallery/Project_Shield/k26.jpeg';
 import Image127 from '../asset/Our gallery/Project_Shield/k28.jpeg';
 import Image128 from '../asset/Our gallery/Project_Shield/k29.jpeg';
-import Image129 from '../asset/Our gallery/Project_Shield/k30.jpeg';
-import Image130 from '../asset/Our gallery/Project_Shield/k31.jpeg';
+//import Image129 from '../asset/Our gallery/Project_Shield/k30.jpeg';
+//import Image130 from '../asset/Our gallery/Project_Shield/k31.jpeg';
 import Image131 from '../asset/Our gallery/Project_Shield/k32.jpeg';
-import Image132 from '../asset/Our gallery/Project_Shield/k34.jpeg';
+//import Image132 from '../asset/Our gallery/Project_Shield/k34.jpeg';
 
 
 function Project_Shield() {
@@ -50,29 +50,29 @@ function Project_Shield() {
     { src: Image107, date: '12 Aug 2025' },
     { src: Image108, date: '12 Aug 2025' },
     { src: Image109, date: '12 Aug 2025' },
-    { src: Image110, date: '12 Aug 2025' },
+    //{ src: Image110, date: '12 Aug 2025' },
     { src: Image111, date: '12 Aug 2025' },
     { src: Image112, date: '12 Aug 2025' },
     { src: Image113, date: '12 Aug 2025' },
     { src: Image114, date: '12 Aug 2025' },
     { src: Image115, date: '12 Aug 2025' },
     { src: Image116, date: '12 Aug 2025' },
-    { src: Image117, date: '12 Aug 2025' },
-    { src: Image118, date: '12 Aug 2025' },
+   // { src: Image117, date: '12 Aug 2025' },
+    //{ src: Image118, date: '12 Aug 2025' },
     { src: Image119, date: '12 Aug 2025' },
     { src: Image120, date: '12 Aug 2025' },
     { src: Image121, date: '12 Aug 2025' },
     { src: Image122, date: '12 Aug 2025' },
-    { src: Image123, date: '12 Aug 2025' },
+    //{ src: Image123, date: '12 Aug 2025' },
     { src: Image124, date: '12 Aug 2025' },
     { src: Image125, date: '12 Aug 2025' },
     { src: Image126, date: '12 Aug 2025' },
     { src: Image127, date: '12 Aug 2025' },
     { src: Image128, date: '12 Aug 2025' },
-    { src: Image129, date: '12 Aug 2025' },
-    { src: Image130, date: '12 Aug 2025' },
+    //{ src: Image129, date: '12 Aug 2025' },
+    //{ src: Image130, date: '12 Aug 2025' },
     { src: Image131, date: '12 Aug 2025' },
-    { src: Image132, date: '12 Aug 2025' }
+    //{ src: Image132, date: '12 Aug 2025' }
 
   ];
 
@@ -118,7 +118,7 @@ function Project_Shield() {
       <Home />
       <div className="container">
         <div className="p-4 mx-auto text-center" style={styles.card}>
-          <h2 className="mb-4 fw-bold text-primary">OutSmart The Scammers PROJECT SHIELD | 12 Aug 2025</h2>
+          <h2 className="mb-4 fw-bold text-primary">PROJECT SHIELD | 12 Aug 2025</h2>
 
           {/* ✅ Image Grid */}
           <div className="row">
@@ -137,7 +137,7 @@ function Project_Shield() {
                   onClick={() => setZoomIndex(i)}
                 >
                   <img src={img.src} alt="Gallery" style={styles.img} />
-                  <div className="overlay" style={styles.overlay}>OUTSMART THE SCAMMERS PROJECT SHIELD | 12 Aug 2025</div>
+                  <div className="overlay" style={styles.overlay}>PROJECT SHIELD | 12 Aug 2025</div>
                 </div>
               </div>
             ))}
@@ -162,7 +162,7 @@ function Project_Shield() {
 
           {/* ✅ Tooltip */}
           <div style={{ ...styles.tooltip, top: hoverPos.y, left: hoverPos.x }}>
-            OUTSMART THE SCAMMERS PROJECT SHIELD | 12 Aug 2025
+           PROJECT SHIELD | 12 Aug 2025
           </div>
         </div>
       )}
