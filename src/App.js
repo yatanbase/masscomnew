@@ -62,6 +62,8 @@ import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
 import Pbord from './page/Pbord';
+import Interaction from './page/Interaction';
+import Aiworkshop from './page/Aiworkshop';
 import PBOS from './page/PBOS';
 import Nikon from './page/Nikon';
 import HindiDiwas_25 from './page/HindiDiwas_25';
@@ -164,7 +166,9 @@ function App() {
           <Route path="/Page48" element={<Page48 />} />
           <Route path="/Page49" element={<Page49 />} />
           <Route path="/Page50" element={<Page50 />} />
-          <Route path="/PKAHANI" element={<PKAHANI />} />
+         <Route path="/PKAHANI" element={<PKAHANI />} />
+         <Route path="/Interaction" element={<Interaction />} />
+         <Route path="/Aiworkshop" element={<Aiworkshop />} />
           <Route path="/Wastemanegment" element={<Wastemanegment />} />
           <Route path="/Project_Shield" element={<Project_Shield />} />
           <Route path="/Page51" element={<Page51 />} />

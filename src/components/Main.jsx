@@ -107,8 +107,24 @@ import AryabhattaTimes_Logo from '../asset/AryabhattaTimes_logo.png'
 import Form from '../components/Form'
 import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
+import Interaction_img from '../asset/Our gallery/Interaction/img1.jpg'
+import Aiworkshop_img from '../asset/Our gallery/Aiworkshop/img1.jpeg'
 
 const galleryItems = [
+    {
+        id: 69,
+        image: Aiworkshop_img,
+        title: "Training  India's  Workforce to Ai-ready| 27 Aug 2025",
+        link: "/Aiworkshop"
+    },
+     
+    {
+        id: 68,
+        image: Interaction_img,
+        title: "Interaction On Film| 22 Aug 2025",
+        link: "/Interaction"
+    },
+ 
      {
         id: 67,
         image: Project_Shield_img,
