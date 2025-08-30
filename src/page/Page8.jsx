@@ -120,9 +120,12 @@ import ImageJuly10 from '../asset/media_center/2025/July/danik30-07-25.jpeg';
 // August
 
  import ImageAug from '../asset/media_center/2025/August/Danik_Bhasker.jpeg';
- import ImageAug1 from '../asset/media_center/2025/August/prabhat.jpeg';
-
-
+ import ImageAug1 from '../asset/media_center/2025/August/prabhat.jpeg'; 
+ import ImageAug2 from '../asset/media_center/2025/August/hin28.jpeg';
+ import ImageAug3 from '../asset/media_center/2025/August/prabhat28.jpeg';
+ import ImageAug5 from '../asset/media_center/2025/August/hiniqc.jpeg';
+ import ImageAug6 from '../asset/media_center/2025/August/hind30.jpeg';
+import ImageAug7 from '../asset/media_center/2025/August/hind30.jpeg';
 
 function Page8() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -130,6 +133,11 @@ function Page8() {
 
   // Organize images by year and dates
   const images2025 = [
+     { src: ImageAug7, date: '30/08/2025' },
+    { src: ImageAug6, date: '30/08/2025' },
+     { src: ImageAug5, date: '30/08/2025' },
+    { src: ImageAug3, date: '28/08/2025' },
+    { src: ImageAug2, date: '28/08/2025' },
      { src: ImageAug1, date: '13/08/2025' },
     { src: ImageAug, date: '13/08/2025' },
     { src: ImageJuly11, date: '30/07/2025' },
