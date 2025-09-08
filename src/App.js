@@ -62,6 +62,7 @@ import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
 import Pbord from './page/Pbord';
+import FreeTraining from './page/FreeTraining';
 import Interaction from './page/Interaction';
 import Aiworkshop from './page/Aiworkshop';
 import PBOS from './page/PBOS';
@@ -112,6 +113,7 @@ function App() {
           <Route path="/Staff" element={<Page4 />} />
           <Route path="/Faculty" element={<Page5 />} />
           <Route path="/page6" element={<Page6 />} />
+          <Route path="/FreeTraining" element={<FreeTraining />} />
           <Route path="/RoleOfSJMC" element={<Page7 />} />
           <Route path="/Media_Center" element={<Page8 />} />
           <Route path="/Founder_Director" element={<Page9 />} />

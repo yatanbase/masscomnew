@@ -579,8 +579,6 @@ function Page1() {
     <td colSpan="7" style={{ textAlign: 'center' }}>OR</td>
 </tr>
 
-
-
 <tr style={{ boxSizing: 'border-box' }}>
                         <td style={{ boxSizing: 'border-box', padding: '8px', lineHeight: '1.42857', verticalAlign: 'top', border: '1px solid rgb(221, 221, 221)' }}>
                             EC-1
@@ -604,8 +602,6 @@ function Page1() {
                             100
                         </td>
                     </tr>
-
-
 
                     <tr style={{ boxSizing: 'border-box', padding: '8px', lineHeight: '1.42857', verticalAlign: 'top', border: '1px solid rgb(221, 221, 221)' }}>
     <td colSpan="7" style={{ textAlign: 'center' }}>Choose Any one in two Elective papers (DSE – 1 or GE – 1)</td>
@@ -636,9 +632,8 @@ function Page1() {
                     </tr>
                     
                     <tr style={{ boxSizing: 'border-box', padding: '8px', lineHeight: '1.42857', verticalAlign: 'top', border: '1px solid rgb(221, 221, 221)' }}>
-    <td colSpan="7" style={{ textAlign: 'center' }}>OR</td>
+                        <td colSpan="7" style={{ textAlign: 'center' }}>OR</td>
 </tr>
-
 
                     <tr style={{ boxSizing: 'border-box' }}>
                         <td style={{ boxSizing: 'border-box', padding: '8px', lineHeight: '1.42857', verticalAlign: 'top', border: '1px solid rgb(221, 221, 221)' }}>
@@ -665,11 +660,12 @@ function Page1() {
 
                 </tbody>
             </table>
-            <a className="btn btn-success" 
-               href={ma_pdf} 
-               style={{ boxSizing: 'border-box', background: 'none rgb(15, 189, 113)', color: 'rgb(255, 255, 255)', textDecoration: 'none', display: 'inline-block', marginBottom: '0px', fontWeight: 'normal', textAlign: 'center', verticalAlign: 'middle', cursor: 'pointer', border: '1px solid rgb(13, 165, 99)', whiteSpace: 'nowrap', padding: '6px 12px', fontSize: '14px', lineHeight: '1.42857', borderRadius: '0px', userSelect: 'none' }}>
-                View Course In PDF
-            </a>
+        <div style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
+            <a className="btn btn-success" href={ma_pdf}>New Syllabus(2025-2026)</a>
+            <a className="btn btn-success" href={ma_pdf}>Old Syllabus(2023-2024)</a>
+        </div>
+
+  
         </div></div></div></div></div></div>
     </>
   )

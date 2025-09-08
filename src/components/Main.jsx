@@ -602,13 +602,10 @@ const MainContent = () => {
 
 <li className="nav-item" role="presentation">
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
-                <a style={{fontWeight:'bold',color: "inherit"}} className="nav-link dropdown-toggle dropdown-item text-reset text-decoration-none" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Contact</a>
-                <ul className="dropdown-menu" aria-labelledby="contact-tab">
-                    <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('+919241027682')}>Phone : 📱 +919241027682</button></li>
-                    <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('sjmcpatna@gmail.com')}>Landline : ☎️  0612-2351919</button></li>
-                    <li><button className="dropdown-item" style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => copyToClipboard('sjmcpatna@gmail.com')}>Mail :  📧 sjmcpatna@gmail.com</button></li>
-                    <li><a  style={{ textAlign: 'center', border: 'none', background: 'none', cursor: 'pointer' }} className="dropdown-item" href="https://www.google.com/maps/place/Aryabhatta+Knowledge+University/@25.5923023,85.1323539,17z/data=!4m10!1m2!2m1!1sAryabhatta+Knowledge+University,+Gyan+Parisar,Mithapur,+Patna-800+001+India!3m6!1s0x39ed58702e5ae787:0x6c55883d32ec4db4!8m2!3d25.5923023!4d85.1349288!15sCktBcnlhYmhhdHRhIEtub3dsZWRnZSBVbml2ZXJzaXR5LCBHeWFuIFBhcmlzYXIsTWl0aGFwdXIsIFBhdG5hLTgwMCAwMDEgSW5kaWGSAQp1bml2ZXJzaXR54AEA!16s%2Fm%2F0cpbfy3?entry=ttu" target="_blank">ADDRESS INFO<br />Aryabhatta Knowledge University,<br></br> Gyan Parisar,Mithapur, Patna-800 001 (Bihar) India</a></li>
-                    <li><hr className="dropdown-divider" /></li>
+                <a style={{fontWeight:'bold',color: "inherit"}} className="nav-link dropdown-toggle dropdown-item text-reset text-decoration-none" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Committee</a>
+                <ul className="dropdown-menu" aria-labelledby="faculty-tab">
+                    <li><NavLink to="/AdvisoryCommittee" className="dropdown-item"> Academic Advisory Committee </NavLink></li>
+                    <li> <NavLink to="/board-of-studies" className="dropdown-item"> Board of Studies</NavLink></li>
                 </ul>
             </div>
         </li>
@@ -734,7 +731,7 @@ const MainContent = () => {
         <img src={Book} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
         
         </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Upcoming Events</h4>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}><h4 >Upcoming Events</h4>
     </div>
     </div>
     </a>
@@ -742,24 +739,29 @@ const MainContent = () => {
     <a href='/page38' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
-        <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
+    <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
         
         </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Aryabhatta Times</h4>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}><h4 >Aryabhatta Times</h4>
     </div>
     </div>
     </a>
-   
+    <a href='/free-training' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'}}>
+    <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
+        <img src={MCLogo} style={{ width:'100%',height:'auto'}} />
+    </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    
+      <h4>Free Training Course</h4>
+    </div>
+  </div>
+</a>
 
-
-
-
-
-            <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
-                <h4 className='heading-news'>Important Links</h4>
+        <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
+            <h4 className='heading-news'>Important Links</h4>
 
                
-                <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
+        <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
         
         <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>
         
@@ -767,9 +769,7 @@ const MainContent = () => {
         
         <a href={Announcement4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>MoU between SJMC & BIPARD  </a>
 
-
-
-
+    
 
 
 
