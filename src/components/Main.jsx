@@ -14,7 +14,6 @@ import g3 from '../asset/slide3.jpeg';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom/dist';
 import { width } from '@fortawesome/free-solid-svg-icons/fa0';
-
 import Image1 from '../asset/home_slider_1.jpg';
 import Image2 from '../asset/home_slider_2.jpg';
 import Image3 from '../asset/home_slider_3.jpg';
@@ -266,6 +265,12 @@ const galleryItems = [
         image: Screen_writing,
         title: "Screen Writing and its Technical Aspects",
         link: "/Page42"
+    },
+    {
+        id: 112,
+        image: Screen_writing,
+        title: "Screen Writing and its Technical Aspects",
+        link: "/Page112"
     },
     {
         id: 8,
@@ -541,31 +546,67 @@ const MainContent = () => {
                 </ul>
             </div>
         </li>
-<li className="nav-item" role="presentation">
+{/*<li className="nav-item" role="presentation">
   <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
     <a style={{ fontWeight: 'bold' }}className="nav-link dropdown-toggle text-reset" 
     id="faculty-tab"data-bs-toggle="dropdown"href="#Faculty"role="tab"aria-controls="faculty"aria-selected="false"onClick={toggleFacultyDropdown}>
       Faculty/Staff
     </a>
 <ul className="dropdown-menu" aria-labelledby="faculty-tab">
-<li><NavLink to="/AdvisoryCommittee" className="dropdown-item"> Academic Advisory Committee </NavLink></li>
-<li> <NavLink to="/board-of-studies" className="dropdown-item"> Board of Studies</NavLink></li>
-
 <li> <NavLink to="/Faculty" className="dropdown-item"> Head of Department</NavLink></li>
-
-
-<li className="dropdown-submenu">
-<a className="dropdown-item dropdown-toggle" href="#" onClick={togglePgdDropdown} > Faculty </a>
-<ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}> <li> <NavLink to="/Consultant" className="dropdown-item"> Regular Faculty </NavLink></li>
+ <li> <NavLink to="/Consultant" className="dropdown-item"> Regular Faculty </NavLink></li>
 <li> <NavLink to="/GuestFaculty" className="dropdown-item"> Guest Faculty </NavLink></li>
-</ul>
-</li>
 <li><NavLink to="/Staff" className="dropdown-item"> Staff</NavLink> </li><li> <hr className="dropdown-divider" /> </li>
 </ul>
   </div>
+</li>*/}
+
+<li className="nav-item" role="presentation">
+  <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
+    <a
+      style={{ fontWeight: 'bold' }}
+      className="nav-link dropdown-toggle text-reset"
+      id="faculty-tab"
+      data-bs-toggle="dropdown"
+      href="#Faculty"
+      role="tab"
+      aria-controls="faculty"
+      aria-selected="false"
+      onClick={toggleFacultyDropdown}
+    >
+      Faculty/Staff
+    </a>
+    <ul className="dropdown-menu" aria-labelledby="faculty-tab">
+      <li>
+        <NavLink to="/Faculty" className="dropdown-item">
+          Head of Department
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Consultant" className="dropdown-item">
+          Regular Faculty
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/GuestFaculty" className="dropdown-item">
+          Guest Faculty
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Staff" className="dropdown-item">
+          Staff
+        </NavLink>
+      </li>
+      <li>
+        <hr className="dropdown-divider" />
+      </li>
+    </ul>
+  </div>
 </li>
 
-          <li className="nav-item" role="presentation"> 
+
+
+    <li className="nav-item" role="presentation"> 
     <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
     <a style={{ fontWeight: 'bold' }}  className="nav-link dropdown-toggle text-reset"  id="annual-report-tab"  data-bs-toggle="dropdown"  href="#AnnualReport"  role="tab"
     aria-controls="annual-report"  aria-selected="false"  onClick={toggleFacultyDropdown}>Resources</a>
@@ -614,14 +655,11 @@ const MainContent = () => {
             <div className="tab-content" id="myTabContent">
                 
 <div className="tab-pane fade show tab-border active" id="home" role="tabpanel" aria-labelledby="home-tab" style={{margin:'10px', border:'none'}}>
-
     <div className='partent' style={{}}>
         <div className='Box-About-1' style={{marginLeft:'-10px',width:'900px'}}>
             <div style={{position:'relative', top:'13px'}}>
-        <ImageSlider images={images} />     
-
-        </div>
-
+                <ImageSlider images={images} />     
+             </div>
             <div>
                 <p style={{ paddingTop: "20px", textAlign:"justify", fontWeight:'bold'}}>
                 School of Journalism and Mass Communication (SJMC) was established by Bihar government vide Cabinet decision 15/ पी 5- 09/ 2016-629 dated April 12, 2017. The then Rajya Sabha MP Shri Pavan K Verma contributed approximately Rs. nine crores from his MPLADs funds to set up the said institute, The DPR for which was prepared by Aryabhatta Knowledge University.The Bihar government has proposed to develop SJMC as the potential Centre of Excellence. SJMC will work with other national as well as international Centres to harmonize its journalism curricula in order to promote quality journalism education in the state Careers in Mass Communication are not only high paying but also bring in a great deal of job satisfaction and expression of creativity. </p>
@@ -630,9 +668,9 @@ const MainContent = () => {
                 </p>
 
                 <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>The information technology revolution has significantly contributed to the expansion of mass media. It has also posed major challenges for students, teachers and practitioners of mass media. It is a challenge which we accept as an essential part of life at SJMC.</p>
-      <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Mass Communication is not limited to journalism alone. To a great extent mass media is a modern reality which covers all aspects of human life. Moreover, a great change can be observed in the concept of people working in mass media. Careers in Mass Communication are not only high paying but also bring in a great deal of job satisfaction and expression of creativity.</p>
-      <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Generating a cadre of trained human resources specialized in understanding and addressing issues related to mass communication is one of the critical needs of the hour, and educational institutions have to play a crucial role in this regard. The institute would ensure tailored programmes to meet the needs of developing societies. This will make SJMC different from other institutes of Journalism &Mass Communication training in this state and elsewhere. This will also give a different identity and character to our alumni.</p>
-      <p style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>
+                <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Mass Communication is not limited to journalism alone. To a great extent mass media is a modern reality which covers all aspects of human life. Moreover, a great change can be observed in the concept of people working in mass media. Careers in Mass Communication are not only high paying but also bring in a great deal of job satisfaction and expression of creativity.</p>
+                <p className="text-justify" style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>Generating a cadre of trained human resources specialized in understanding and addressing issues related to mass communication is one of the critical needs of the hour, and educational institutions have to play a crucial role in this regard. The institute would ensure tailored programmes to meet the needs of developing societies. This will make SJMC different from other institutes of Journalism &Mass Communication training in this state and elsewhere. This will also give a different identity and character to our alumni.</p>
+                <p style={{ paddingTop: "20px" , textAlign:"justify" , fontWeight:'bold'}}>
                 With this view, the School of Journalism &Mass Communication may come up with courses specifically aimed at teaching and research on Communication & Information system Establishment of this institute was essential because of the current trend of proliferation of media institutions in Bihar without appropriate curricula. Media scholars and professionals have over the years debated the benchmark for journalism curriculum of developing countries since the curricula differ structurally and pedagogically from one another.
                 </p>
                 <br></br>
@@ -725,6 +763,7 @@ const MainContent = () => {
     </div>
     </a>
 
+
     <a href='/upcomingEvents' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
@@ -739,28 +778,26 @@ const MainContent = () => {
     <a href='/page38' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
-    <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>
-        
-        </div>
+         <img src={AryabhattaTimes_Logo} style={{ width:'75%',height:'75%',position:'relative',top:'.2rem'}}></img>    
+    </div>
     <div style={{marginLeft:'15px',marginTop:'10px'}}><h4 >Aryabhatta Times</h4>
     </div>
     </div>
     </a>
-    <a href='/free-training' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
-    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'}}>
+<a href='/page112' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+    <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
-        <img src={MCLogo} style={{ width:'100%',height:'auto'}} />
+        <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>
+        
+        </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Free Trainning</h4>
     </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    
-      <h4>Free Training Course</h4>
     </div>
-  </div>
-</a>
+    </a>
 
         <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
             <h4 className='heading-news'>Important Links</h4>
-
-               
+            
         <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
         
         <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>
@@ -770,22 +807,6 @@ const MainContent = () => {
         <a href={Announcement4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>MoU between SJMC & BIPARD  </a>
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
         </div>
@@ -861,7 +882,6 @@ const MainContent = () => {
                     <h5>a. Objectives of the Program:
                     </h5>
                     <p>To equip students with the essential skills required to excel in various roles within the field of journalism and mass communication, including reporting, writing, editing, interviewing, and media production. The course is designed in such a way that it gives students an overall understanding of Media with specialization in electronic journalism, electronic media production, online journalism and Print media.</p>
-
 
                     <h5>b. Program Outcomes:</h5>
                     <p>Graduates will demonstrate a comprehensive understanding of key concepts, theories, and principles in journalism, mass communication, and related fields. Professional Skills Development: Graduates will possess the necessary skills for effective.</p>
@@ -972,7 +992,6 @@ const MainContent = () => {
         ))}
     </div>
 </div>
-
         </main>
         
         <Footer/>

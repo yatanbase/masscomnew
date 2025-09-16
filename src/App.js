@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import MainContent from './components/Main';
-import Admission_popup from './components/Admission_popup'; // ✅ Added
+import Admission_popup from './components/Admission_popup';
 
-import Page1 from './page/page1';
-import Page2 from './page/page2';
+// Pages
+import Page1 from './page/Page1';
+import Page2 from './page/Page2';
 import About from './page/About';
 import Page4 from './page/Page4';
 import Page5 from './page/Page5';
@@ -20,7 +21,7 @@ import Page13 from './page/Page13';
 import Page14 from './page/Page14';
 import Page15 from './page/Page15';
 import Page16 from './page/Page16';
-import Page17 from './page/page17';
+import Page17 from './page/Page17';
 import Page18 from './page/Page18';
 import Page19 from './page/Page19';
 import Page20 from './page/Page20';
@@ -41,10 +42,6 @@ import Page34 from './page/Page34';
 import Page35 from './page/Page35';
 import Page36 from './page/Page36';
 import Page37 from './page/Page37';
-import Page54 from './page/Page54';
-import PKAHANI from './page/PKAHANI';
-import Wastemanegment from './page/Wastemanegment';
-import Project_Shield from './page/Project_Shield';
 import Page38 from './page/Page38';
 import Page39 from './page/Page39';
 import Page40 from './page/Page40';
@@ -60,7 +57,12 @@ import Page49 from './page/Page49';
 import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
-import Page53 from './page/page53';
+import Page53 from './page/Page53';
+import Page54 from './page/Page54';
+import Page112 from './page/Page112';
+import PKAHANI from './page/PKAHANI';
+import Wastemanegment from './page/Wastemanegment';
+import Project_Shield from './page/Project_Shield';
 import Pbord from './page/Pbord';
 import FreeTraining from './page/FreeTraining';
 import Interaction from './page/Interaction';
@@ -76,6 +78,8 @@ import VJDivas from './page/VJDivas';
 import Seminar from './page/Seminar';
 import Conference from './page/Conference';
 import SmartClass from './page/SmartClass';
+
+// News
 import News1 from './News/News1';
 import News2 from './News/News2';
 import News3 from './News/News3';
@@ -95,9 +99,7 @@ function App() {
     }
   }, []);
 
-  const handleCloseAd = () => {
-    setShowAd(false);
-  };
+  const handleCloseAd = () => setShowAd(false);
 
   return (
     <>
@@ -105,7 +107,6 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainContent />} />
           <Route path="/" element={<MainContent />} />
           <Route path="/MA" element={<Page1 />} />
           <Route path="/PhD" element={<Page2 />} />
@@ -160,6 +161,7 @@ function App() {
           <Route path="/Page40" element={<Page40 />} />
           <Route path="/Page41" element={<Page41 />} />
           <Route path="/Page42" element={<Page42 />} />
+          <Route path="/Page112" element={<Page112 />} />
           <Route path="/Page43" element={<Page43 />} />
           <Route path="/Page44" element={<Page44 />} />
           <Route path="/Page45" element={<Page45 />} />
@@ -168,9 +170,9 @@ function App() {
           <Route path="/Page48" element={<Page48 />} />
           <Route path="/Page49" element={<Page49 />} />
           <Route path="/Page50" element={<Page50 />} />
-         <Route path="/PKAHANI" element={<PKAHANI />} />
-         <Route path="/Interaction" element={<Interaction />} />
-         <Route path="/Aiworkshop" element={<Aiworkshop />} />
+          <Route path="/PKAHANI" element={<PKAHANI />} />
+          <Route path="/Interaction" element={<Interaction />} />
+          <Route path="/Aiworkshop" element={<Aiworkshop />} />
           <Route path="/Wastemanegment" element={<Wastemanegment />} />
           <Route path="/Project_Shield" element={<Project_Shield />} />
           <Route path="/Page51" element={<Page51 />} />
@@ -179,7 +181,6 @@ function App() {
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
-          <Route path="/SmartClass" element={<SmartClass />} />         
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />
