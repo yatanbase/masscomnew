@@ -38,19 +38,14 @@ const Page112 = () => {
     },
   };
 
-  // PDF open function
   const openPdf = (pdfUrl) => {
     if (pdfUrl) {
-      window.open(pdfUrl, "_blank");
+      window.open(pdfUrl, "_blank", "noopener,noreferrer");
     } else {
       alert("PDF not found!");
     }
-    if (pdfUrl) {
-      window.open(pdfUrl, "_blank", "noopener,noreferrer");
-    }
   };
 
-  // card data
   const cards = [
     {
       title: "3 Month Training",
@@ -74,12 +69,8 @@ const Page112 = () => {
             key={index}
             style={{ ...styles.card, background: card.bg }}
             onClick={() => openPdf(card.pdf)}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.transform = "scale(1.05)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.transform = "scale(1)")
-            }
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <h2 style={styles.cardTitle}>{card.title}</h2>
             <p style={styles.cardSubtitle}>{card.subtitle}</p>
