@@ -1,4 +1,6 @@
 import React from "react";
+
+// सही file names के साथ import
 import pdfPhd1 from "../asset/fg/phd_syllabus1.pdf"; 
 import pdfPhd2 from "../asset/fg/ma-sly.pdf"; 
 
@@ -44,7 +46,6 @@ const Page112 = () => {
     },
   };
 
-  // hover effect functions
   const handleMouseEnter = (e) => {
     Object.assign(e.currentTarget.style, styles.cardHover);
   };
@@ -57,12 +58,14 @@ const Page112 = () => {
     });
   };
 
-  // PDF open function
   const openPdf = (pdfUrl) => {
-    window.open(pdfUrl, "_blank");
+    if (pdfUrl) {
+      window.open(pdfUrl, "_blank");
+    } else {
+      alert("PDF not found!");
+    }
   };
 
-  // card data (easily expandable)
   const cards = [
     {
       title: "3 Month Training",
