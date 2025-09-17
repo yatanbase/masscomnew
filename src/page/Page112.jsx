@@ -1,6 +1,6 @@
 import React from "react";
-import pdfPhd1 from "../asset/fg/phd_syllabus1.pdf"; 
-import pdfPhd2 from "../asset/fg/ma-sly.pdf"; 
+import pdfPhd1 from "../asset/fg/17.pdf";
+import pdfPhd2 from "../asset/fg/16.pdf";
 
 const Page112 = () => {
   const styles = {
@@ -8,7 +8,7 @@ const Page112 = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "100vh",
+      minHeight: "100vh",
       padding: "20px",
       background: "linear-gradient(135deg, #f0f4ff, #e8faff)",
     },
@@ -26,13 +26,7 @@ const Page112 = () => {
       cursor: "pointer",
       textAlign: "center",
       transition: "all 0.3s ease-in-out",
-      transform: "scale(1)",
       boxShadow: "0 6px 15px rgba(0,0,0,0.15)",
-    },
-    cardHover: {
-      transform: "scale(1.05)",
-      boxShadow: "0 12px 25px rgba(0,0,0,0.2)",
-      filter: "brightness(1.1)",
     },
     cardTitle: {
       fontSize: "24px",
@@ -44,25 +38,14 @@ const Page112 = () => {
     },
   };
 
-  // hover effect functions
-  const handleMouseEnter = (e) => {
-    Object.assign(e.currentTarget.style, styles.cardHover);
-  };
-
-  const handleMouseLeave = (e) => {
-    Object.assign(e.currentTarget.style, {
-      transform: "scale(1)",
-      boxShadow: "0 6px 15px rgba(0,0,0,0.15)",
-      filter: "brightness(1)",
-    });
-  };
-
   // PDF open function
   const openPdf = (pdfUrl) => {
-    window.open(pdfUrl, "_blank");
+    if (pdfUrl) {
+      window.open(pdfUrl, "_blank", "noopener,noreferrer");
+    }
   };
 
-  // card data (easily expandable)
+  // card data
   const cards = [
     {
       title: "3 Month Training",
@@ -86,8 +69,12 @@ const Page112 = () => {
             key={index}
             style={{ ...styles.card, background: card.bg }}
             onClick={() => openPdf(card.pdf)}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = "scale(1.05)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.transform = "scale(1)")
+            }
           >
             <h2 style={styles.cardTitle}>{card.title}</h2>
             <p style={styles.cardSubtitle}>{card.subtitle}</p>
