@@ -1,6 +1,6 @@
 import React from "react";
 import pdfPhd1 from "../asset/fg/phd_syllabus1.pdf"; 
-import pdfPhd2 from "../asset/fg/phd_syllabus2.pdf"; 
+import pdfPhd2 from "../asset/fg/ma-sly.pdf"; 
 
 const Page112 = () => {
   const styles = {
