@@ -41,6 +41,11 @@ const Page112 = () => {
   // PDF open function
   const openPdf = (pdfUrl) => {
     if (pdfUrl) {
+      window.open(pdfUrl, "_blank");
+    } else {
+      alert("PDF not found!");
+    }
+    if (pdfUrl) {
       window.open(pdfUrl, "_blank", "noopener,noreferrer");
     }
   };
