@@ -2,6 +2,7 @@ import { width } from '@fortawesome/free-solid-svg-icons/fa0'
 import React from 'react'
 import Home from '../components/HomeButton'
 import ma_pdf from '../asset/ma_syllabus.pdf'
+import ma_pdf1 from '../asset/ma_syllabus_new.pdf'
 
 function Page1() {
   return (
@@ -661,7 +662,7 @@ function Page1() {
                 </tbody>
             </table>
         <div style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
-            <a className="btn btn-success" href={ma_pdf}>New Syllabus(2025-2026)</a>
+            <a className="btn btn-success" href={ma_pdf1}>New Syllabus(2025-2026)</a>
             <a className="btn btn-success" href={ma_pdf}>Old Syllabus(2023-2024)</a>
         </div>
 

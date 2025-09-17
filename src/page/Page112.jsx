@@ -1,4 +1,5 @@
 import React from "react";
+import pdfPhd from "../asset/fg/phd_syllabus.pdf"; // एक ही PDF import की गई है
 
 const Page112 = () => {
   const styles = {
@@ -68,12 +69,13 @@ const Page112 = () => {
   return (
     <div style={styles.container}>
       <div style={styles.cardGrid}>
+        {/* पहला कार्ड */}
         <div
           style={{
             ...styles.card,
             background: "linear-gradient(135deg, #4e73df, #1d3bb8)",
           }}
-          onClick={() => openPdf("/assets/3-month-training.pdf")}
+          onClick={() => openPdf(pdfPhd)}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -83,12 +85,13 @@ const Page112 = () => {
           </p>
         </div>
 
+        {/* दूसरा कार्ड */}
         <div
           style={{
             ...styles.card,
             background: "linear-gradient(135deg, #1cc88a, #0e8058)",
           }}
-          onClick={() => openPdf("/assets/fg/phd_syllabus.pdf")}
+          onClick={() => openPdf(pdfPhd)}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
