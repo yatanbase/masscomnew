@@ -1,4 +1,6 @@
 import React from "react";
+import pdfPhd1 from "../asset/fg/17.pdf";
+import pdfPhd2 from "../asset/fg/16.pdf";
 
 const Page112 = () => {
   const styles = {
@@ -48,13 +50,13 @@ const Page112 = () => {
     {
       title: "3 Month Training",
       subtitle: "Intensive short-term program to boost your skills quickly.",
-      pdf: "/Doc/17.pdf", // ✅ public folder se access
+      pdf: pdfPhd1,
       bg: "linear-gradient(135deg, #4e73df, #1d3bb8)",
     },
     {
       title: "5 Month Training",
       subtitle: "In-depth training with practical projects and mentorship.",
-      pdf: "/Doc/16.pdf", // ✅ public folder se access
+      pdf: pdfPhd2,
       bg: "linear-gradient(135deg, #1cc88a, #0e8058)",
     },
   ];
@@ -67,12 +69,8 @@ const Page112 = () => {
             key={index}
             style={{ ...styles.card, background: card.bg }}
             onClick={() => openPdf(card.pdf)}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.transform = "scale(1.05)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.transform = "scale(1)")
-            }
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <h2 style={styles.cardTitle}>{card.title}</h2>
             <p style={styles.cardSubtitle}>{card.subtitle}</p>
