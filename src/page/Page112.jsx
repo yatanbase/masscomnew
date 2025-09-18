@@ -1,6 +1,6 @@
 import React from "react";
-import pdfPhd1 from "../asset/fg/17.pdf";
-import pdfPhd2 from "../asset/fg/16.pdf";
+import pdfPhd1 from "E:/masscomnew/public/Doc/17.pdf";
+import pdfPhd2 from "E:/masscomnew/public/Doc/16.pdf";
 
 const Page112 = () => {
   const styles = {
