@@ -21,7 +21,6 @@ const Page112 = () => {
       borderRadius: "20px",
       color: "#fff",
       padding: "40px 20px",
-      cursor: "pointer",
       textAlign: "center",
       transition: "all 0.3s ease-in-out",
       boxShadow: "0 6px 15px rgba(0,0,0,0.15)",
@@ -33,15 +32,21 @@ const Page112 = () => {
     cardSubtitle: {
       fontSize: "16px",
       opacity: "0.9",
+      marginBottom: "20px",
     },
-  };
-
-  const openPdf = (pdfUrl) => {
-    if (pdfUrl) {
-      window.open(pdfUrl, "_blank", "noopener,noreferrer");
-    } else {
-      alert("PDF not found!");
-    }
+    button: {
+      backgroundColor: "#fff",
+      color: "#333",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      transition: "all 0.3s ease-in-out",
+    },
+    buttonHover: {
+      backgroundColor: "#333",
+      color: "#fff",
+    },
   };
 
   const cards = [
@@ -66,7 +71,6 @@ const Page112 = () => {
           <div
             key={index}
             style={{ ...styles.card, background: card.bg }}
-            onClick={() => openPdf(card.pdf)}
             onMouseEnter={(e) =>
               (e.currentTarget.style.transform = "scale(1.05)")
             }
@@ -76,6 +80,24 @@ const Page112 = () => {
           >
             <h2 style={styles.cardTitle}>{card.title}</h2>
             <p style={styles.cardSubtitle}>{card.subtitle}</p>
+
+            {/* ✅ Direct Open Button */}
+            <a
+              href={card.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.button}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#333";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#fff";
+                e.currentTarget.style.color = "#333";
+              }}
+            >
+              📄 View / Download PDF
+            </a>
           </div>
         ))}
       </div>
