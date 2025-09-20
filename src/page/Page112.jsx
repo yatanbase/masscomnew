@@ -1,6 +1,9 @@
 import React from "react";
-import pdfPhd1 from "E:/masscomnew/public/Doc/17.pdf";
-import pdfPhd2 from "E:/masscomnew/public/Doc/16.pdf";
+
+
+const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://sjmc.ac.in';
+const pdfPhd1 = baseUrl + "/Doc/17.pdf";
+const pdfPhd2 = baseUrl + "/Doc/16.pdf";
 
 const Page112 = () => {
   const styles = {

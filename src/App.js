@@ -5,8 +5,8 @@ import MainContent from './components/Main';
 import Admission_popup from './components/Admission_popup';
 
 // Pages
-import Page1 from './page/Page1';
-import Page2 from './page/Page2';
+import Page1 from './page/page1';
+import Page2 from './page/page2';
 import About from './page/About';
 import Page4 from './page/Page4';
 import Page5 from './page/Page5';
@@ -21,7 +21,7 @@ import Page13 from './page/Page13';
 import Page14 from './page/Page14';
 import Page15 from './page/Page15';
 import Page16 from './page/Page16';
-import Page17 from './page/Page17';
+import Page17 from './page/page17';
 import Page18 from './page/Page18';
 import Page19 from './page/Page19';
 import Page20 from './page/Page20';
@@ -57,7 +57,7 @@ import Page49 from './page/Page49';
 import Page50 from './page/Page50';
 import Page51 from './page/Page51';
 import Page52 from './page/Page52';
-import Page53 from './page/Page53';
+import Page53 from './page/page53';
 import Page54 from './page/Page54';
 import Page112 from './page/Page112';
 import PKAHANI from './page/PKAHANI';
