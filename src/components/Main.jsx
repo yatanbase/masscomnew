@@ -528,8 +528,8 @@ const MainContent = () => {
             <div className={`dropdown ${facultyDropdownOpen ? 'show' : ''}`}>
                 <a style={{fontWeight:'bold'}} className="nav-link dropdown-toggle text-reset" id="contact-tab" data-bs-toggle="dropdown" href="#Facilities" role="tab" aria-controls="contact" aria-selected="false" onClick={toggleFacultyDropdown}>Academic Program</a>
                 <ul className="dropdown-menu" aria-labelledby="contact-tab">
-                    <li><a href="/PhD" className="dropdown-item">Ph.D. in Mass communication</a></li>
                     <li><a href="/MA" className="dropdown-item">M.A. in Journalism and Mass communication</a></li>
+                    <li><a href="/PhD" className="dropdown-item">Ph.D. in Mass communication</a></li>
                     <li  onClick={togglePgdDropdown}>
                         <a className="dropdown-item dropdown-toggle" style={{ cursor: 'pointer' }} data-bs-toggle="dropdown">PG Courses</a>
                         <ul className={`dropdown-menu ${pgDiplomaDropdownOpen ? 'show' : ''}`}>

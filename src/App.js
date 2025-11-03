@@ -59,7 +59,7 @@ import Page51 from './page/Page51';
 import Page52 from './page/Page52';
 import Page53 from './page/page53';
 import Page54 from './page/Page54';
-import Page112 from './page/Page112';
+import Page112 from './page/page112';
 import PKAHANI from './page/PKAHANI';
 import Wastemanegment from './page/Wastemanegment';
 import Project_Shield from './page/Project_Shield';

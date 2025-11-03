@@ -1,6 +1,6 @@
 import React from "react";
 
-const Page112 = () => {
+const page112 = () => {
   const styles = {
     container: {
       display: "flex",
@@ -98,4 +98,4 @@ const Page112 = () => {
   );
 };
 
-export default Page112;
+export default page112;

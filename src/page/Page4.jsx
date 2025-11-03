@@ -1,6 +1,5 @@
 import React from 'react'
 import Sanjeev from '../asset/SANJEEVkr.png';
-import Ranu from '../asset/ranu.jpg'
 import Arjun from '../asset/ARJUNTHAKUR.png';
 import Amish from '../asset/AMISHANAND.png';
 import { NavLink } from 'react-router-dom';
