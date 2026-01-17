@@ -25,10 +25,10 @@ const Footer = () => {
                         <h4>Important Links</h4>
                         <ul>
                         <li><a   href="https://www.nda.gov.in/" className="dropdown-item"> NDA </a></li>
-            <li><a   href="https://www.nptel.ac.in/" className="dropdown-item"> NPTEL </a></li>
-            <li><a   href="https://www.swayam.gov.in/" className="dropdown-item"> SWAYAM </a></li>
-            <li><a   href="https://www.swayamprabhay.gov.in/" className="dropdown-item"> SWAYAM PRABHA </a></li>
-            <li><a   href="https://egyankosh.ac.in/" className="dropdown-item"> EGYANKOSH </a></li>
+                        <li><a   href="https://www.nptel.ac.in/" className="dropdown-item"> NPTEL </a></li>
+                        <li><a   href="https://www.swayam.gov.in/" className="dropdown-item"> SWAYAM </a></li>
+                        <li><a   href="https://www.swayamprabhay.gov.in/" className="dropdown-item"> SWAYAM PRABHA </a></li>
+                        <li><a   href="https://egyankosh.ac.in/" className="dropdown-item"> EGYANKOSH </a></li>
                             {/* Add similar links for remaining entries */}
                         </ul>
                         

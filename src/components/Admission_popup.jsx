@@ -48,7 +48,7 @@ const Admission_popup = ({ onClose }) => {
           </video>
 
           {/* ✅ SLIDING IMAGE BANNERS with Arrows */}
-          <Swiper
+           {/*   <Swiper
             modules={[Autoplay, Pagination, Navigation]} // ✅ Navigation added
             spaceBetween={10}
             slidesPerView={1}
@@ -72,7 +72,7 @@ const Admission_popup = ({ onClose }) => {
             <SwiperSlide>
               <img src={Image5} alt="Ad 5" className="ad-image" />
             </SwiperSlide>
-          </Swiper>
+          </Swiper>  /}
 
           {/* ✅ Button Below */}
           <div className="button_container">

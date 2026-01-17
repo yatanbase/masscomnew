@@ -125,32 +125,43 @@ import ImageJuly10 from '../asset/media_center/2025/July/danik30-07-25.jpeg';
  import ImageAug3 from '../asset/media_center/2025/August/prabhat28.jpeg';
  import ImageAug5 from '../asset/media_center/2025/August/hiniqc.jpeg';
  import ImageAug6 from '../asset/media_center/2025/August/hind30.jpeg';
-import ImageAug7 from '../asset/media_center/2025/August/hind30.jpeg';
+ import ImageAug7 from '../asset/media_center/2025/August/hind30.jpeg';
+
+//2026
+
+ import ImageJan13 from '../asset/media_center/2026/DB_13_Jan_26.jpg'
+ import ImageJan13_1 from '../asset/media_center/2026/PK_13_Jan_26.jpg'
+
 
 function Page8() {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalImage, setModalImage] = useState('');
 
   // Organize images by year and dates
+  const images2026 = [
+    { src: ImageJan13, date: '13/01/2026' },
+    { src: ImageJan13_1, date: '13/01/2026' },
+
+  ];
   const images2025 = [
-     { src: ImageAug7, date: '30/08/2025' },
+    { src: ImageAug7, date: '30/08/2025' },
     { src: ImageAug6, date: '30/08/2025' },
-     { src: ImageAug5, date: '30/08/2025' },
+    { src: ImageAug5, date: '30/08/2025' },
     { src: ImageAug3, date: '28/08/2025' },
     { src: ImageAug2, date: '28/08/2025' },
-     { src: ImageAug1, date: '13/08/2025' },
+    { src: ImageAug1, date: '13/08/2025' },
     { src: ImageAug, date: '13/08/2025' },
     { src: ImageJuly11, date: '30/07/2025' },
-     { src: ImageJuly9, date: '30/07/2025' },
+    { src: ImageJuly9, date: '30/07/2025' },
     { src: ImageJuly10, date: '30/07/2025' },
     { src: ImageJuly7, date: '29/07/2025' },
-     { src: ImageJuly8, date: '29/07/2025' },
+    { src: ImageJuly8, date: '29/07/2025' },
     { src: ImageJuly5, date: '24/07/2025' },
-     { src: ImageJuly6, date: '24/07/2025' },
-   { src: ImageJuly1, date: '22/07/2025' },
-     { src: ImageJuly2, date: '22/07/2025' },
-      { src: ImageJuly3, date: '22/07/2025' },
-       { src: ImageJuly4, date: '02/07/2025' },
+    { src: ImageJuly6, date: '24/07/2025' },
+    { src: ImageJuly1, date: '22/07/2025' },
+    { src: ImageJuly2, date: '22/07/2025' },
+    { src: ImageJuly3, date: '22/07/2025' },
+    { src: ImageJuly4, date: '02/07/2025' },
     { src: ImageJune1, date: '28/06/2025' },
     { src: Image3_6, date: '13/03/2025' },
     { src: Image3_7, date: '26/03/2025' },
@@ -287,13 +298,19 @@ function Page8() {
             </div>
           ) : (
             <>
-    {[...images, ...images].map((image, index) => (
-  <div className="aslide" key={index} onClick={() => handleImageClick(image.src)}>
-    {/* ⚠️ "Image" word hatakar meaningful alt lagaya */}
-    <img src={image.src} alt={image.caption || `Slide ${index + 1}`} />
-    <p style={{ textAlign: 'left', color: 'gray' }}>Date : {image.date}</p>
+   {images.map((image, index) => (
+  <div
+    className="aslide"
+    key={`${image.src}-${index}`}
+    onClick={() => handleImageClick(image.src)}
+  >
+    <img src={image.src} alt={`Media clipping ${index + 1}`} />
+    <p style={{ textAlign: 'left', color: 'gray' }}>
+      Date : {image.date}
+    </p>
   </div>
 ))}
+
 </>
 )}
 </div>
@@ -305,7 +322,8 @@ function Page8() {
     <div className='slidecontainer' style={{ margin: '40px' }}>
       <Home/>
       <h2 style={{fontWeight:'bold'}}>Media Center</h2>
-      
+
+      {renderYearSection('2026', images2026)}
       {renderYearSection('2025', images2025)}
       {renderYearSection('2024', images2024)}
       {renderYearSection('2023', images2023)}

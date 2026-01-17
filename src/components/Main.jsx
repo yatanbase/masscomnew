@@ -108,8 +108,36 @@ import Form from '../components/Form'
 import Track from '../components/traffic'
 import Interaction_img from '../asset/Our gallery/Interaction/img1.jpg'
 import Aiworkshop_img from '../asset/Our gallery/Aiworkshop/img1.jpeg'
+import VCMeet_2026_img from '../asset/Our gallery/VC Meet_2026/img5.jpeg'
+import Student_Interaction_img from '../asset/Our gallery/Student_Interaction_2026/img1.jpeg'
+import Youth_Day_img from '../asset/Our gallery/youthday_2026/1.jpeg'
+import StudentLens from '../components/StudentLens'
+
 
 const galleryItems = [
+
+
+    {
+        id: 115,
+        image: Youth_Day_img,
+        title: "National Youth Day 2026 |12 Jan 2026",
+        link: "/Youth_Day"
+    },
+
+    {
+        id: 114,
+        image: Student_Interaction_img,
+        title: "Student Interaction 2026 | 07 Jan 2026",
+        link: "/Student_Interaction"
+    },
+
+    {
+        id: 113,
+        image: VCMeet_2026_img,
+        title: " VC MEET 2025| 22-23 Dec 2025",
+        link: "/VCMeet_2026"
+    },
+
     {
         id: 69,
         image: Aiworkshop_img,
@@ -197,27 +225,29 @@ const galleryItems = [
         image: GauraiyaDiwas_img,
         title: "Gauraiya Diwas | 30 April 2025",
         link: "/GauraiyaDiwas"
-    },    
+    },   
+
     {
         id: 63,
         image: IQACTrainingProgram_img,
         title: "IQAC Training Program | 07 Feb 2025",
         link: "/IQACTrainingProgram"
     }, 
-   
-   
+    
     {
         id: 28,
         image: March27,
         title: "MOOC Training Program Day 3",
         link: "/Page51"
     },
+
     {
         id: 27,
         image: March26,
         title: "MOOC Training Program Day 2",
         link: "/Page50"
     },
+
     {
         id: 26,
         image: March25,
@@ -230,66 +260,76 @@ const galleryItems = [
         title: "Film Acting Masterclass by AKU & BSFD & FC",
         link: "/Page48"
     },
+
     {
         id: 2,
         image: Unicef,
         title: "Communication For Social and Behavior Change",
         link: "/Page47"
     },
+
     {
         id: 3,
         image: Univ,
         title: "Collaboration with association of Indian University",
         link: "/Page46"
     },
+
     {
         id: 4,
         image: Prabhat_akhbar,
         title: "Visit To Prabhat Khabar",
         link: "/Page45"
     },
+
     {
         id: 5,
         image: BBC_talk,
         title: "Talk with BBC ( 29-01-2025)",
         link: "/Page44"
     },
+
     {
         id: 6,
         image: Resurgent_bharat,
         title: "Resurgent Bharat",
         link: "/Page43"
     },
+
     {
         id: 7,
         image: Screen_writing,
         title: "Screen Writing and its Technical Aspects",
         link: "/Page42"
     },
+
     {
         id: 112,
         image: Screen_writing,
         title: "Screen Writing and its Technical Aspects",
         link: "/Page112"
     },
+
     {
         id: 8,
         image: Free_Course,
         title: "Free Photography and Film Making Training Course",
         link: "/Page40"
-        },
-        {
-            id: 9,
-            image: Aids_img,
-            title: "Role of Youth in Combating AIDS",
-            link: "/Page39"
-        },
-        {
-            id: 10,
-            image: PRO_img,
+    },
+
+    {
+        id: 9,
+        image: Aids_img,
+        title: "Role of Youth in Combating AIDS",
+        link: "/Page39"
+     },
+
+    {
+        id: 10,
+        image: PRO_img,
         title: "Rules and Responsiblities of PRO",
         link: "/Page37"
-    },
+    },    
     {
         id: 11,
         image: Aryabhatta_times,
@@ -700,8 +740,12 @@ const MainContent = () => {
 
             </div>
         </div>
+
+
+    {/* News and Announcements */}
+
         <div  style={{ marginTop:"10px", padding: "10px",width:'400px', height: "1333px",textAlign:'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-    <div className='news-box' style={{ width: '100%', height: '550px',marginTop:"10px",   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",padding:"10px 10px" , backgroundColor:"#F0F0F0",marginBottom:"10px" ,textAlign:'center',overflow:'auto',marginTop:'0px'}}>
+        <div className='news-box' style={{ width: '100%', height: '550px',marginTop:"10px",   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",padding:"10px 10px" , backgroundColor:"#F0F0F0",marginBottom:"10px" ,textAlign:'center',overflow:'auto',marginTop:'0px'}}>
         <h4 className='heading-news' style={{position:'sticky',top:'-8px',zIndex:'1'}}>News and Announcements</h4>
         <br />
 
@@ -735,33 +779,31 @@ const MainContent = () => {
         <a href={Orientation_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Orientation at SJMC 2024      </a>
         <a href={Wetland_pdf} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', position:'relative',left:'10px' }}>Wetlands For Life - Training Workshop      </a>
         <a href="/News6" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Student Film Recognised.</a>
-
-        <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>
-        
-        <a href="/News7" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Discussion on Journalism at PBF  </a>
-        
-        <a href="/News3" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Training Workshop for Media.</a>
-        
-        <a href="/News2" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Human Rights Awareness</a>
-        
-        <a href="/News1" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Street Play and Script Writing Contest </a>
-        
-        <a href="/News5" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Screening of Seven Films </a>
-        
+        <a href="/News4" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Open Mic on "Youth Icon of Bihar" </a>       
+        <a href="/News7" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Discussion on Journalism at PBF  </a>       
+        <a href="/News3" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Training Workshop for Media.</a>        
+        <a href="/News2" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Human Rights Awareness</a>        
+        <a href="/News1" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Street Play and Script Writing Contest </a>        
+        <a href="/News5" className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Screening of Seven Films </a>        
         </div>
 
     </div>
 
-                <a href='/Media_Center' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+ {/* Media Center */}
+
+
+    <a href='/Media_Center' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
         <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>
-        
-        </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Media Center</h4>
+    </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>
+        <h4 >Media Center</h4>
     </div>
     </div>
     </a>
+
+ {/* Upcoming Events */}
 
 
     <a href='/upcomingEvents' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
@@ -775,6 +817,9 @@ const MainContent = () => {
     </div>
     </a>
 
+ {/* Aryabhatta Times */}
+
+
     <a href='/page38' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
@@ -784,40 +829,40 @@ const MainContent = () => {
     </div>
     </div>
     </a>
-<a href='/page112' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
+
+ {/* Free Trainning */}
+
+
+    <a href='/page112' style={{width:'100%',position:'relative',right:'8px',textDecoration:'none'}}>
     <div style={{ width: '100%', height: '70px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0",margin:'10px', position:'relative',bottom:'5px' ,display:'flex'    }}>
     <div style={{ backgroundColor:'#780000',borderRadius:'50%',width:'50px', height:'98%'}}>
-        <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>
-        
-        </div>
-    <div style={{marginLeft:'15px',marginTop:'10px'}}>    <h4 >Free Trainning</h4>
+        <img src={MCLogo} style={{ width:'100%',height:'auto'}}></img>    
+    </div>
+    <div style={{marginLeft:'15px',marginTop:'10px'}}>    
+        <h4 >Free Trainning</h4>
     </div>
     </div>
     </a>
 
-        <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
-            <h4 className='heading-news'>Important Links</h4>
-            
-        <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>
-        
-        <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>
-        
-        <a href={Announcement3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>
-        
+
+ {/* Important Links */}
+
+    <div style={{ width: '100%', height: '750px',boxShadow:'0 4px 8px rgb(0,0,0,0.5)', padding:"10px 10px"  , backgroundColor:"#F0F0F0" }}>
+        <h4 className='heading-news'>Important Links</h4>
+        <a href={Announcement1} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px', marginTop:'25px' }}>Notice About Academic Advisory Committee </a>   
+        <a href={Announcement2} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Board Of Studies  </a>      
+        <a href={Announcement3} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>Approved Syllabus Of Courses Offered By SJMC  </a>     
         <a href={Announcement4} target='_blank' className='text-decoration-none' style={{ display: 'block', marginBottom: '20px' }}>MoU between SJMC & BIPARD  </a>
 
-    
 
             </div>
         </div>
     </div>
-
 </div>
 <div className="tab-pane fade tab-border" id="profile" role="tabpanel" aria-labelledby="contact-tab">
     <br />
     <h6>VISION:</h6>
     <p>Department of School Of Journalism and Mass communication is to nurture, produce and create innovative young minds of  global standards for media education, research, extension and training, using state-of-the-art technology for building a knowledge driven information society, contributing to human development, empowerment and participatory democracy, anchored in pluralism, universal values & ethics and to attain and remain a centre of excellence.</p>
-
     <h6>Mission:</h6>
     <p>To create a dynamic learning and working environment which nurtures new ideas, creativity, research and scholarship and develops leaders and innovators in the domain of media and mass communication. anc become a leading national institution by offering the young aspiring media professionals an interdisciplinary and dynamic milieu where they can develop comprehensive and critical awareness of diverse communication, information and media.</p>
 </div>
@@ -992,6 +1037,18 @@ const MainContent = () => {
         ))}
     </div>
 </div>
+
+{/* Section: Student lens */}
+
+<div>
+  {/* Existing homepage sections */}
+
+  <StudentLens />
+
+  {/* More sections if needed */}
+</div>
+
+
         </main>
         
         <Footer/>
