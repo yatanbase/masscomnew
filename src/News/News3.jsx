@@ -14,8 +14,8 @@ const News3 = () => {
         <div className="col-md-12 text-center">
 
         <h2 style={{display: 'block',borderBottom: '1px solid black', textAlign:'left',fontWeight:'bold',margin:'20px'}}>
-Training workshop for media professionals to create awareness about disaster mitigation
-</h2>
+          Training workshop for media professionals to create awareness about disaster mitigation
+        </h2>
 
 <p style={{textAlign:'left',fontSize:'20px',margin:'20px'}}>
 29.11.2023. Dr. Manisha Prakash, Assistant Professor, SJMC was invited as resource person by Bihar State Disaster Management Authority for the training workshop organised for media professionals of Bihar to create awareness about disaster mitigation. 

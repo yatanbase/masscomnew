@@ -32,8 +32,7 @@ const slideImages = [
   { url: Slide19, caption: '' },
   { url: Slide18, caption: '' },
   { url: Slide21, caption: '' },
-  { url: Slide22, caption: '' },
-  
+  { url: Slide22, caption: '' }, 
   { url: Slide4, caption: '' },
   { url: Slide5, caption: '' },
   { url: Slide6, caption: '' },

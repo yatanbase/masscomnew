@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import MainContent from './components/Main';
 import Admission_popup from './components/Admission_popup';
+import StudentLens from "./components/StudentLens";
+
 
 // Pages
 import Page1 from './page/page1';
@@ -73,11 +75,16 @@ import HindiDiwas_25 from './page/HindiDiwas_25';
 import CampusConnection from './page/CampusConnection';
 import GauraiyaDiwas from './page/GauraiyaDiwas';
 import JagranSpeechCompetition from './page/JagranSpeechCompetition';
+import VCMeet_2026 from './page/VCMeet_2026';
+import Student_Interaction from './page/Student_Interaction';
+import Youth_Day from './page/Youth_Day';
 import IQACTrainingProgram from './page/IQACTrainingProgram';
 import VJDivas from './page/VJDivas';
 import Seminar from './page/Seminar';
 import Conference from './page/Conference';
 import SmartClass from './page/SmartClass';
+
+
 
 // News
 import News1 from './News/News1';
@@ -108,6 +115,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainContent />} />
+          <Route path="/" element={<StudentLens />} />
           <Route path="/MA" element={<Page1 />} />
           <Route path="/PhD" element={<Page2 />} />
           <Route path="/About" element={<About />} />
@@ -181,6 +189,10 @@ function App() {
           <Route path="/Seminar" element={<Seminar />} />
           <Route path="/Conference" element={<Conference />} />
           <Route path="/SmartClass" element={<SmartClass />} />
+          <Route path="/VCMeet_2026" element={<VCMeet_2026 />} />
+          <Route path="/Student_Interaction" element={<Student_Interaction />} />
+          <Route path="/Youth_Day" element={<Youth_Day/>} />
+
           <Route path="/News1" element={<News1 />} />
           <Route path="/News2" element={<News2 />} />
           <Route path="/News3" element={<News3 />} />
@@ -188,6 +200,8 @@ function App() {
           <Route path="/News5" element={<News5 />} />
           <Route path="/News6" element={<News6 />} />
           <Route path="/News7" element={<News7 />} />
+
+         
         </Routes>
       </BrowserRouter>
     </>

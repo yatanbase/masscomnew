@@ -111,6 +111,26 @@
 }
 
 .ad-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #f3f1ef;        /*  change color here */
+  color: #070707;             /* cross color */
+  border: none;
+  font-size: 26px;
+  font-weight: bold;
+  /*width: 36px;
+  height: 36px;
+  border-radius: 50%;*/
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.ad-close:hover {
+  background: #b71c1c;        /* hover color */
+}
+
+/*.ad-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -120,7 +140,7 @@
     color: white;
     cursor: pointer;
     z-index: 1001;
-}
+}*/
 
 /* ✅ Mobile Responsive Style */
 @media only screen and (max-width: 600px) {

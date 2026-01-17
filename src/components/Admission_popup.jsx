@@ -7,11 +7,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation'; // ✅ Navigation CSS
 
 import advideo from '../asset/skill course.mp4';
-import Image5 from '../asset/Adms_banner1.jpeg';
+{/*import Image5 from '../asset/Adms_banner1.jpeg';
 import Image1 from '../asset/Adms_banner2.jpeg';
 import Image2 from '../asset/Adms_banner3.jpeg';
 import Image3 from '../asset/Adms_banner4.jpeg';
-import Image4 from '../asset/Adms_banner5.jpg';
+import Image4 from '../asset/Adms_banner5.jpg';*/}
 
 
 const Admission_popup = ({ onClose }) => {
@@ -48,7 +48,7 @@ const Admission_popup = ({ onClose }) => {
           </video>
 
           {/* ✅ SLIDING IMAGE BANNERS with Arrows */}
-          <Swiper
+           {/*   <Swiper
             modules={[Autoplay, Pagination, Navigation]} // ✅ Navigation added
             spaceBetween={10}
             slidesPerView={1}
@@ -72,7 +72,7 @@ const Admission_popup = ({ onClose }) => {
             <SwiperSlide>
               <img src={Image5} alt="Ad 5" className="ad-image" />
             </SwiperSlide>
-          </Swiper>
+          </Swiper>  /}
 
           {/* ✅ Button Below */}
           <div className="button_container">

@@ -10,11 +10,10 @@ import Image108 from '../asset/Our gallery/Aiworkshop/img6.jpeg';
 import Image109 from '../asset/Our gallery/Aiworkshop/img7.jpeg';
 import Image110 from '../asset/Our gallery/Aiworkshop/img8.jpeg';
 import Image111 from '../asset/Our gallery/Aiworkshop/img9.jpeg';
-import Image112 from '../asset/Our gallery/Aiworkshop/img10.jpeg';
-import Image113 from '../asset/Our gallery/Aiworkshop/img11.jpeg';
-import Image114 from '../asset/Our gallery/Aiworkshop/img9.jpeg';
-import Image115 from '../asset/Our gallery/Aiworkshop/img10.jpeg';
-import Image116 from '../asset/Our gallery/Aiworkshop/img11.jpeg';
+import Image113 from '../asset/Our gallery/Aiworkshop/img10.jpeg';
+import Image114 from '../asset/Our gallery/Aiworkshop/img12.jpeg';
+import Image115 from '../asset/Our gallery/Aiworkshop/img13.jpeg';
+import Image116 from '../asset/Our gallery/Aiworkshop/img14.jpeg';
 
 
 function Aiworkshop () {
@@ -30,11 +29,10 @@ function Aiworkshop () {
     { src: Image109, date: '27 Aug 2025' },
     { src: Image110, date: '27 Aug 2025' },
     { src: Image111, date: '27 Aug 2025' },
-    { src: Image112, date: '27 Aug 2025' },
     { src: Image113, date: '27 Aug 2025' },
-     { src: Image114, date: '27 Aug 2025' },
-      { src: Image115, date: '27 Aug 2025' },
-       { src: Image116, date: '27 Aug 2025' },
+    { src: Image114, date: '27 Aug 2025' },
+    { src: Image115, date: '27 Aug 2025' },
+    { src: Image116, date: '27 Aug 2025' },
   ];
 
   const [zoomIndex, setZoomIndex] = useState(null);
