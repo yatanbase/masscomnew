@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import MainContent from './components/Main';
-import Admission_popup from './components/Admission_popup';
+//import Admission_popup from './components/Admission_popup';
 
 // Pages
 import Page1 from './page/page1';
@@ -89,7 +89,7 @@ import News6 from './News/News6';
 import News7 from './News/News7';
 
 function App() {
-  const [showAd, setShowAd] = useState(false);
+  /*const [showAd, setShowAd] = useState(false);
 
   useEffect(() => {
     const adShown = localStorage.getItem('adShown');
@@ -99,11 +99,11 @@ function App() {
     }
   }, []);
 
-  const handleCloseAd = () => setShowAd(false);
+  const handleCloseAd = () => setShowAd(false);*/
 
   return (
     <>
-      {showAd && <Admission_popup onClose={handleCloseAd} />}
+    
 
       <BrowserRouter>
         <Routes>

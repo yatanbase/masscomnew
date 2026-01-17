@@ -104,7 +104,7 @@ import SocialMediaPopup from '../components/ClubsButton'
 import MCLogo from '../asset/media_center_logo.png'
 import AryabhattaTimes_Logo from '../asset/AryabhattaTimes_logo.png'
 import Form from '../components/Form'
-import Advertisement from '../components/Admission_popup'
+//import Advertisement from '../components/Admission_popup'
 import Track from '../components/traffic'
 import Interaction_img from '../asset/Our gallery/Interaction/img1.jpg'
 import Aiworkshop_img from '../asset/Our gallery/Aiworkshop/img1.jpeg'
@@ -387,11 +387,11 @@ const galleryItems = [
 const MainContent = () => {
     
 
-    const [showAd, setShowAd] = useState(true);         //for popup admission ad
+    /*const [showAd, setShowAd] = useState(true);         //for popup admission ad
 
     const handleCloseAd = () => {
       setShowAd(false);
-    };
+    };*/
 
 
     const latestNews = "Important announcement: Classes will be canceled tomorrow due to inclement weather.";
@@ -485,7 +485,7 @@ const MainContent = () => {
     return (
         <>
 
-{showAd && <Advertisement onClose={handleCloseAd} />}
+
        
         {/* <Toolbar /> */}
       <Header />
